@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ios" customModuleProvider="target">
             <connections>
+                <outlet property="testBtn" destination="sS8-Iw-fed" id="9uk-gD-w38"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,22 +22,23 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mangoplateLogin" translatesAutoresizingMaskIntoConstraints="NO" id="ub2-it-Pql">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE3-aK-vds">
-                    <rect key="frame" x="232" y="411" width="66" height="35"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                    <state key="normal" title="건너뛰기">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS8-Iw-fed">
+                    <rect key="frame" x="245" y="422" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="goToMainTest:" destination="-1" eventType="touchUpInside" id="0j9-aC-gBi"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ub2-it-Pql" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7As-qf-eXa"/>
                 <constraint firstAttribute="bottom" secondItem="ub2-it-Pql" secondAttribute="bottom" id="8zr-Jo-Thf"/>
-                <constraint firstItem="CE3-aK-vds" firstAttribute="trailing" secondItem="ub2-it-Pql" secondAttribute="trailing" constant="-22" id="WIb-KJ-4yT"/>
+                <constraint firstItem="sS8-Iw-fed" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="245" id="MTG-dD-o3b"/>
                 <constraint firstItem="ub2-it-Pql" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jBl-lX-kA1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ub2-it-Pql" secondAttribute="trailing" id="jme-rf-qF8"/>
-                <constraint firstItem="CE3-aK-vds" firstAttribute="bottom" secondItem="ub2-it-Pql" secondAttribute="bottom" constant="-34" id="ryx-o3-dQn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sS8-Iw-fed" secondAttribute="bottom" constant="28" id="jnQ-7G-LvZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sS8-Iw-fed" secondAttribute="trailing" constant="29" id="wdK-Ce-jiT"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="136.875" y="130"/>

@@ -27,6 +27,17 @@
 		BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */; };
 		BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */; };
 		BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */; };
+		C12E0064245416D000EE949F /* FourthMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0062245416D000EE949F /* FourthMainViewController.swift */; };
+		C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E0063245416D000EE949F /* FourthMainViewController.xib */; };
+		C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */; };
+		C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E006D24542C7A00EE949F /* customTabBarCollectionViewCell.xib */; };
+		C1A3E30F2455290E00740325 /* SecondMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3E30D2455290E00740325 /* SecondMainViewController.swift */; };
+		C1A3E3102455290E00740325 /* SecondMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A3E30E2455290E00740325 /* SecondMainViewController.xib */; };
+		C1A3E3132455292000740325 /* ThreeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3E3112455292000740325 /* ThreeMainViewController.swift */; };
+		C1A3E3142455292000740325 /* ThreeMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A3E3122455292000740325 /* ThreeMainViewController.xib */; };
+		C1A3E3172455293000740325 /* FiveMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3E3152455293000740325 /* FiveMainViewController.swift */; };
+		C1A3E3182455293000740325 /* FiveMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A3E3162455293000740325 /* FiveMainViewController.xib */; };
+		C1A3E31A2455AAEB00740325 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3E3192455AAEB00740325 /* MenuBar.swift */; };
 		C1B4A83B2452A8C0005608F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4A8392452A8C0005608F9 /* LoginViewController.swift */; };
 		C1B4A83C2452A8C0005608F9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B4A83A2452A8C0005608F9 /* LoginViewController.xib */; };
 		C1B4A847245308F8005608F9 /* LocationAgreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4A845245308F8005608F9 /* LocationAgreeViewController.swift */; };
@@ -75,6 +86,17 @@
 		BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDEF323B22F9B7CB00FEF8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEF323D22F9B7CB00FEF8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C12E0062245416D000EE949F /* FourthMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthMainViewController.swift; sourceTree = "<group>"; };
+		C12E0063245416D000EE949F /* FourthMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthMainViewController.xib; sourceTree = "<group>"; };
+		C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabBarCollectionViewCell.swift; sourceTree = "<group>"; };
+		C12E006D24542C7A00EE949F /* customTabBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customTabBarCollectionViewCell.xib; sourceTree = "<group>"; };
+		C1A3E30D2455290E00740325 /* SecondMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainViewController.swift; sourceTree = "<group>"; };
+		C1A3E30E2455290E00740325 /* SecondMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondMainViewController.xib; sourceTree = "<group>"; };
+		C1A3E3112455292000740325 /* ThreeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeMainViewController.swift; sourceTree = "<group>"; };
+		C1A3E3122455292000740325 /* ThreeMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeMainViewController.xib; sourceTree = "<group>"; };
+		C1A3E3152455293000740325 /* FiveMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveMainViewController.swift; sourceTree = "<group>"; };
+		C1A3E3162455293000740325 /* FiveMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiveMainViewController.xib; sourceTree = "<group>"; };
+		C1A3E3192455AAEB00740325 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		C1B4A8392452A8C0005608F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1B4A83A2452A8C0005608F9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		C1B4A8412452C85E005608F9 /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -155,6 +177,8 @@
 				BD75ABD42301B3FB00E0FC7A /* PopUp */,
 				BD9BF18522F9DCC7009E47EB /* MainViewController.swift */,
 				BD9BF18622F9DCC7009E47EB /* MainViewController.xib */,
+				C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */,
+				C12E006D24542C7A00EE949F /* customTabBarCollectionViewCell.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -193,7 +217,7 @@
 		BDEF322222F9B7CA00FEF8BD = {
 			isa = PBXGroup;
 			children = (
-				BDEF322D22F9B7CB00FEF8BD /* ios */,
+				BDEF322D22F9B7CB00FEF8BD /* MangoPlate */,
 				BDEF322C22F9B7CB00FEF8BD /* Products */,
 				1E6F8D1136275E5E1F4E8B48 /* Pods */,
 				596D99A16687EBAF37438401 /* Frameworks */,
@@ -208,7 +232,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BDEF322D22F9B7CB00FEF8BD /* ios */ = {
+		BDEF322D22F9B7CB00FEF8BD /* MangoPlate */ = {
 			isa = PBXGroup;
 			children = (
 				BD9BF17122F9C31D009E47EB /* config */,
@@ -216,13 +240,54 @@
 				C1B4A8372452A642005608F9 /* Login */,
 				C1B4A84424530845005608F9 /* LocationAgree */,
 				BD9BF16F22F9C314009E47EB /* Main */,
+				C1A3E30B245527D900740325 /* SecondMain */,
+				C1A3E30C245527DC00740325 /* ThreeMain */,
+				C12E00612454166700EE949F /* FourthMain */,
+				C1A3E30A245527D000740325 /* FiveMain */,
 				BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */,
 				BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */,
 				BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */,
 				BDEF323D22F9B7CB00FEF8BD /* Info.plist */,
 				BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */,
 			);
-			path = ios;
+			path = MangoPlate;
+			sourceTree = "<group>";
+		};
+		C12E00612454166700EE949F /* FourthMain */ = {
+			isa = PBXGroup;
+			children = (
+				C12E0062245416D000EE949F /* FourthMainViewController.swift */,
+				C12E0063245416D000EE949F /* FourthMainViewController.xib */,
+			);
+			path = FourthMain;
+			sourceTree = "<group>";
+		};
+		C1A3E30A245527D000740325 /* FiveMain */ = {
+			isa = PBXGroup;
+			children = (
+				C1A3E3152455293000740325 /* FiveMainViewController.swift */,
+				C1A3E3162455293000740325 /* FiveMainViewController.xib */,
+			);
+			path = FiveMain;
+			sourceTree = "<group>";
+		};
+		C1A3E30B245527D900740325 /* SecondMain */ = {
+			isa = PBXGroup;
+			children = (
+				C1A3E30D2455290E00740325 /* SecondMainViewController.swift */,
+				C1A3E30E2455290E00740325 /* SecondMainViewController.xib */,
+				C1A3E3192455AAEB00740325 /* MenuBar.swift */,
+			);
+			path = SecondMain;
+			sourceTree = "<group>";
+		};
+		C1A3E30C245527DC00740325 /* ThreeMain */ = {
+			isa = PBXGroup;
+			children = (
+				C1A3E3112455292000740325 /* ThreeMainViewController.swift */,
+				C1A3E3122455292000740325 /* ThreeMainViewController.xib */,
+			);
+			path = ThreeMain;
 			sourceTree = "<group>";
 		};
 		C1B4A8372452A642005608F9 /* Login */ = {
@@ -314,9 +379,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
+				C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				C1B4A83C2452A8C0005608F9 /* LoginViewController.xib in Resources */,
+				C1A3E3142455292000740325 /* ThreeMainViewController.xib in Resources */,
+				C1A3E3182455293000740325 /* FiveMainViewController.xib in Resources */,
 				BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */,
+				C1A3E3102455290E00740325 /* SecondMainViewController.xib in Resources */,
+				C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				C1B4A848245308F8005608F9 /* LocationAgreeViewController.xib in Resources */,
@@ -372,21 +442,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A3E3132455292000740325 /* ThreeMainViewController.swift in Sources */,
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
+				C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
+				C1A3E3172455293000740325 /* FiveMainViewController.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
+				C1A3E30F2455290E00740325 /* SecondMainViewController.swift in Sources */,
 				C1B4A847245308F8005608F9 /* LocationAgreeViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
+				C1A3E31A2455AAEB00740325 /* MenuBar.swift in Sources */,
 				C1B4A83B2452A8C0005608F9 /* LoginViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
+				C12E0064245416D000EE949F /* FourthMainViewController.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,
 			);

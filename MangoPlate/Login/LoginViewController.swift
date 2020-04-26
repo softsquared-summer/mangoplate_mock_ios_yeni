@@ -11,6 +11,15 @@ import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var testBtn: UIButton!//메인으로 넘어가는 거 테스트위해 임시로 만들어둔 버튼(로그인 기능으로 화면이 메인으로 넘어가는게 가능해지면 그때 지움
+    
+    
+    @IBAction func goToMainTest(_ sender: UIButton) {
+        let mainvc = MainViewController() //change this to your class name
+        mainvc.modalPresentationStyle = .fullScreen
+        self.present(mainvc, animated: true, completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
