@@ -9,20 +9,24 @@
 import UIKit
 
 class SecondMainViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-//
+
 //    let secondCollectionView: UICollectionView = {
 //
-//        let flowLayout = UICollectionViewFlowLayout()
-//        let collectionView = UICollectionView(frame: .init(x: 0, y: 0, width: 100, height: 100), collectionViewLayout: flowLayout)
+//        let collectionViewLayout = UICollectionViewFlowLayout()
+//        collectionViewLayout.scrollDirection = .horizontal
+//        let collectionView = UICollectionView(frame: .init(x: 0, y: 0, width: 500, height: 60), collectionViewLayout: collectionViewLayout)
 //        collectionView.translatesAutoresizingMaskIntoConstraints = false
 //        collectionView.backgroundColor = UIColor.red
 //
 //        return collectionView
 //    }()
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = UIColor.white
+       
+        collectionView?.backgroundColor = UIColor.white
+        
 //        NSLayoutConstraint.activate([
 //        secondCollectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
 //        secondCollectionView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0),
@@ -30,8 +34,8 @@ class SecondMainViewController: UICollectionViewController, UICollectionViewDele
 //        secondCollectionView.heightAnchor.constraint(equalToConstant: 300)
 //
 //        ])
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
-//
+        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
+//        view.addSubview(collectionView)
 //        let alarmCollectionView:UICollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
 //        let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
         // Do any additional setup after loading the view.
@@ -39,15 +43,15 @@ class SecondMainViewController: UICollectionViewController, UICollectionViewDele
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 2
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
         cell.backgroundColor = UIColor.red
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 200)
+        return CGSize(width: view.frame.width/2, height: 55)
     }
     
 //

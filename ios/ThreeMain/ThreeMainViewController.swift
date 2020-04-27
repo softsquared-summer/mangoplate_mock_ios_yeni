@@ -1,5 +1,5 @@
 //
-//  FiveMainViewController.swift
+//  ThreeMainViewController.swift
 //  ios
 //
 //  Created by 조예은 on 2020/04/26.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FiveMainViewController: UIViewController {
+class ThreeMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +17,10 @@ class FiveMainViewController: UIViewController {
     }
 
 
+    @IBAction func PresentPreviousView(_ sender: UIButton) {
+
+        self.dismiss(animated: true, completion: nil) //ThreeMainViewController를 스택에서 지움으로써 이전에 띄웠던 뷰로 돌아가짐 (x버튼 누르면 이전에 탭했었던 뷰 보여주기 (main,second,fourth,five중))
+    }
     /*
     // MARK: - Navigation
 

@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let baseUrl = "http://13.124.75.140"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         // Override point for customization after application launch.
         
         // StatusBar에 Alamofire 시도 중 Indicator 띄워주기 위한 옵션 설정

@@ -39,6 +39,9 @@
                         <constraint firstAttribute="height" constant="70" id="r2p-7v-Vq0"/>
                     </constraints>
                     <state key="normal" image="ThreeMainBottomButton"/>
+                    <connections>
+                        <action selector="PresentPreviousView:" destination="-1" eventType="touchUpInside" id="zkJ-5P-aYM"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BE7-pK-Dff">
                     <rect key="frame" x="0.0" y="566" width="414" height="60"/>
