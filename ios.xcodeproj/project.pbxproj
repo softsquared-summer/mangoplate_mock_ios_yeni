@@ -31,6 +31,10 @@
 		C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E0063245416D000EE949F /* FourthMainViewController.xib */; };
 		C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */; };
 		C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E006D24542C7A00EE949F /* customTabBarCollectionViewCell.xib */; };
+		C18059D624580AEB005FB4EC /* TestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18059D524580AEB005FB4EC /* TestResponse.swift */; };
+		C18059D824581052005FB4EC /* RestaurantsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18059D724581052005FB4EC /* RestaurantsResponse.swift */; };
+		C185CAAE2458682A00DBB6C3 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185CAAC2458682A00DBB6C3 /* MyInfoViewController.swift */; };
+		C185CAAF2458682A00DBB6C3 /* MyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C185CAAD2458682A00DBB6C3 /* MyInfoViewController.xib */; };
 		C1A3E30F2455290E00740325 /* SecondMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3E30D2455290E00740325 /* SecondMainViewController.swift */; };
 		C1A3E3102455290E00740325 /* SecondMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A3E30E2455290E00740325 /* SecondMainViewController.xib */; };
 		C1A3E3132455292000740325 /* ThreeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3E3112455292000740325 /* ThreeMainViewController.swift */; };
@@ -43,10 +47,6 @@
 		C1B4A84A24531686005608F9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B4A84924531685005608F9 /* FBSDKCoreKit.framework */; };
 		C1B4A84C24531691005608F9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B4A84B24531691005608F9 /* FBSDKLoginKit.framework */; };
 		C1B4A84E245318D8005608F9 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B4A84D245318D8005608F9 /* KakaoOpenSDK.framework */; };
-		C1BFA5A92456AFA400C22C53 /* FiveMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BFA5A72456AFA400C22C53 /* FiveMainViewController.swift */; };
-		C1BFA5AA2456AFA400C22C53 /* FiveMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1BFA5A82456AFA400C22C53 /* FiveMainViewController.xib */; };
-		C1BFA5AD2456BE9700C22C53 /* FiveMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BFA5AB2456BE9700C22C53 /* FiveMainTableViewCell.swift */; };
-		C1BFA5AE2456BE9700C22C53 /* FiveMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1BFA5AC2456BE9700C22C53 /* FiveMainTableViewCell.xib */; };
 		C7B0F461A33E2BA70527A7F9 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +92,10 @@
 		C12E0063245416D000EE949F /* FourthMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthMainViewController.xib; sourceTree = "<group>"; };
 		C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		C12E006D24542C7A00EE949F /* customTabBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customTabBarCollectionViewCell.xib; sourceTree = "<group>"; };
+		C18059D524580AEB005FB4EC /* TestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResponse.swift; sourceTree = "<group>"; };
+		C18059D724581052005FB4EC /* RestaurantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsResponse.swift; sourceTree = "<group>"; };
+		C185CAAC2458682A00DBB6C3 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		C185CAAD2458682A00DBB6C3 /* MyInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoViewController.xib; sourceTree = "<group>"; };
 		C1A3E30D2455290E00740325 /* SecondMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainViewController.swift; sourceTree = "<group>"; };
 		C1A3E30E2455290E00740325 /* SecondMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondMainViewController.xib; sourceTree = "<group>"; };
 		C1A3E3112455292000740325 /* ThreeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeMainViewController.swift; sourceTree = "<group>"; };
@@ -105,10 +109,6 @@
 		C1B4A84924531685005608F9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		C1B4A84B24531691005608F9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		C1B4A84D245318D8005608F9 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = "../../../Downloads/KakaoOpenSDK-1/KakaoOpenSDK.framework"; sourceTree = "<group>"; };
-		C1BFA5A72456AFA400C22C53 /* FiveMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveMainViewController.swift; sourceTree = "<group>"; };
-		C1BFA5A82456AFA400C22C53 /* FiveMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiveMainViewController.xib; sourceTree = "<group>"; };
-		C1BFA5AB2456BE9700C22C53 /* FiveMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveMainTableViewCell.swift; sourceTree = "<group>"; };
-		C1BFA5AC2456BE9700C22C53 /* FiveMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiveMainTableViewCell.xib; sourceTree = "<group>"; };
 		D52E2D8320870120DBBF4DF3 /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				BD75ABDF2301BE8200E0FC7A /* TutorialResponse.swift */,
+				C18059D524580AEB005FB4EC /* TestResponse.swift */,
+				C18059D724581052005FB4EC /* RestaurantsResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -247,7 +249,7 @@
 				C1A3E30B245527D900740325 /* SecondMain */,
 				C1A3E30C245527DC00740325 /* ThreeMain */,
 				C12E00612454166700EE949F /* FourthMain */,
-				C1A3E30A245527D000740325 /* FiveMain */,
+				C1A3E30A245527D000740325 /* MyInfo */,
 				BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */,
 				BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */,
 				BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */,
@@ -266,15 +268,13 @@
 			path = FourthMain;
 			sourceTree = "<group>";
 		};
-		C1A3E30A245527D000740325 /* FiveMain */ = {
+		C1A3E30A245527D000740325 /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
-				C1BFA5A72456AFA400C22C53 /* FiveMainViewController.swift */,
-				C1BFA5A82456AFA400C22C53 /* FiveMainViewController.xib */,
-				C1BFA5AB2456BE9700C22C53 /* FiveMainTableViewCell.swift */,
-				C1BFA5AC2456BE9700C22C53 /* FiveMainTableViewCell.xib */,
+				C185CAAC2458682A00DBB6C3 /* MyInfoViewController.swift */,
+				C185CAAD2458682A00DBB6C3 /* MyInfoViewController.xib */,
 			);
-			path = FiveMain;
+			path = MyInfo;
 			sourceTree = "<group>";
 		};
 		C1A3E30B245527D900740325 /* SecondMain */ = {
@@ -384,15 +384,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1BFA5AE2456BE9700C22C53 /* FiveMainTableViewCell.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				C1B4A83C2452A8C0005608F9 /* LoginViewController.xib in Resources */,
 				C1A3E3142455292000740325 /* ThreeMainViewController.xib in Resources */,
-				C1BFA5AA2456AFA400C22C53 /* FiveMainViewController.xib in Resources */,
 				BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */,
 				C1A3E3102455290E00740325 /* SecondMainViewController.xib in Resources */,
+				C185CAAF2458682A00DBB6C3 /* MyInfoViewController.xib in Resources */,
 				C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
@@ -449,7 +448,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1BFA5AD2456BE9700C22C53 /* FiveMainTableViewCell.swift in Sources */,
 				C1A3E3132455292000740325 /* ThreeMainViewController.swift in Sources */,
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
@@ -457,6 +455,7 @@
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
+				C18059D824581052005FB4EC /* RestaurantsResponse.swift in Sources */,
 				C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
@@ -465,8 +464,9 @@
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
-				C1BFA5A92456AFA400C22C53 /* FiveMainViewController.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
+				C185CAAE2458682A00DBB6C3 /* MyInfoViewController.swift in Sources */,
+				C18059D624580AEB005FB4EC /* TestResponse.swift in Sources */,
 				C1A3E31A2455AAEB00740325 /* MenuBar.swift in Sources */,
 				C1B4A83B2452A8C0005608F9 /* LoginViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,

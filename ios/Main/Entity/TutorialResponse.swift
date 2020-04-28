@@ -27,23 +27,23 @@ extension TutorialResponse: Mappable {
     
 }
 
-struct Tutorial {
-    var seq: Int!
-    var type: String!
-    var url: String!
-    var content: String!
-}
-
-extension Tutorial: Mappable {
-    
-    init?(map: Map) {
-    }
-    
-    mutating func mapping(map: Map) {
-        seq <- map["seq"]
-        type <- map["type"]
-        url <- map["url"]
-        content <- map["content"]
-    }
-    
-}
+//struct Tutorial {
+//    var seq: Int!
+//    var type: String!
+//    var url: String!
+//    var content: String!
+//}
+//
+//extension Tutorial: Mappable {
+//
+//    init?(map: Map) {
+//    }
+//
+//    mutating func mapping(map: Map) {
+//        seq <- map["seq"]
+//        type <- map["type"]
+//        url <- map["url"]
+//        content <- map["content"]
+//    }
+//
+//}

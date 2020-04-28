@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class MainViewController: BaseViewController , UIScrollViewDelegate {
+class MainViewController: BaseViewController , UIScrollViewDelegate, CLLocationManagerDelegate {
    
     var pageViewController : UIPageViewController!
     var pageTitles: NSArray!
@@ -19,8 +20,9 @@ class MainViewController: BaseViewController , UIScrollViewDelegate {
     var frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
     var pageControl: UIPageControl!
     var headerVisible = true
-    var PresentLocationAccessViewCount = 0 //왜 안될까--------------------
-    
+
+    var locationManager:CLLocationManager!
+
     @IBOutlet weak var pagecontrolContainer: UIView!
     @IBOutlet weak var pagerContainer: UIView!
     @IBOutlet weak var firstButton: UIButton!
@@ -33,7 +35,6 @@ class MainViewController: BaseViewController , UIScrollViewDelegate {
 
 
     @IBAction func pressedPresentMainViewController(_ sender: UIButton) {
-        self.PresentLocationAccessViewCount = 1 //왜 안될까--------------------
         let MainVC = MainViewController() //change this to your class name
         MainVC.modalPresentationStyle = .fullScreen
         self.present(MainVC, animated: true, completion: nil)
@@ -58,7 +59,7 @@ class MainViewController: BaseViewController , UIScrollViewDelegate {
         self.present(fourthMainVC, animated: true, completion: nil)
     }
     @IBAction func pressedPresentFiveMainViewController(_ sender: UIButton) {
-        let fiveMainVC = FiveMainViewController() //change this to your class name
+        let fiveMainVC = MyInfoViewController() //change this to your class name
         fiveMainVC.modalPresentationStyle = .fullScreen
         self.present(fiveMainVC, animated: true, completion: nil)
     }
@@ -89,18 +90,20 @@ class MainViewController: BaseViewController , UIScrollViewDelegate {
             scrollView.delegate = self as! UIScrollViewDelegate
         configurePageControl()
         self.pagerContainer.addSubview(scrollView)
-        if PresentLocationAccessViewCount == 0{ //PresentLocationAccessViewCount가 최초 허용할 때만 실행 //왜 안될까--------------------
-            DispatchQueue.global(qos: .utility).async {
-               
-                DispatchQueue.main.async {
-                        self.PresentLocationAccessViewCount = 1 // PresentLocationAccessViewCount가 이미 허용했음을 의미 //왜 안될까--------------------
-                        self.PresentLocationAccessView()
-                
-                }
-            }//UIAlertController는 일반적으로 viewDidAppear에서 쓰인다. 하지만 ThreeMainViewController에서 MainViewController로 돌아올 경우 알림이 허용된 상태기 때문에 알림창이 뜨면안된다. 따라서 DispatchQueue를 사용해서 viewDidLoad에 작성했다.
-        //하지만 pressedPresentMainViewController()를 사용했을 때는 MainViewController가 로드되기 때문에 알림이 뜨게된다 이 점을 해결해야한다.
-        }
+        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+                locationManager.requestWhenInUseAuthorization() //권한 요청
+                locationManager.desiredAccuracy = kCLLocationAccuracyBest
+                locationManager.startUpdatingLocation()
+
     }
+    override func didReceiveMemoryWarning() {
+            super.didReceiveMemoryWarning()
+            // Dispose of any resources that can be recreated.
+        }
+
+
     override func viewDidAppear(_ animated: Bool) {
 //        PresentLocationAccessView()
         setPageViewInScroll()
@@ -148,31 +151,31 @@ class MainViewController: BaseViewController , UIScrollViewDelegate {
  
     
     
-    func PresentLocationAccessView(){
-//        let attributedString = NSAttributedString(string: "",attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
-        
-        let alert = UIAlertController(title:"", message:"", preferredStyle: .alert)
-        
-        alert.setValue(NSAttributedString(string: "'MangoPlate'이(가) 사용자의 위치에 접근하도록 허용하겠습니까?", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17),NSAttributedString.Key.foregroundColor : UIColor.white]), forKey: "attributedTitle")
-        
-        alert.setValue(NSAttributedString(string: "접근을 허용하면, 현재 위치를 활용하여 주변의 가까운 식당을 편하게 찾을 수 있어요.", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 13),NSAttributedString.Key.foregroundColor : UIColor.white]), forKey: "attributedMessage")
-        let AllowUsingTheApp = UIAlertAction(title: "허용", style: .default, handler: nil)
-//        let AllowWhileUsingTheApp = UIAlertAction(title: "앱을 사용하는 동안 허용", style: .default, handler: nil)
+//    func PresentLocationAccessView(){
+////        let attributedString = NSAttributedString(string: "",attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
 //
+//        let alert = UIAlertController(title:"", message:"", preferredStyle: .alert)
 //
-//        let OnceAllowed = UIAlertAction(title: "한 번 허용", style: .default, handler: nil)
-//        let Disallow = UIAlertAction(title: "허용 안 함", style: .default, handler: nil)
-        alert.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = UIColor.darkGray
-
-        alert.addAction(AllowUsingTheApp)
-
-//        alert.addAction(AllowWhileUsingTheApp)
-//        alert.addAction(OnceAllowed)
-//        alert.addAction(Disallow)
-        alert.preferredAction = AllowUsingTheApp
-        self.present(alert, animated: true, completion: nil)
-
-    }
+//        alert.setValue(NSAttributedString(string: "'MangoPlate'이(가) 사용자의 위치에 접근하도록 허용하겠습니까?", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17),NSAttributedString.Key.foregroundColor : UIColor.white]), forKey: "attributedTitle")
+//
+//        alert.setValue(NSAttributedString(string: "접근을 허용하면, 현재 위치를 활용하여 주변의 가까운 식당을 편하게 찾을 수 있어요.", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 13),NSAttributedString.Key.foregroundColor : UIColor.white]), forKey: "attributedMessage")
+//        let AllowUsingTheApp = UIAlertAction(title: "허용", style: .default, handler: nil)
+////        let AllowWhileUsingTheApp = UIAlertAction(title: "앱을 사용하는 동안 허용", style: .default, handler: nil)
+////
+////
+////        let OnceAllowed = UIAlertAction(title: "한 번 허용", style: .default, handler: nil)
+////        let Disallow = UIAlertAction(title: "허용 안 함", style: .default, handler: nil)
+//        alert.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = UIColor.darkGray
+//
+//        alert.addAction(AllowUsingTheApp)
+//
+////        alert.addAction(AllowWhileUsingTheApp)
+////        alert.addAction(OnceAllowed)
+////        alert.addAction(Disallow)
+//        alert.preferredAction = AllowUsingTheApp
+//        self.present(alert, animated: true, completion: nil)
+//
+//    }
     
 }
 

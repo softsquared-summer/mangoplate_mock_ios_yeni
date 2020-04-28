@@ -12,14 +12,23 @@ import AlamofireObjectMapper
 class MainDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-//    func getTutorials(_ mainViewController: MainViewController) {        
+//    func getTutorials(_ mainViewController: MainViewController) {
 //        Alamofire
 //            //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-//            .request("\(self.appDelegate.baseUrl)/ads", method: .get)
+//            .request("\(self.appDelegate.baseUrl)/restaurants", method: .get)
 //            .validate()
-//            .responseObject(completionHandler: { (response: DataResponse<TutorialResponse>) in
+//            .responseObject(completionHandler: { (response: DataResponse<RestaurantsResponse>) in
 //                switch response.result {
-//                case .success(let tutorialResponse):
+//                case .success(let restaurantsResponse):
+//                    if (restaurantsResponse.code == 100) {
+//                        return "오류"
+//                    }
+//                    
+//                    if (restaurants.code == 200) {
+//                        mainViewController.titleLabel.text = restaurantsResponse.result[2].title
+//                    }
+//                    
+//                    
 //                    if tutorialResponse.code == 100 {
 //                        mainViewController.titleLabel.text = tutorialResponse.message
 //                    } else {

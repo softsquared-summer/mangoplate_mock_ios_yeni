@@ -53,6 +53,9 @@ class LoginViewController: UIViewController {
     }()
     
     @objc private func touchUpLoginButton(_ sender: UIButton) {
+        
+        let ud = UserDefaults.standard
+        
       guard let session = KOSession.shared() else {
         return
       }
@@ -63,11 +66,14 @@ class LoginViewController: UIViewController {
       
       session.open { (error) in
         if error != nil || !session.isOpen() { return }
-        KOSessionTask.userMeTask(completion: { (error, user) in
-          guard let user = user,
-                let email = user.account?.email,
+        KOSessionTask.userMeTask(completion: { (error, profile) in
             
-                let nickname = user.nickname else { return }
+            let kakao = profile!
+            ud.set(kakao.properties!["nickname"], forKey: "nickname")
+//          guard let user = user,
+//                let email = user.account?.email,
+//
+//                let nickname = user.nickname else { return }
           
         })
       }
