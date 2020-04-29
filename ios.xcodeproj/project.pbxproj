@@ -31,10 +31,31 @@
 		C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E0063245416D000EE949F /* FourthMainViewController.xib */; };
 		C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */; };
 		C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E006D24542C7A00EE949F /* customTabBarCollectionViewCell.xib */; };
+		C16600ED24594B3C00E3800D /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600EC24594B3C00E3800D /* MainTab.swift */; };
+		C16600F024594BBB00E3800D /* findingGoodRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600EE24594BBB00E3800D /* findingGoodRestaurantViewController.swift */; };
+		C16600F124594BBB00E3800D /* findingGoodRestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16600EF24594BBB00E3800D /* findingGoodRestaurantViewController.xib */; };
+		C16600F424594BE900E3800D /* MangoPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600F224594BE900E3800D /* MangoPickViewController.swift */; };
+		C16600F524594BE900E3800D /* MangoPickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16600F324594BE900E3800D /* MangoPickViewController.xib */; };
+		C16600F824594C1900E3800D /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600F624594C1900E3800D /* PlusViewController.swift */; };
+		C16600F924594C1900E3800D /* PlusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16600F724594C1900E3800D /* PlusViewController.xib */; };
+		C16600FC24594C3900E3800D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600FA24594C3900E3800D /* NewsViewController.swift */; };
+		C16600FD24594C3900E3800D /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16600FB24594C3900E3800D /* NewsViewController.xib */; };
+		C166010024594D9B00E3800D /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600FE24594D9B00E3800D /* MyInfoViewController.swift */; };
+		C166010124594D9B00E3800D /* MyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16600FF24594D9B00E3800D /* MyInfoViewController.xib */; };
+		C16601042459650200E3800D /* EatDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16601022459650200E3800D /* EatDealViewController.swift */; };
+		C16601052459650200E3800D /* EatDealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16601032459650200E3800D /* EatDealViewController.xib */; };
+		C16601082459651300E3800D /* TopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16601062459651300E3800D /* TopListViewController.swift */; };
+		C16601092459651300E3800D /* TopListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16601072459651300E3800D /* TopListViewController.xib */; };
+		C166010C24597F6200E3800D /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C166010A24597F6200E3800D /* EmailLoginViewController.swift */; };
+		C166010D24597F6200E3800D /* EmailLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C166010B24597F6200E3800D /* EmailLoginViewController.xib */; };
 		C18059D624580AEB005FB4EC /* TestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18059D524580AEB005FB4EC /* TestResponse.swift */; };
 		C18059D824581052005FB4EC /* RestaurantsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18059D724581052005FB4EC /* RestaurantsResponse.swift */; };
-		C185CAAE2458682A00DBB6C3 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185CAAC2458682A00DBB6C3 /* MyInfoViewController.swift */; };
-		C185CAAF2458682A00DBB6C3 /* MyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C185CAAD2458682A00DBB6C3 /* MyInfoViewController.xib */; };
+		C185CAAE2458682A00DBB6C3 /* fivew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185CAAC2458682A00DBB6C3 /* fivew.swift */; };
+		C185CAAF2458682A00DBB6C3 /* five.xib in Resources */ = {isa = PBXBuildFile; fileRef = C185CAAD2458682A00DBB6C3 /* five.xib */; };
+		C1A1F99C2459D32800C4862E /* LostPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1F99A2459D32800C4862E /* LostPasswordViewController.swift */; };
+		C1A1F99D2459D32800C4862E /* LostPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A1F99B2459D32800C4862E /* LostPasswordViewController.xib */; };
+		C1A1F9A02459D3B200C4862E /* SignUpByEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1F99E2459D3B200C4862E /* SignUpByEmailViewController.swift */; };
+		C1A1F9A12459D3B200C4862E /* SignUpByEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A1F99F2459D3B200C4862E /* SignUpByEmailViewController.xib */; };
 		C1A3E30F2455290E00740325 /* SecondMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3E30D2455290E00740325 /* SecondMainViewController.swift */; };
 		C1A3E3102455290E00740325 /* SecondMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A3E30E2455290E00740325 /* SecondMainViewController.xib */; };
 		C1A3E3132455292000740325 /* ThreeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3E3112455292000740325 /* ThreeMainViewController.swift */; };
@@ -92,10 +113,31 @@
 		C12E0063245416D000EE949F /* FourthMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthMainViewController.xib; sourceTree = "<group>"; };
 		C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		C12E006D24542C7A00EE949F /* customTabBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customTabBarCollectionViewCell.xib; sourceTree = "<group>"; };
+		C16600EC24594B3C00E3800D /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		C16600EE24594BBB00E3800D /* findingGoodRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findingGoodRestaurantViewController.swift; sourceTree = "<group>"; };
+		C16600EF24594BBB00E3800D /* findingGoodRestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = findingGoodRestaurantViewController.xib; sourceTree = "<group>"; };
+		C16600F224594BE900E3800D /* MangoPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoPickViewController.swift; sourceTree = "<group>"; };
+		C16600F324594BE900E3800D /* MangoPickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MangoPickViewController.xib; sourceTree = "<group>"; };
+		C16600F624594C1900E3800D /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
+		C16600F724594C1900E3800D /* PlusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusViewController.xib; sourceTree = "<group>"; };
+		C16600FA24594C3900E3800D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C16600FB24594C3900E3800D /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		C16600FE24594D9B00E3800D /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		C16600FF24594D9B00E3800D /* MyInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoViewController.xib; sourceTree = "<group>"; };
+		C16601022459650200E3800D /* EatDealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatDealViewController.swift; sourceTree = "<group>"; };
+		C16601032459650200E3800D /* EatDealViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EatDealViewController.xib; sourceTree = "<group>"; };
+		C16601062459651300E3800D /* TopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewController.swift; sourceTree = "<group>"; };
+		C16601072459651300E3800D /* TopListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopListViewController.xib; sourceTree = "<group>"; };
+		C166010A24597F6200E3800D /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		C166010B24597F6200E3800D /* EmailLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailLoginViewController.xib; sourceTree = "<group>"; };
 		C18059D524580AEB005FB4EC /* TestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResponse.swift; sourceTree = "<group>"; };
 		C18059D724581052005FB4EC /* RestaurantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsResponse.swift; sourceTree = "<group>"; };
-		C185CAAC2458682A00DBB6C3 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
-		C185CAAD2458682A00DBB6C3 /* MyInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoViewController.xib; sourceTree = "<group>"; };
+		C185CAAC2458682A00DBB6C3 /* fivew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fivew.swift; sourceTree = "<group>"; };
+		C185CAAD2458682A00DBB6C3 /* five.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = five.xib; sourceTree = "<group>"; };
+		C1A1F99A2459D32800C4862E /* LostPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostPasswordViewController.swift; sourceTree = "<group>"; };
+		C1A1F99B2459D32800C4862E /* LostPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LostPasswordViewController.xib; sourceTree = "<group>"; };
+		C1A1F99E2459D3B200C4862E /* SignUpByEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpByEmailViewController.swift; sourceTree = "<group>"; };
+		C1A1F99F2459D3B200C4862E /* SignUpByEmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpByEmailViewController.xib; sourceTree = "<group>"; };
 		C1A3E30D2455290E00740325 /* SecondMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainViewController.swift; sourceTree = "<group>"; };
 		C1A3E30E2455290E00740325 /* SecondMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondMainViewController.xib; sourceTree = "<group>"; };
 		C1A3E3112455292000740325 /* ThreeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeMainViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +287,7 @@
 				BD9BF17022F9C318009E47EB /* Splash */,
 				C1B4A8372452A642005608F9 /* Login */,
 				C1B4A84424530845005608F9 /* LocationAgree */,
+				C16600EB24594AF800E3800D /* MainTab */,
 				BD9BF16F22F9C314009E47EB /* Main */,
 				C1A3E30B245527D900740325 /* SecondMain */,
 				C1A3E30C245527DC00740325 /* ThreeMain */,
@@ -268,11 +311,33 @@
 			path = FourthMain;
 			sourceTree = "<group>";
 		};
+		C16600EB24594AF800E3800D /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				C16600EC24594B3C00E3800D /* MainTab.swift */,
+				C16600EE24594BBB00E3800D /* findingGoodRestaurantViewController.swift */,
+				C16600EF24594BBB00E3800D /* findingGoodRestaurantViewController.xib */,
+				C16600F224594BE900E3800D /* MangoPickViewController.swift */,
+				C16600F324594BE900E3800D /* MangoPickViewController.xib */,
+				C16600F624594C1900E3800D /* PlusViewController.swift */,
+				C16600F724594C1900E3800D /* PlusViewController.xib */,
+				C16600FA24594C3900E3800D /* NewsViewController.swift */,
+				C16600FB24594C3900E3800D /* NewsViewController.xib */,
+				C16600FE24594D9B00E3800D /* MyInfoViewController.swift */,
+				C16600FF24594D9B00E3800D /* MyInfoViewController.xib */,
+				C16601022459650200E3800D /* EatDealViewController.swift */,
+				C16601032459650200E3800D /* EatDealViewController.xib */,
+				C16601062459651300E3800D /* TopListViewController.swift */,
+				C16601072459651300E3800D /* TopListViewController.xib */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
 		C1A3E30A245527D000740325 /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
-				C185CAAC2458682A00DBB6C3 /* MyInfoViewController.swift */,
-				C185CAAD2458682A00DBB6C3 /* MyInfoViewController.xib */,
+				C185CAAC2458682A00DBB6C3 /* fivew.swift */,
+				C185CAAD2458682A00DBB6C3 /* five.xib */,
 			);
 			path = MyInfo;
 			sourceTree = "<group>";
@@ -303,6 +368,12 @@
 				C1B4A8392452A8C0005608F9 /* LoginViewController.swift */,
 				C1B4A83A2452A8C0005608F9 /* LoginViewController.xib */,
 				C1B4A8412452C85E005608F9 /* KakaoOpenSDK-Bridging-Header.h */,
+				C166010A24597F6200E3800D /* EmailLoginViewController.swift */,
+				C166010B24597F6200E3800D /* EmailLoginViewController.xib */,
+				C1A1F99A2459D32800C4862E /* LostPasswordViewController.swift */,
+				C1A1F99B2459D32800C4862E /* LostPasswordViewController.xib */,
+				C1A1F99E2459D3B200C4862E /* SignUpByEmailViewController.swift */,
+				C1A1F99F2459D3B200C4862E /* SignUpByEmailViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -386,16 +457,26 @@
 			files = (
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */,
+				C16600F924594C1900E3800D /* PlusViewController.xib in Resources */,
+				C16601052459650200E3800D /* EatDealViewController.xib in Resources */,
+				C16600FD24594C3900E3800D /* NewsViewController.xib in Resources */,
+				C16600F524594BE900E3800D /* MangoPickViewController.xib in Resources */,
+				C1A1F9A12459D3B200C4862E /* SignUpByEmailViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				C1B4A83C2452A8C0005608F9 /* LoginViewController.xib in Resources */,
 				C1A3E3142455292000740325 /* ThreeMainViewController.xib in Resources */,
 				BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */,
 				C1A3E3102455290E00740325 /* SecondMainViewController.xib in Resources */,
-				C185CAAF2458682A00DBB6C3 /* MyInfoViewController.xib in Resources */,
+				C185CAAF2458682A00DBB6C3 /* five.xib in Resources */,
+				C16601092459651300E3800D /* TopListViewController.xib in Resources */,
+				C166010D24597F6200E3800D /* EmailLoginViewController.xib in Resources */,
 				C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
+				C166010124594D9B00E3800D /* MyInfoViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				C1B4A848245308F8005608F9 /* LocationAgreeViewController.xib in Resources */,
+				C1A1F99D2459D32800C4862E /* LostPasswordViewController.xib in Resources */,
+				C16600F124594BBB00E3800D /* findingGoodRestaurantViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,14 +529,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C16600F824594C1900E3800D /* PlusViewController.swift in Sources */,
 				C1A3E3132455292000740325 /* ThreeMainViewController.swift in Sources */,
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
+				C16600FC24594C3900E3800D /* NewsViewController.swift in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
+				C16601042459650200E3800D /* EatDealViewController.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
+				C1A1F99C2459D32800C4862E /* LostPasswordViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				C18059D824581052005FB4EC /* RestaurantsResponse.swift in Sources */,
+				C16600F424594BE900E3800D /* MangoPickViewController.swift in Sources */,
 				C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
@@ -463,13 +549,19 @@
 				C1B4A847245308F8005608F9 /* LocationAgreeViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
+				C1A1F9A02459D3B200C4862E /* SignUpByEmailViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
-				C185CAAE2458682A00DBB6C3 /* MyInfoViewController.swift in Sources */,
+				C166010024594D9B00E3800D /* MyInfoViewController.swift in Sources */,
+				C185CAAE2458682A00DBB6C3 /* fivew.swift in Sources */,
 				C18059D624580AEB005FB4EC /* TestResponse.swift in Sources */,
 				C1A3E31A2455AAEB00740325 /* MenuBar.swift in Sources */,
 				C1B4A83B2452A8C0005608F9 /* LoginViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
+				C16601082459651300E3800D /* TopListViewController.swift in Sources */,
+				C16600ED24594B3C00E3800D /* MainTab.swift in Sources */,
+				C166010C24597F6200E3800D /* EmailLoginViewController.swift in Sources */,
+				C16600F024594BBB00E3800D /* findingGoodRestaurantViewController.swift in Sources */,
 				C12E0064245416D000EE949F /* FourthMainViewController.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,

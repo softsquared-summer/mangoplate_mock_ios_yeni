@@ -10,29 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyInfoViewController" customModule="ios" customModuleProvider="target">
             <connections>
-                <outlet property="EATDealReceivingNotification" destination="KHP-Ra-CTZ" id="UuA-Fe-XHh"/>
-                <outlet property="MyListView" destination="Buj-Oq-NeA" id="GyQ-FN-HGa"/>
-                <outlet property="TimelineView" destination="vat-DH-G2z" id="AKQ-q2-1J2"/>
-                <outlet property="WantToGoView" destination="o3R-rS-MYn" id="tKF-Ui-w4M"/>
-                <outlet property="alaramButton" destination="VgZ-2R-7qm" id="g29-OF-DuN"/>
-                <outlet property="bookmarkView" destination="Sti-En-EBk" id="27k-2o-7po"/>
-                <outlet property="editButton" destination="W8h-0a-Wwv" id="Fbh-G8-SAC"/>
-                <outlet property="eventView" destination="tzr-Cg-98X" id="OQR-MN-LJJ"/>
-                <outlet property="followerButton" destination="pop-HE-A96" id="QUu-gX-Fr1"/>
-                <outlet property="followerLabel" destination="YDQ-q4-PvB" id="CDW-rB-VX3"/>
-                <outlet property="followingButton" destination="6cS-mU-wDU" id="Pfz-kO-UYQ"/>
-                <outlet property="followingLabel" destination="wQD-og-0q3" id="y1h-df-TJs"/>
-                <outlet property="haveBeenThereCount" destination="jM1-JY-ieS" id="QvH-Gm-fok"/>
-                <outlet property="haveBeenThereView" destination="SX6-Qy-evn" id="i2D-ab-sMp"/>
-                <outlet property="nameLabel" destination="xiI-2S-AMt" id="NOn-nW-zjf"/>
-                <outlet property="photoCount" destination="EZy-pz-AEq" id="82B-35-H7h"/>
-                <outlet property="photoView" destination="6Nz-UA-Q6o" id="BDB-xf-Cen"/>
-                <outlet property="profileImageButton" destination="KWa-JI-D19" id="gkX-KL-igf"/>
-                <outlet property="purchasedEATDealView" destination="NIC-gf-JnH" id="mkk-L5-V4T"/>
-                <outlet property="restaurantWhereIRegisteredView" destination="4DO-Zc-cQb" id="91e-xb-j6h"/>
-                <outlet property="reviewCount" destination="PA0-cx-5tV" id="1a4-Gg-PuO"/>
-                <outlet property="reviewView" destination="ye3-pe-mMQ" id="8hE-ml-VLV"/>
-                <outlet property="settingView" destination="eHq-My-5NN" id="dJY-5c-0U2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

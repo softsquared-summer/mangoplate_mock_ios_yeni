@@ -30,10 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use Firebase library to configure APIs
         //FirebaseApp.configure()
         ApplicationDelegate.shared.application( application, didFinishLaunchingWithOptions: launchOptions )
-        
+      
+
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let splashViewController = SplashViewController()
         self.window?.rootViewController = UINavigationController(rootViewController: splashViewController)
+        
+        
+        // Make the Tab Bar Controller the root view controller
+        
 
 //        self.window?.rootViewController = UINavigatiController(rootViewController: splashViewController)
         self.window?.makeKeyAndVisible()

@@ -25,14 +25,15 @@ class MainViewController: BaseViewController , UIScrollViewDelegate, CLLocationM
 
     @IBOutlet weak var pagecontrolContainer: UIView!
     @IBOutlet weak var pagerContainer: UIView!
-    @IBOutlet weak var firstButton: UIButton!
-    @IBOutlet weak var secondButton: UIButton!
-    @IBOutlet weak var threeButton: UIButton!
-    @IBOutlet weak var fourthButton: UIButton!
-    @IBOutlet weak var fiveButton: UIButton!
+   
+    @IBOutlet weak var locationButton: UIButton!
+    
+    @IBOutlet weak var tabBar: UITabBar!
     
     
 
+    
+    
 
     @IBAction func pressedPresentMainViewController(_ sender: UIButton) {
         let MainVC = MainViewController() //change this to your class name
@@ -96,6 +97,10 @@ class MainViewController: BaseViewController , UIScrollViewDelegate, CLLocationM
                 locationManager.requestWhenInUseAuthorization() //권한 요청
                 locationManager.desiredAccuracy = kCLLocationAccuracyBest
                 locationManager.startUpdatingLocation()
+        
+        self.tabBar.tintColor = .orange
+
+
 
     }
     override func didReceiveMemoryWarning() {
@@ -108,6 +113,8 @@ class MainViewController: BaseViewController , UIScrollViewDelegate, CLLocationM
 //        PresentLocationAccessView()
         setPageViewInScroll()
     }
+    
+   
     
     
     func setPageViewInScroll(){

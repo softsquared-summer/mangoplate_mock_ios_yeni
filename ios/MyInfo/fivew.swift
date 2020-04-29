@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyInfoViewController: UIViewController {
+class five: UIViewController {
 
     
     @IBOutlet weak var eventView: UIView!

@@ -15,10 +15,22 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func goToMainTest(_ sender: UIButton) {
-        let mainvc = MainViewController() //change this to your class name
-        mainvc.modalPresentationStyle = .fullScreen
-        self.present(mainvc, animated: true, completion: nil)
+        let mainTabvc = MainTab() //change this to your class name
+        mainTabvc.modalPresentationStyle = .fullScreen
+        self.present(mainTabvc, animated: true, completion: nil)
         
+    }
+    
+    
+    @IBAction func emailLoginButton(_ sender: UIButton) {
+//        let editorViewController = EmailLoginViewController()
+//        let navEditorViewController: UINavigationController = UINavigationController(rootViewController: EmailLoginViewController())
+//        self.present(navEditorViewController, animated: true, completion: nil)
+//
+        let emailLoginvc = EmailLoginViewController() //change this to your class name
+        emailLoginvc.modalPresentationStyle = .fullScreen
+        self.present(emailLoginvc, animated: true, completion: nil)
+        // 네비게이션바 화면으로 이동
     }
     override func viewDidLoad() {
         super.viewDidLoad()

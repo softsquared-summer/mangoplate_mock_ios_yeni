@@ -29,19 +29,34 @@
                         <action selector="goToMainTest:" destination="-1" eventType="touchUpInside" id="0j9-aC-gBi"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRq-kW-Tpy">
+                    <rect key="frame" x="93" y="594" width="228" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="이메일로 시작하기">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="emailLoginButton:" destination="-1" eventType="touchUpInside" id="Ulr-8a-Jwq"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ub2-it-Pql" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7As-qf-eXa"/>
                 <constraint firstAttribute="bottom" secondItem="ub2-it-Pql" secondAttribute="bottom" id="8zr-Jo-Thf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bRq-kW-Tpy" secondAttribute="trailing" constant="93" id="GfA-DS-Wzz"/>
+                <constraint firstItem="sS8-Iw-fed" firstAttribute="top" secondItem="bRq-kW-Tpy" secondAttribute="bottom" constant="178" id="Lum-OV-l53"/>
                 <constraint firstItem="sS8-Iw-fed" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="245" id="MTG-dD-o3b"/>
+                <constraint firstItem="bRq-kW-Tpy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="93" id="eUH-YC-YSv"/>
                 <constraint firstItem="ub2-it-Pql" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jBl-lX-kA1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ub2-it-Pql" secondAttribute="trailing" id="jme-rf-qF8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sS8-Iw-fed" secondAttribute="bottom" constant="28" id="jnQ-7G-LvZ"/>
+                <constraint firstItem="bRq-kW-Tpy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="550" id="tyr-j5-qyg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sS8-Iw-fed" secondAttribute="trailing" constant="29" id="wdK-Ce-jiT"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="136.875" y="130"/>
+            <point key="canvasLocation" x="136.23188405797103" y="129.91071428571428"/>
         </view>
     </objects>
     <resources>
