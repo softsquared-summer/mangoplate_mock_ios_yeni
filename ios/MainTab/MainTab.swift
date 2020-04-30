@@ -10,10 +10,10 @@ import UIKit
 class MainTab: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
-    var firstTabImage: UIImage = UIImage(named: "firstItem_gray")!
+//    var firstTabImage: UIImage = UIImage(named: "firstItem_gray")!
 
     let findingGoodRestaurant = UINavigationController(rootViewController: findingGoodRestaurantViewController())
-    findingGoodRestaurant.tabBarItem = UITabBarItem(title: nil, image: firstTabImage, selectedImage: UIImage(named: "firstItem_orange"))
+    findingGoodRestaurant.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "firstItem_gray"), selectedImage: UIImage(named: "firstItem_orange"))
 //    findingGoodRestaurant.tabBarItem.imageInsets = UIEdgeInsets(top: 9, left: 15, bottom: 0, right: 0)
 
     let MangoPick = UINavigationController(rootViewController: MangoPickViewController())

@@ -7,5 +7,5 @@
 //
 
 protocol NoticePopUpDelegate {
-    func pressedDismissButton()
+    func pressedDismissNoticeButton()
 }

@@ -9,20 +9,28 @@
 import UIKit
 
 class MangoPickViewController: UITabBarController {
+    
+    
+    @IBOutlet weak var locationSelectView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let EatDeal = UINavigationController(rootViewController: EatDealViewController())
         EatDeal.tabBarItem =  UITabBarItem(title: "EAT딜", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
-        EatDeal.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -16)
+        EatDeal.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -15)
         let TopList = UINavigationController(rootViewController: TopListViewController())
         TopList.tabBarItem = UITabBarItem(title: "Top리스트", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
-        TopList.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -16) //이미지 제거
+        TopList.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -15) //이미지 제거
         
         
         let tabBarList = [EatDeal, TopList]
         self.viewControllers = tabBarList
         self.tabBar.tintColor = .orange
         UIApplication.shared.statusBarStyle = .lightContent
+        
+
+//        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -10.0)
+
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -33,6 +41,8 @@ class MangoPickViewController: UITabBarController {
         tabFrame.size.height    = 100
         tabFrame.origin.y       = view.frame.size.height - view.frame.size.height
         tabBar.frame            = tabFrame
+        
+       
     } //mangopickVC에 적용하기
     /*
      // MARK: - Navigation

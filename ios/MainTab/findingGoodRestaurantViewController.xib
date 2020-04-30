@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="findingGoodRestaurantViewController" customModule="ios" customModuleProvider="target">
             <connections>
+                <outlet property="alignButton" destination="Bc8-ip-Hdz" id="ucj-tz-ATY"/>
                 <outlet property="locationButton" destination="Ect-F4-WbC" id="74y-c6-pQh"/>
                 <outlet property="pagecontrolContainer" destination="Blc-GA-9jj" id="gaF-aj-NTQ"/>
                 <outlet property="pagerContainer" destination="2w7-TR-VJH" id="osS-t6-OMh"/>
@@ -36,6 +37,9 @@
                             <state key="normal" title="성남시">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <connections>
+                                <action selector="presentLocationList:" destination="-1" eventType="touchUpInside" id="ZeU-h1-ZAX"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="∨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jN-ct-tLv">
                             <rect key="frame" x="55" y="25" width="10.5" height="20.5"/>
@@ -56,7 +60,7 @@
                         <constraint firstAttribute="trailing" secondItem="RCL-iN-ekF" secondAttribute="trailing" id="wik-ag-Gtz"/>
                     </constraints>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-8e-6ps">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-8e-6ps">
                     <rect key="frame" x="0.0" y="106" width="414" height="790"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P27-A1-a1b">
@@ -89,18 +93,63 @@
                                     <rect key="frame" x="0.0" y="160" width="413.5" height="70"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bc8-ip-Hdz">
-                                            <rect key="frame" x="10" y="20" width="52" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                            <state key="normal" title="평점순 ∨">
-                                                <color key="titleColor" red="0.85101479290000004" green="0.85488957170000002" blue="0.85490262510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <rect key="frame" x="10" y="20" width="39" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <state key="normal" title="평점순">
+                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="presentAlign:" destination="-1" eventType="touchUpInside" id="DUW-YK-BGv"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="∨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meF-LK-rxs">
+                                            <rect key="frame" x="49" y="26" width="9" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.85101479290000004" green="0.85488957170000002" blue="0.85490262510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2K5-OL-uqu">
+                                            <rect key="frame" x="267.5" y="20" width="63" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="63" id="9j2-9n-eGp"/>
+                                                <constraint firstAttribute="height" constant="30" id="z8c-RB-FIb"/>
+                                            </constraints>
+                                            <state key="normal" image="ICRadius"/>
+                                            <connections>
+                                                <action selector="presentRadius:" destination="-1" eventType="touchUpInside" id="OSk-nW-pBx"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDT-Th-t46">
+                                            <rect key="frame" x="295.5" y="27.5" width="25" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.96848052740000001" green="0.50179405919999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTB-zU-KwH">
+                                            <rect key="frame" x="335.5" y="20" width="63" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="9PT-C9-mEN"/>
+                                                <constraint firstAttribute="width" constant="63" id="aPt-tD-BFt"/>
+                                            </constraints>
+                                            <state key="normal" image="ICfilter"/>
+                                            <connections>
+                                                <action selector="presentFilter:" destination="-1" eventType="touchUpInside" id="KGN-8O-bxf"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="wTB-zU-KwH" secondAttribute="trailing" constant="15" id="N0a-e2-C1z"/>
                                         <constraint firstItem="Bc8-ip-Hdz" firstAttribute="top" secondItem="ADb-WI-ysj" secondAttribute="top" constant="20" id="Qdi-tJ-1Dg"/>
+                                        <constraint firstItem="meF-LK-rxs" firstAttribute="centerY" secondItem="Bc8-ip-Hdz" secondAttribute="centerY" id="S2v-on-9P4"/>
+                                        <constraint firstItem="wTB-zU-KwH" firstAttribute="top" secondItem="ADb-WI-ysj" secondAttribute="top" constant="20" id="aSI-NS-84H"/>
+                                        <constraint firstItem="wTB-zU-KwH" firstAttribute="leading" secondItem="2K5-OL-uqu" secondAttribute="trailing" constant="5" id="cfZ-C6-UgH"/>
+                                        <constraint firstItem="rDT-Th-t46" firstAttribute="centerY" secondItem="2K5-OL-uqu" secondAttribute="centerY" id="gyR-vL-AGJ"/>
                                         <constraint firstAttribute="bottom" secondItem="Bc8-ip-Hdz" secondAttribute="bottom" constant="20" id="oN3-Ds-B3Y"/>
+                                        <constraint firstItem="2K5-OL-uqu" firstAttribute="trailing" secondItem="rDT-Th-t46" secondAttribute="trailing" constant="10" id="otm-2c-0WX"/>
+                                        <constraint firstItem="2K5-OL-uqu" firstAttribute="top" secondItem="ADb-WI-ysj" secondAttribute="top" constant="20" id="rE6-wN-6CO"/>
                                         <constraint firstAttribute="height" constant="70" id="sIn-Xw-LLh"/>
+                                        <constraint firstItem="meF-LK-rxs" firstAttribute="leading" secondItem="Bc8-ip-Hdz" secondAttribute="trailing" id="uQ2-qZ-cfx"/>
                                         <constraint firstItem="Bc8-ip-Hdz" firstAttribute="leading" secondItem="ADb-WI-ysj" secondAttribute="leading" constant="10" id="w29-YM-FOP"/>
                                     </constraints>
                                 </view>
@@ -204,10 +253,12 @@
                 <constraint firstItem="Oyv-Kx-Nsv" firstAttribute="top" secondItem="CYK-Z5-8Xs" secondAttribute="top" constant="10" id="pcU-Yz-pzC"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="CYK-Z5-8Xs"/>
-            <point key="canvasLocation" x="203" y="104"/>
+            <point key="canvasLocation" x="202.89855072463769" y="103.79464285714285"/>
         </view>
     </objects>
     <resources>
+        <image name="ICRadius" width="570" height="234"/>
+        <image name="ICfilter" width="480" height="238"/>
         <image name="fourthItem_gray" width="173" height="104"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="map" catalog="system" width="64" height="56"/>

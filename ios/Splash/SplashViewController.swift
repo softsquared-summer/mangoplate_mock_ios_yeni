@@ -14,10 +14,11 @@ class SplashViewController: BaseViewController {
         super.viewDidLoad()
         //시간 좀 주기
         
-
+//
         let vc = LoginViewController() //change this to your class name
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
+       
 //        let navigationViewController = self.navigationController
 //
 //        navigationViewController!.pushViewController(LoginViewController(), animated: true)

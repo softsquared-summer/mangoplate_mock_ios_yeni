@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Align Pop Up-->
+        <scene sceneID="Y7i-0w-oY3">
+            <objects>
+                <viewController storyboardIdentifier="AlignPopUp" id="t0e-8o-fwS" customClass="AlignPopUp" customModule="ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tuz-lp-KEG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4o-xA-qlc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdX-4V-66x">
+                                <rect key="frame" x="0.0" y="746" width="414" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjg-1q-kSs">
+                                        <rect key="frame" x="75" y="61" width="70" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="XVD-pl-3Nj"/>
+                                            <constraint firstAttribute="height" constant="30" id="tn7-JY-MJF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="평점순">
+                                            <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedRatingDismiss:" destination="t0e-8o-fwS" eventType="touchUpInside" id="4hF-Qg-6LV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-we-oOa">
+                                        <rect key="frame" x="173" y="61" width="70" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="7gk-Pa-vLL"/>
+                                            <constraint firstAttribute="height" constant="30" id="Bfo-xk-ufj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="리뷰순">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedReviewDismiss:" destination="t0e-8o-fwS" eventType="touchUpInside" id="mqv-9E-Cbx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jJ-0P-X0u">
+                                        <rect key="frame" x="271" y="61" width="70" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3bL-cO-OHz"/>
+                                            <constraint firstAttribute="width" constant="70" id="R2M-T3-Ish"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="거리순">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedDistanceDismiss:" destination="t0e-8o-fwS" eventType="touchUpInside" id="FrQ-q2-gCM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3F-vM-kG5">
+                                        <rect key="frame" x="8" y="8" width="30" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="58J-hm-ppa"/>
+                                            <constraint firstAttribute="width" constant="30" id="hUP-z8-sgr"/>
+                                        </constraints>
+                                        <state key="normal" image="down">
+                                            <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedLocationDismiss:" destination="t0e-8o-fwS" eventType="touchUpInside" id="kUt-x0-Jyt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1jJ-0P-X0u" firstAttribute="top" secondItem="qdX-4V-66x" secondAttribute="top" constant="61" id="0cw-Ov-LnQ"/>
+                                    <constraint firstItem="aBg-we-oOa" firstAttribute="leading" secondItem="Vjg-1q-kSs" secondAttribute="trailing" constant="28" id="80p-aL-Jyw"/>
+                                    <constraint firstItem="Vjg-1q-kSs" firstAttribute="top" secondItem="qdX-4V-66x" secondAttribute="top" constant="61" id="8o9-ug-aql"/>
+                                    <constraint firstItem="1jJ-0P-X0u" firstAttribute="leading" secondItem="aBg-we-oOa" secondAttribute="trailing" constant="28" id="KOQ-ys-87i"/>
+                                    <constraint firstAttribute="bottom" secondItem="aBg-we-oOa" secondAttribute="bottom" constant="59" id="WIW-SK-r9q"/>
+                                    <constraint firstItem="Vjg-1q-kSs" firstAttribute="leading" secondItem="qdX-4V-66x" secondAttribute="leading" constant="75" id="dtn-aH-jKq"/>
+                                    <constraint firstItem="s3F-vM-kG5" firstAttribute="top" secondItem="qdX-4V-66x" secondAttribute="top" constant="8" id="lgE-0u-cLz"/>
+                                    <constraint firstItem="s3F-vM-kG5" firstAttribute="leading" secondItem="qdX-4V-66x" secondAttribute="leading" constant="8" id="yuK-Ra-mmI"/>
+                                    <constraint firstAttribute="height" constant="150" id="zSA-EU-P1R"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정렬" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="925-ZH-xLI">
+                                <rect key="frame" x="190.5" y="767" width="33" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qdX-4V-66x" firstAttribute="centerX" secondItem="N4o-xA-qlc" secondAttribute="centerX" id="1Q7-Rs-NBS"/>
+                            <constraint firstAttribute="bottom" secondItem="N4o-xA-qlc" secondAttribute="bottom" id="8d4-nW-NyP"/>
+                            <constraint firstAttribute="bottom" secondItem="qdX-4V-66x" secondAttribute="bottom" id="POk-DC-9zw"/>
+                            <constraint firstItem="aBg-we-oOa" firstAttribute="top" secondItem="925-ZH-xLI" secondAttribute="bottom" constant="17" id="T2C-QR-EnW"/>
+                            <constraint firstItem="N4o-xA-qlc" firstAttribute="top" secondItem="Tuz-lp-KEG" secondAttribute="top" id="TIv-XV-vq3"/>
+                            <constraint firstItem="qdX-4V-66x" firstAttribute="leading" secondItem="Oza-FB-JBh" secondAttribute="leading" id="Wag-AL-aFV"/>
+                            <constraint firstItem="925-ZH-xLI" firstAttribute="centerX" secondItem="Tuz-lp-KEG" secondAttribute="centerX" id="ht9-Lj-i4p"/>
+                            <constraint firstItem="N4o-xA-qlc" firstAttribute="leading" secondItem="Tuz-lp-KEG" secondAttribute="leading" id="jQM-tk-u88"/>
+                            <constraint firstAttribute="trailing" secondItem="N4o-xA-qlc" secondAttribute="trailing" id="jgy-oA-evM"/>
+                            <constraint firstItem="Oza-FB-JBh" firstAttribute="trailing" secondItem="qdX-4V-66x" secondAttribute="trailing" id="qx3-i8-8eM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oza-FB-JBh"/>
+                    </view>
+                    <connections>
+                        <outlet property="orderOfDistance" destination="1jJ-0P-X0u" id="gKV-YB-dM5"/>
+                        <outlet property="orderOfRating" destination="Vjg-1q-kSs" id="aVN-CJ-Mf5"/>
+                        <outlet property="orderOfReview" destination="aBg-we-oOa" id="Pi2-Tj-koD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4e-KY-WKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.014492753623188" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down" width="1200" height="630"/>
+    </resources>
+</document>

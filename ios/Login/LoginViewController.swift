@@ -19,22 +19,29 @@ class LoginViewController: UIViewController {
         mainTabvc.modalPresentationStyle = .fullScreen
         self.present(mainTabvc, animated: true, completion: nil)
         
+        
     }
     
     
     @IBAction func emailLoginButton(_ sender: UIButton) {
-//        let editorViewController = EmailLoginViewController()
-//        let navEditorViewController: UINavigationController = UINavigationController(rootViewController: EmailLoginViewController())
-//        self.present(navEditorViewController, animated: true, completion: nil)
+        let emailLoginVC = EmailLoginViewController()
+        let emailLoginViewController: UINavigationController = UINavigationController(rootViewController: EmailLoginViewController())
+        emailLoginViewController.modalPresentationStyle = .fullScreen
+
+        self.present(emailLoginViewController, animated: true, completion: nil)
 //
-        let emailLoginvc = EmailLoginViewController() //change this to your class name
-        emailLoginvc.modalPresentationStyle = .fullScreen
-        self.present(emailLoginvc, animated: true, completion: nil)
-        // 네비게이션바 화면으로 이동
+//        let emailLoginvc = EmailLoginViewController() //change this to your class name
+//        emailLoginvc.modalPresentationStyle = .fullScreen
+//        self.present(emailLoginvc, animated: true, completion: nil)
+//        // 네비게이션바 화면으로 이동
+       
     }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
+        navigationController?.isNavigationBarHidden = true
+
 
         // Do any additional setup after loading the view.
     }

@@ -24,6 +24,9 @@
                         <constraint firstAttribute="height" constant="60" id="sol-iX-gIR"/>
                     </constraints>
                     <state key="normal" image="threeMainFirstItem"/>
+                    <connections>
+                        <action selector="PresentEatDealVC:" destination="-1" eventType="touchUpInside" id="xUk-Kz-l5F"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDs-02-5BY">
                     <rect key="frame" x="0.0" y="726" width="414" height="60"/>
@@ -31,6 +34,9 @@
                         <constraint firstAttribute="height" constant="60" id="eKj-Cn-giI"/>
                     </constraints>
                     <state key="normal" image="ThreeMainFourthItem"/>
+                    <connections>
+                        <action selector="PresentRestaurantRegistrationVC:" destination="-1" eventType="touchUpInside" id="baa-rX-1Kl"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaF-4q-OhD">
                     <rect key="frame" x="172" y="806" width="70" height="70"/>
@@ -40,7 +46,7 @@
                     </constraints>
                     <state key="normal" image="ThreeMainBottomButton"/>
                     <connections>
-                        <action selector="PresentPreviousView:" destination="-1" eventType="touchUpInside" id="uMF-R6-1Qe"/>
+                        <action selector="PresentPreviousTab:" destination="-1" eventType="touchUpInside" id="kQi-LM-1J0"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDw-sB-l7O">
@@ -49,6 +55,9 @@
                         <constraint firstAttribute="height" constant="60" id="r1F-xk-JfM"/>
                     </constraints>
                     <state key="normal" image="ThreeMainSecondItem"/>
+                    <connections>
+                        <action selector="PresentHaveBeenThereVC:" destination="-1" eventType="touchUpInside" id="gLD-pz-ocj"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mG2-3o-Qei">
                     <rect key="frame" x="0.0" y="646" width="414" height="60"/>

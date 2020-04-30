@@ -11,20 +11,64 @@ import UIKit
 class EmailLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+//        navigationItem.backBarButtonItem = UIBarButtonItem(
+//        title: "이메일로 로그인", style: .plain, target: nil, action: nil)
+//        let backButton = UIBarButtonItem()
+//        backButton.title = "이메일로 로그인"
+//        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        var backbutton = UIButton(type: .custom)
+        backbutton.setImage(UIImage(named: "backBarButton.png"), for: .normal) // Image can be downloaded from here below link
+        backbutton.setTitle("이메일로 로그인", for: .normal)
+        backbutton.tintColor = .black
+//        backbutton.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        backbutton.setTitleColor(backbutton.tintColor, for: .normal) // You can change the TitleColor
+
+        backbutton.addTarget(self, action: #selector(self.backAction), for: .touchUpInside)
+
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
+        
+        
     }
+    
+   @objc func backAction(_ sender: UIButton) {
+      let _ = self.dismiss(animated: true, completion: nil)
+   }
 
     @IBAction func findingPassword(_ sender: UIButton) {
-        let lostPasswordvc = LostPasswordViewController() //change this to your class name
-        lostPasswordvc.modalPresentationStyle = .fullScreen
-        self.present(lostPasswordvc, animated: true, completion: nil)
+//        let lostPasswordvc = LostPasswordViewController() //change this to your class name
+//        lostPasswordvc.modalPresentationStyle = .fullScreen
+//        self.present(lostPasswordvc, animated: true, completion: nil)
+//         let passwordnavigation = self.navigationController
+//        passwordnavigation!.pushViewController(LostPasswordViewController(), animated: true)
+        let lostPasswordVC = LostPasswordViewController()
+        let lostPasswordViewController: UINavigationController = UINavigationController(rootViewController: LostPasswordViewController())
+        lostPasswordViewController.modalPresentationStyle = .fullScreen
+
+        self.present(lostPasswordViewController, animated: true, completion: nil)
+        //네비게이션 바 생성
+        
+//        let lostPasswordVC = UINavigationController(rootViewController: LostPasswordViewController())
+
     }
     
     
     @IBAction func signupByEmail(_ sender: UIButton) {
-        let signupByEmailvc = SignUpByEmailViewController() //change this to your class name
-        signupByEmailvc.modalPresentationStyle = .fullScreen
-        self.present(signupByEmailvc, animated: true, completion: nil)
+        let signupVC = SignUpByEmailViewController()
+              let signupViewController: UINavigationController = UINavigationController(rootViewController: SignUpByEmailViewController())
+              signupViewController.modalPresentationStyle = .fullScreen
+
+              self.present(signupViewController, animated: true, completion: nil)
+        
+//        let signupByEmailvc = SignUpByEmailViewController() //change this to your class name
+//        signupByEmailvc.modalPresentationStyle = .fullScreen
+//        self.present(signupByEmailvc, animated: true, completion: nil)
+//        let signUpByEmailVC = UINavigationController(rootViewController: SignUpByEmailViewController())
+
+        
     }
+    
+    
+
     /*
     // MARK: - Navigation
 

@@ -48,6 +48,33 @@
 		C16601092459651300E3800D /* TopListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16601072459651300E3800D /* TopListViewController.xib */; };
 		C166010C24597F6200E3800D /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C166010A24597F6200E3800D /* EmailLoginViewController.swift */; };
 		C166010D24597F6200E3800D /* EmailLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C166010B24597F6200E3800D /* EmailLoginViewController.xib */; };
+		C167982F245A5AAD00E7F8F6 /* NewsAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167982D245A5AAD00E7F8F6 /* NewsAllViewController.swift */; };
+		C1679830245A5AAD00E7F8F6 /* NewsAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C167982E245A5AAD00E7F8F6 /* NewsAllViewController.xib */; };
+		C1679833245A5AC200E7F8F6 /* NewsFollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679831245A5AC200E7F8F6 /* NewsFollowingViewController.swift */; };
+		C1679834245A5AC200E7F8F6 /* NewsFollowingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1679832245A5AC200E7F8F6 /* NewsFollowingViewController.xib */; };
+		C1679838245A822800E7F8F6 /* AlignPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679837245A822800E7F8F6 /* AlignPopUp.swift */; };
+		C167983A245A823300E7F8F6 /* AlignPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679839245A823300E7F8F6 /* AlignPopUpDelegate.swift */; };
+		C167983C245A823E00E7F8F6 /* AlignPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C167983B245A823E00E7F8F6 /* AlignPopUp.storyboard */; };
+		C167983F245A9C4F00E7F8F6 /* HaveBeenThereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167983D245A9C4F00E7F8F6 /* HaveBeenThereViewController.swift */; };
+		C1679840245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C167983E245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib */; };
+		C1679843245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679841245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift */; };
+		C1679844245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1679842245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib */; };
+		C1679847245AA6AE00E7F8F6 /* LocationPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679845245AA6AE00E7F8F6 /* LocationPopUpViewController.swift */; };
+		C1679848245AA6AE00E7F8F6 /* LocationPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1679846245AA6AE00E7F8F6 /* LocationPopUpViewController.xib */; };
+		C167984B245AA79800E7F8F6 /* RecentRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679849245AA79800E7F8F6 /* RecentRegionViewController.swift */; };
+		C167984C245AA79800E7F8F6 /* RecentRegionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C167984A245AA79800E7F8F6 /* RecentRegionViewController.xib */; };
+		C167984F245AA7BA00E7F8F6 /* NearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167984D245AA7BA00E7F8F6 /* NearViewController.swift */; };
+		C1679850245AA7BA00E7F8F6 /* NearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C167984E245AA7BA00E7F8F6 /* NearViewController.xib */; };
+		C1679853245AA7D800E7F8F6 /* GangNamGuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679851245AA7D800E7F8F6 /* GangNamGuViewController.swift */; };
+		C1679854245AA7D800E7F8F6 /* GangNamGuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1679852245AA7D800E7F8F6 /* GangNamGuViewController.xib */; };
+		C1679857245AA7EA00E7F8F6 /* GangBukGuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679855245AA7EA00E7F8F6 /* GangBukGuViewController.swift */; };
+		C1679858245AA7EA00E7F8F6 /* GangBukGuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1679856245AA7EA00E7F8F6 /* GangBukGuViewController.xib */; };
+		C167985C245B026700E7F8F6 /* RadiusPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167985B245B026700E7F8F6 /* RadiusPopUp.swift */; };
+		C167985E245B027D00E7F8F6 /* RadiusPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167985D245B027D00E7F8F6 /* RadiusPopUpDelegate.swift */; };
+		C1679860245B028E00E7F8F6 /* RadiusPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C167985F245B028E00E7F8F6 /* RadiusPopUp.storyboard */; };
+		C1679862245B02A200E7F8F6 /* FilterPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679861245B02A200E7F8F6 /* FilterPopUp.swift */; };
+		C1679864245B02AD00E7F8F6 /* FilterPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679863245B02AD00E7F8F6 /* FilterPopUpDelegate.swift */; };
+		C1679866245B02B600E7F8F6 /* FilterPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1679865245B02B600E7F8F6 /* FilterPopUp.storyboard */; };
 		C18059D624580AEB005FB4EC /* TestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18059D524580AEB005FB4EC /* TestResponse.swift */; };
 		C18059D824581052005FB4EC /* RestaurantsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18059D724581052005FB4EC /* RestaurantsResponse.swift */; };
 		C185CAAE2458682A00DBB6C3 /* fivew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185CAAC2458682A00DBB6C3 /* fivew.swift */; };
@@ -130,6 +157,33 @@
 		C16601072459651300E3800D /* TopListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopListViewController.xib; sourceTree = "<group>"; };
 		C166010A24597F6200E3800D /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		C166010B24597F6200E3800D /* EmailLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailLoginViewController.xib; sourceTree = "<group>"; };
+		C167982D245A5AAD00E7F8F6 /* NewsAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAllViewController.swift; sourceTree = "<group>"; };
+		C167982E245A5AAD00E7F8F6 /* NewsAllViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsAllViewController.xib; sourceTree = "<group>"; };
+		C1679831245A5AC200E7F8F6 /* NewsFollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFollowingViewController.swift; sourceTree = "<group>"; };
+		C1679832245A5AC200E7F8F6 /* NewsFollowingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsFollowingViewController.xib; sourceTree = "<group>"; };
+		C1679837245A822800E7F8F6 /* AlignPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignPopUp.swift; sourceTree = "<group>"; };
+		C1679839245A823300E7F8F6 /* AlignPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignPopUpDelegate.swift; sourceTree = "<group>"; };
+		C167983B245A823E00E7F8F6 /* AlignPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlignPopUp.storyboard; sourceTree = "<group>"; };
+		C167983D245A9C4F00E7F8F6 /* HaveBeenThereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveBeenThereViewController.swift; sourceTree = "<group>"; };
+		C167983E245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HaveBeenThereViewController.xib; sourceTree = "<group>"; };
+		C1679841245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRegistrationViewController.swift; sourceTree = "<group>"; };
+		C1679842245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantRegistrationViewController.xib; sourceTree = "<group>"; };
+		C1679845245AA6AE00E7F8F6 /* LocationPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPopUpViewController.swift; sourceTree = "<group>"; };
+		C1679846245AA6AE00E7F8F6 /* LocationPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationPopUpViewController.xib; sourceTree = "<group>"; };
+		C1679849245AA79800E7F8F6 /* RecentRegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRegionViewController.swift; sourceTree = "<group>"; };
+		C167984A245AA79800E7F8F6 /* RecentRegionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentRegionViewController.xib; sourceTree = "<group>"; };
+		C167984D245AA7BA00E7F8F6 /* NearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearViewController.swift; sourceTree = "<group>"; };
+		C167984E245AA7BA00E7F8F6 /* NearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearViewController.xib; sourceTree = "<group>"; };
+		C1679851245AA7D800E7F8F6 /* GangNamGuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangNamGuViewController.swift; sourceTree = "<group>"; };
+		C1679852245AA7D800E7F8F6 /* GangNamGuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GangNamGuViewController.xib; sourceTree = "<group>"; };
+		C1679855245AA7EA00E7F8F6 /* GangBukGuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangBukGuViewController.swift; sourceTree = "<group>"; };
+		C1679856245AA7EA00E7F8F6 /* GangBukGuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GangBukGuViewController.xib; sourceTree = "<group>"; };
+		C167985B245B026700E7F8F6 /* RadiusPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusPopUp.swift; sourceTree = "<group>"; };
+		C167985D245B027D00E7F8F6 /* RadiusPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusPopUpDelegate.swift; sourceTree = "<group>"; };
+		C167985F245B028E00E7F8F6 /* RadiusPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RadiusPopUp.storyboard; sourceTree = "<group>"; };
+		C1679861245B02A200E7F8F6 /* FilterPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPopUp.swift; sourceTree = "<group>"; };
+		C1679863245B02AD00E7F8F6 /* FilterPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPopUpDelegate.swift; sourceTree = "<group>"; };
+		C1679865245B02B600E7F8F6 /* FilterPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterPopUp.storyboard; sourceTree = "<group>"; };
 		C18059D524580AEB005FB4EC /* TestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResponse.swift; sourceTree = "<group>"; };
 		C18059D724581052005FB4EC /* RestaurantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsResponse.swift; sourceTree = "<group>"; };
 		C185CAAC2458682A00DBB6C3 /* fivew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fivew.swift; sourceTree = "<group>"; };
@@ -192,9 +246,10 @@
 		BD75ABD42301B3FB00E0FC7A /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
-				BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */,
-				BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */,
-				BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */,
+				C1679835245A809D00E7F8F6 /* LocationPopup */,
+				C1679836245A80B500E7F8F6 /* AlignPopup */,
+				C1679859245AFEA200E7F8F6 /* RadiusPopup */,
+				C167985A245B021C00E7F8F6 /* FilterPopup */,
 			);
 			path = PopUp;
 			sourceTree = "<group>";
@@ -222,7 +277,6 @@
 			children = (
 				BD75ABD62301B42900E0FC7A /* Entity */,
 				BD75ABD52301B40B00E0FC7A /* DataManager */,
-				BD75ABD42301B3FB00E0FC7A /* PopUp */,
 				BD9BF18522F9DCC7009E47EB /* MainViewController.swift */,
 				BD9BF18622F9DCC7009E47EB /* MainViewController.xib */,
 				C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */,
@@ -319,18 +373,77 @@
 				C16600EF24594BBB00E3800D /* findingGoodRestaurantViewController.xib */,
 				C16600F224594BE900E3800D /* MangoPickViewController.swift */,
 				C16600F324594BE900E3800D /* MangoPickViewController.xib */,
-				C16600F624594C1900E3800D /* PlusViewController.swift */,
-				C16600F724594C1900E3800D /* PlusViewController.xib */,
-				C16600FA24594C3900E3800D /* NewsViewController.swift */,
-				C16600FB24594C3900E3800D /* NewsViewController.xib */,
-				C16600FE24594D9B00E3800D /* MyInfoViewController.swift */,
-				C16600FF24594D9B00E3800D /* MyInfoViewController.xib */,
 				C16601022459650200E3800D /* EatDealViewController.swift */,
 				C16601032459650200E3800D /* EatDealViewController.xib */,
 				C16601062459651300E3800D /* TopListViewController.swift */,
 				C16601072459651300E3800D /* TopListViewController.xib */,
+				C16600F624594C1900E3800D /* PlusViewController.swift */,
+				C16600F724594C1900E3800D /* PlusViewController.xib */,
+				C167983D245A9C4F00E7F8F6 /* HaveBeenThereViewController.swift */,
+				C167983E245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib */,
+				C1679841245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift */,
+				C1679842245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib */,
+				C16600FA24594C3900E3800D /* NewsViewController.swift */,
+				C16600FB24594C3900E3800D /* NewsViewController.xib */,
+				C167982D245A5AAD00E7F8F6 /* NewsAllViewController.swift */,
+				C167982E245A5AAD00E7F8F6 /* NewsAllViewController.xib */,
+				C1679831245A5AC200E7F8F6 /* NewsFollowingViewController.swift */,
+				C1679832245A5AC200E7F8F6 /* NewsFollowingViewController.xib */,
+				C16600FE24594D9B00E3800D /* MyInfoViewController.swift */,
+				C16600FF24594D9B00E3800D /* MyInfoViewController.xib */,
+				BD75ABD42301B3FB00E0FC7A /* PopUp */,
 			);
 			path = MainTab;
+			sourceTree = "<group>";
+		};
+		C1679835245A809D00E7F8F6 /* LocationPopup */ = {
+			isa = PBXGroup;
+			children = (
+				C1679845245AA6AE00E7F8F6 /* LocationPopUpViewController.swift */,
+				C1679846245AA6AE00E7F8F6 /* LocationPopUpViewController.xib */,
+				C1679849245AA79800E7F8F6 /* RecentRegionViewController.swift */,
+				C167984A245AA79800E7F8F6 /* RecentRegionViewController.xib */,
+				C167984D245AA7BA00E7F8F6 /* NearViewController.swift */,
+				C167984E245AA7BA00E7F8F6 /* NearViewController.xib */,
+				C1679851245AA7D800E7F8F6 /* GangNamGuViewController.swift */,
+				C1679852245AA7D800E7F8F6 /* GangNamGuViewController.xib */,
+				C1679855245AA7EA00E7F8F6 /* GangBukGuViewController.swift */,
+				C1679856245AA7EA00E7F8F6 /* GangBukGuViewController.xib */,
+				BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */,
+				BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */,
+				BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */,
+			);
+			path = LocationPopup;
+			sourceTree = "<group>";
+		};
+		C1679836245A80B500E7F8F6 /* AlignPopup */ = {
+			isa = PBXGroup;
+			children = (
+				C1679837245A822800E7F8F6 /* AlignPopUp.swift */,
+				C1679839245A823300E7F8F6 /* AlignPopUpDelegate.swift */,
+				C167983B245A823E00E7F8F6 /* AlignPopUp.storyboard */,
+			);
+			path = AlignPopup;
+			sourceTree = "<group>";
+		};
+		C1679859245AFEA200E7F8F6 /* RadiusPopup */ = {
+			isa = PBXGroup;
+			children = (
+				C167985B245B026700E7F8F6 /* RadiusPopUp.swift */,
+				C167985D245B027D00E7F8F6 /* RadiusPopUpDelegate.swift */,
+				C167985F245B028E00E7F8F6 /* RadiusPopUp.storyboard */,
+			);
+			path = RadiusPopup;
+			sourceTree = "<group>";
+		};
+		C167985A245B021C00E7F8F6 /* FilterPopup */ = {
+			isa = PBXGroup;
+			children = (
+				C1679861245B02A200E7F8F6 /* FilterPopUp.swift */,
+				C1679863245B02AD00E7F8F6 /* FilterPopUpDelegate.swift */,
+				C1679865245B02B600E7F8F6 /* FilterPopUp.storyboard */,
+			);
+			path = FilterPopup;
 			sourceTree = "<group>";
 		};
 		C1A3E30A245527D000740325 /* MyInfo */ = {
@@ -455,26 +568,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1679848245AA6AE00E7F8F6 /* LocationPopUpViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */,
 				C16600F924594C1900E3800D /* PlusViewController.xib in Resources */,
 				C16601052459650200E3800D /* EatDealViewController.xib in Resources */,
 				C16600FD24594C3900E3800D /* NewsViewController.xib in Resources */,
+				C1679858245AA7EA00E7F8F6 /* GangBukGuViewController.xib in Resources */,
 				C16600F524594BE900E3800D /* MangoPickViewController.xib in Resources */,
+				C1679860245B028E00E7F8F6 /* RadiusPopUp.storyboard in Resources */,
 				C1A1F9A12459D3B200C4862E /* SignUpByEmailViewController.xib in Resources */,
+				C167984C245AA79800E7F8F6 /* RecentRegionViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				C1B4A83C2452A8C0005608F9 /* LoginViewController.xib in Resources */,
 				C1A3E3142455292000740325 /* ThreeMainViewController.xib in Resources */,
 				BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */,
+				C1679840245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib in Resources */,
+				C1679850245AA7BA00E7F8F6 /* NearViewController.xib in Resources */,
 				C1A3E3102455290E00740325 /* SecondMainViewController.xib in Resources */,
 				C185CAAF2458682A00DBB6C3 /* five.xib in Resources */,
+				C167983C245A823E00E7F8F6 /* AlignPopUp.storyboard in Resources */,
+				C1679834245A5AC200E7F8F6 /* NewsFollowingViewController.xib in Resources */,
+				C1679866245B02B600E7F8F6 /* FilterPopUp.storyboard in Resources */,
 				C16601092459651300E3800D /* TopListViewController.xib in Resources */,
+				C1679830245A5AAD00E7F8F6 /* NewsAllViewController.xib in Resources */,
 				C166010D24597F6200E3800D /* EmailLoginViewController.xib in Resources */,
 				C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
+				C1679854245AA7D800E7F8F6 /* GangNamGuViewController.xib in Resources */,
 				C166010124594D9B00E3800D /* MyInfoViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				C1B4A848245308F8005608F9 /* LocationAgreeViewController.xib in Resources */,
+				C1679844245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib in Resources */,
 				C1A1F99D2459D32800C4862E /* LostPasswordViewController.xib in Resources */,
 				C16600F124594BBB00E3800D /* findingGoodRestaurantViewController.xib in Resources */,
 			);
@@ -531,23 +656,32 @@
 			files = (
 				C16600F824594C1900E3800D /* PlusViewController.swift in Sources */,
 				C1A3E3132455292000740325 /* ThreeMainViewController.swift in Sources */,
+				C167984F245AA7BA00E7F8F6 /* NearViewController.swift in Sources */,
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				C16600FC24594C3900E3800D /* NewsViewController.swift in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
 				C16601042459650200E3800D /* EatDealViewController.swift in Sources */,
+				C167984B245AA79800E7F8F6 /* RecentRegionViewController.swift in Sources */,
+				C1679853245AA7D800E7F8F6 /* GangNamGuViewController.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				C1A1F99C2459D32800C4862E /* LostPasswordViewController.swift in Sources */,
+				C1679843245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				C18059D824581052005FB4EC /* RestaurantsResponse.swift in Sources */,
 				C16600F424594BE900E3800D /* MangoPickViewController.swift in Sources */,
+				C167983A245A823300E7F8F6 /* AlignPopUpDelegate.swift in Sources */,
+				C167985E245B027D00E7F8F6 /* RadiusPopUpDelegate.swift in Sources */,
 				C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */,
+				C1679862245B02A200E7F8F6 /* FilterPopUp.swift in Sources */,
+				C1679864245B02AD00E7F8F6 /* FilterPopUpDelegate.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
 				C1A3E30F2455290E00740325 /* SecondMainViewController.swift in Sources */,
 				C1B4A847245308F8005608F9 /* LocationAgreeViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
+				C167983F245A9C4F00E7F8F6 /* HaveBeenThereViewController.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				C1A1F9A02459D3B200C4862E /* SignUpByEmailViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
@@ -556,13 +690,19 @@
 				C185CAAE2458682A00DBB6C3 /* fivew.swift in Sources */,
 				C18059D624580AEB005FB4EC /* TestResponse.swift in Sources */,
 				C1A3E31A2455AAEB00740325 /* MenuBar.swift in Sources */,
+				C1679833245A5AC200E7F8F6 /* NewsFollowingViewController.swift in Sources */,
+				C167982F245A5AAD00E7F8F6 /* NewsAllViewController.swift in Sources */,
 				C1B4A83B2452A8C0005608F9 /* LoginViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				C16601082459651300E3800D /* TopListViewController.swift in Sources */,
+				C1679838245A822800E7F8F6 /* AlignPopUp.swift in Sources */,
 				C16600ED24594B3C00E3800D /* MainTab.swift in Sources */,
+				C167985C245B026700E7F8F6 /* RadiusPopUp.swift in Sources */,
 				C166010C24597F6200E3800D /* EmailLoginViewController.swift in Sources */,
 				C16600F024594BBB00E3800D /* findingGoodRestaurantViewController.swift in Sources */,
 				C12E0064245416D000EE949F /* FourthMainViewController.swift in Sources */,
+				C1679857245AA7EA00E7F8F6 /* GangBukGuViewController.swift in Sources */,
+				C1679847245AA6AE00E7F8F6 /* LocationPopUpViewController.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,
 			);

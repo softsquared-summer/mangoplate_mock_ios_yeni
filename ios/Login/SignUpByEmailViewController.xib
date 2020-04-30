@@ -18,20 +18,14 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofp-qD-A3E">
-                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                    <items>
-                        <navigationItem title="이메일로 가입" id="ccO-k9-mwd"/>
-                    </items>
-                </navigationBar>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@mangoplate.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3g-b0-ycw">
-                    <rect key="frame" x="20" y="128" width="374" height="34"/>
+                    <rect key="frame" x="20" y="117" width="374" height="34"/>
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1a-zx-mNE">
-                    <rect key="frame" x="0.0" y="164" width="414" height="2"/>
+                    <rect key="frame" x="0.0" y="153" width="414" height="2"/>
                     <subviews>
                         <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wts-e9-mrO">
                             <rect key="frame" x="20" y="0.0" width="374" height="1"/>
@@ -50,7 +44,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQU-7y-7O2">
-                    <rect key="frame" x="75" y="186" width="264" height="40"/>
+                    <rect key="frame" x="75" y="175" width="264" height="40"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                     <state key="normal" title="이메일 인증하기">
@@ -58,13 +52,13 @@
                     </state>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycq-eS-z1d">
-                    <rect key="frame" x="20" y="246" width="374" height="34"/>
+                    <rect key="frame" x="20" y="235" width="374" height="34"/>
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QF3-u1-mNb">
-                    <rect key="frame" x="0.0" y="280" width="414" height="2"/>
+                    <rect key="frame" x="0.0" y="269" width="414" height="2"/>
                     <subviews>
                         <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3J-4a-9B8">
                             <rect key="frame" x="20" y="2" width="374" height="1"/>
@@ -83,19 +77,19 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최소 6~12자, 영문, 숫자 포함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X26-Wy-Igm">
-                    <rect key="frame" x="20" y="290" width="164" height="17"/>
+                    <rect key="frame" x="20" y="279" width="164" height="17"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ZT-th-Mv7">
-                    <rect key="frame" x="20" y="327" width="374" height="34"/>
+                    <rect key="frame" x="20" y="316" width="374" height="34"/>
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJy-7Z-YUa">
-                    <rect key="frame" x="0.0" y="361" width="414" height="2"/>
+                    <rect key="frame" x="0.0" y="350" width="414" height="2"/>
                     <subviews>
                         <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mna-hZ-qlX">
                             <rect key="frame" x="20" y="2" width="374" height="1"/>
@@ -131,6 +125,7 @@
                 <constraint firstItem="vn8-QW-MQt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FOo-KS-H51"/>
                 <constraint firstItem="v1a-zx-mNE" firstAttribute="top" secondItem="s3g-b0-ycw" secondAttribute="bottom" constant="2" id="G30-21-nvi"/>
                 <constraint firstItem="SJy-7Z-YUa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IPe-NW-fx9"/>
+                <constraint firstItem="s3g-b0-ycw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="73" id="LOH-Ey-IV4"/>
                 <constraint firstItem="X26-Wy-Igm" firstAttribute="top" secondItem="QF3-u1-mNb" secondAttribute="bottom" constant="8" id="LPE-uk-4cS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vn8-QW-MQt" secondAttribute="trailing" id="Lgs-AE-0Wh"/>
                 <constraint firstItem="QF3-u1-mNb" firstAttribute="top" secondItem="ycq-eS-z1d" secondAttribute="bottom" id="MSd-YH-a0p"/>
@@ -144,14 +139,10 @@
                 <constraint firstItem="X26-Wy-Igm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fsz-Jc-gbG"/>
                 <constraint firstItem="ycq-eS-z1d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gWE-7L-P0g"/>
                 <constraint firstItem="vn8-QW-MQt" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="gr9-PS-g6a"/>
-                <constraint firstItem="s3g-b0-ycw" firstAttribute="top" secondItem="ofp-qD-A3E" secondAttribute="bottom" constant="40" id="htY-fr-gNX"/>
                 <constraint firstItem="v1a-zx-mNE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ig2-1e-use"/>
-                <constraint firstItem="ofp-qD-A3E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jjR-Vd-gr3"/>
-                <constraint firstItem="ofp-qD-A3E" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="l4Z-69-YOJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ycq-eS-z1d" secondAttribute="trailing" constant="20" id="moa-NQ-2XA"/>
                 <constraint firstItem="SJy-7Z-YUa" firstAttribute="top" secondItem="4ZT-th-Mv7" secondAttribute="bottom" id="of0-fh-g6E"/>
                 <constraint firstAttribute="trailing" secondItem="v1a-zx-mNE" secondAttribute="trailing" id="qr3-An-S9w"/>
-                <constraint firstItem="ofp-qD-A3E" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="r72-cl-2x5"/>
                 <constraint firstItem="4ZT-th-Mv7" firstAttribute="top" secondItem="X26-Wy-Igm" secondAttribute="bottom" constant="20" id="tsy-me-j0J"/>
                 <constraint firstAttribute="trailing" secondItem="QF3-u1-mNb" secondAttribute="trailing" id="uqS-zD-AoW"/>
                 <constraint firstAttribute="trailing" secondItem="SJy-7Z-YUa" secondAttribute="trailing" id="voC-EE-6Yw"/>

@@ -12,7 +12,9 @@ class NoticePopUp: BaseViewController {
     var noticePopUpDelegate: NoticePopUpDelegate!
     
     @IBAction func pressedDismiss(_ sender: UIButton) {
-        self.noticePopUpDelegate.pressedDismissButton()
+        self.noticePopUpDelegate.pressedDismissNoticeButton()
         self.dismiss(animated: false, completion: nil)
+
     }
+
 }
