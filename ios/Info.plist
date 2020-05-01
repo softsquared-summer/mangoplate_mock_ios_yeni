@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>접근을 허용하면, 현재 위치를 활용하여 주변의 가까운 식당을 편하게 찾을 수 있어요.</string>
 	<key>CFBundleDevelopmentRegion</key>

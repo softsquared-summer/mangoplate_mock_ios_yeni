@@ -28,7 +28,7 @@ class MangoPickViewController: UITabBarController {
         UIApplication.shared.statusBarStyle = .lightContent
         
 
-//        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -10.0)
+//        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontㄲal: 0.0, vertical: -10.0)
 
         
     }

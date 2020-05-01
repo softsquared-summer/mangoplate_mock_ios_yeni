@@ -47,25 +47,34 @@
                                         <color key="textColor" red="0.96848052740000001" green="0.50179405919999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzK-c2-j03">
-                                        <rect key="frame" x="166" y="39" width="83" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzK-c2-j03">
+                                        <rect key="frame" x="157" y="39" width="100" height="36"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="83" id="Lpm-Vg-47f"/>
+                                            <constraint firstAttribute="width" constant="100" id="Lpm-Vg-47f"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                         <color key="textColor" red="0.96848052740000001" green="0.50179405919999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="3000" translatesAutoresizingMaskIntoConstraints="NO" id="qcp-1D-KVX">
+                                        <rect key="frame" x="148" y="110" width="118" height="31"/>
+                                        <color key="tintColor" red="0.96848052740000001" green="0.50179405919999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="xIb-mr-zDd" eventType="valueChanged" id="q8s-oO-zjH"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="VoX-Rh-LWE" firstAttribute="top" secondItem="0zl-AG-97W" secondAttribute="top" constant="8" id="1Vt-PH-XfQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="qcp-1D-KVX" secondAttribute="trailing" constant="150" id="2I6-56-EZe"/>
                                     <constraint firstItem="meE-Ss-Un4" firstAttribute="top" secondItem="0zl-AG-97W" secondAttribute="top" constant="8" id="9tf-9D-v6O"/>
+                                    <constraint firstItem="EzK-c2-j03" firstAttribute="centerX" secondItem="0zl-AG-97W" secondAttribute="centerX" id="G5l-eb-Tuo"/>
                                     <constraint firstAttribute="height" constant="200" id="GTi-Wf-LVK"/>
                                     <constraint firstItem="EzK-c2-j03" firstAttribute="top" secondItem="meE-Ss-Un4" secondAttribute="bottom" constant="8" id="RYj-sT-ycH"/>
+                                    <constraint firstItem="qcp-1D-KVX" firstAttribute="top" secondItem="EzK-c2-j03" secondAttribute="bottom" constant="35" id="aDL-jq-iPw"/>
                                     <constraint firstItem="VoX-Rh-LWE" firstAttribute="leading" secondItem="0zl-AG-97W" secondAttribute="leading" constant="8" id="bl0-EY-PG5"/>
-                                    <constraint firstAttribute="trailing" secondItem="EzK-c2-j03" secondAttribute="trailing" constant="165" id="lCf-r8-Ct1"/>
-                                    <constraint firstItem="EzK-c2-j03" firstAttribute="leading" secondItem="0zl-AG-97W" secondAttribute="leading" constant="166" id="ol1-H0-YgQ"/>
+                                    <constraint firstItem="qcp-1D-KVX" firstAttribute="leading" secondItem="0zl-AG-97W" secondAttribute="leading" constant="150" id="eoY-ut-zcI"/>
                                     <constraint firstItem="meE-Ss-Un4" firstAttribute="leading" secondItem="VoX-Rh-LWE" secondAttribute="trailing" constant="88" id="uIf-93-VLx"/>
                                 </constraints>
                             </view>
@@ -83,6 +92,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zZ9-Or-M1H"/>
                     </view>
+                    <connections>
+                        <outlet property="distanceLabel" destination="EzK-c2-j03" id="gyE-xf-CsD"/>
+                        <outlet property="sliderBar" destination="qcp-1D-KVX" id="8Zw-ri-DYD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhW-nO-1s4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

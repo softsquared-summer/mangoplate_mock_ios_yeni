@@ -9,13 +9,14 @@
 import UIKit
 import CoreLocation
 
-class findingGoodRestaurantViewController: UIViewController, UIScrollViewDelegate, CLLocationManagerDelegate {
+class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegate, CLLocationManagerDelegate {
 
     var pageViewController : UIPageViewController!
         var pageTitles: NSArray!
         var pageImages: NSArray!
         var scrollView: UIScrollView!
         var colors:[UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.black]
+    
         
         var frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
         var pageControl: UIPageControl!
@@ -27,6 +28,9 @@ class findingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
         @IBOutlet weak var pagerContainer: UIView!
        
         @IBOutlet weak var locationButton: UIButton!
+    
+    @IBOutlet weak var distanceLabel: UILabel!
+    
     @IBOutlet weak var alignButton: UIButton!
     
     @IBAction func presentLocationList(_ sender: UIButton) {
@@ -46,6 +50,15 @@ class findingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
 //                self.present(noticePopUp, animated: true, completion: nil)
         
     }
+    
+    @IBAction func presentSearchView(_ sender: UIButton) {
+        let searchvc = SearchViewController() //change this to your class name
+                searchvc.modalPresentationStyle = .fullScreen
+                self.present(searchvc, animated: true, completion: nil)
+               
+        
+    }
+    
     
     
     @IBAction func presentAlign(_ sender: UIButton) {
@@ -166,9 +179,22 @@ class findingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
 
 }
 
-extension findingGoodRestaurantViewController: NoticePopUpDelegate, AlignPopUpDelegate, RadiusPopUpDelegate, FilterPopUpDelegate{
-    func pressedDismissRadiusButton() {
-        //
+extension FindingGoodRestaurantViewController: NoticePopUpDelegate, AlignPopUpDelegate, RadiusPopUpDelegate, FilterPopUpDelegate{
+    
+    func pressedDismiss100mRadiusButton() {
+        self.distanceLabel.text = "100m"
+    }
+    func pressedDismiss300mRadiusButton() {
+        self.distanceLabel.text = "300m"
+    }
+    func pressedDismiss500mRadiusButton() {
+        self.distanceLabel.text = "500m"
+    }
+    func pressedDismiss1kmRadiusButton() {
+        self.distanceLabel.text = "1km"
+    }
+    func pressedDismiss3kmRadiusButton() {
+        self.distanceLabel.text = "3km"
     }
     
     func pressedDismissFilterButton() {

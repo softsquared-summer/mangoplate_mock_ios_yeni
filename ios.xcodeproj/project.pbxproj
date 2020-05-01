@@ -31,9 +31,9 @@
 		C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E0063245416D000EE949F /* FourthMainViewController.xib */; };
 		C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */; };
 		C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E006D24542C7A00EE949F /* customTabBarCollectionViewCell.xib */; };
-		C16600ED24594B3C00E3800D /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600EC24594B3C00E3800D /* MainTab.swift */; };
-		C16600F024594BBB00E3800D /* findingGoodRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600EE24594BBB00E3800D /* findingGoodRestaurantViewController.swift */; };
-		C16600F124594BBB00E3800D /* findingGoodRestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16600EF24594BBB00E3800D /* findingGoodRestaurantViewController.xib */; };
+		C16600ED24594B3C00E3800D /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600EC24594B3C00E3800D /* MainTabViewController.swift */; };
+		C16600F024594BBB00E3800D /* FindingGoodRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600EE24594BBB00E3800D /* FindingGoodRestaurantViewController.swift */; };
+		C16600F124594BBB00E3800D /* FindingGoodRestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16600EF24594BBB00E3800D /* FindingGoodRestaurantViewController.xib */; };
 		C16600F424594BE900E3800D /* MangoPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600F224594BE900E3800D /* MangoPickViewController.swift */; };
 		C16600F524594BE900E3800D /* MangoPickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16600F324594BE900E3800D /* MangoPickViewController.xib */; };
 		C16600F824594C1900E3800D /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16600F624594C1900E3800D /* PlusViewController.swift */; };
@@ -77,6 +77,18 @@
 		C1679866245B02B600E7F8F6 /* FilterPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1679865245B02B600E7F8F6 /* FilterPopUp.storyboard */; };
 		C18059D624580AEB005FB4EC /* TestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18059D524580AEB005FB4EC /* TestResponse.swift */; };
 		C18059D824581052005FB4EC /* RestaurantsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18059D724581052005FB4EC /* RestaurantsResponse.swift */; };
+		C1818363245BB02B0049A62D /* FindingGoodRestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1818362245BB02B0049A62D /* FindingGoodRestaurantDataManager.swift */; };
+		C1818365245BB0CB0049A62D /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1818364245BB0CB0049A62D /* LocationResponse.swift */; };
+		C1818368245BC0570049A62D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1818366245BC0570049A62D /* SearchViewController.swift */; };
+		C1818369245BC0570049A62D /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1818367245BC0570049A62D /* SearchViewController.xib */; };
+		C181836C245BC0830049A62D /* RecentSearchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181836A245BC0830049A62D /* RecentSearchesViewController.swift */; };
+		C181836D245BC0830049A62D /* RecentSearchesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C181836B245BC0830049A62D /* RecentSearchesViewController.xib */; };
+		C1818370245BC09B0049A62D /* FindingFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181836E245BC09B0049A62D /* FindingFriendsViewController.swift */; };
+		C1818371245BC09B0049A62D /* FindingFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C181836F245BC09B0049A62D /* FindingFriendsViewController.xib */; };
+		C1818379245BD6780049A62D /* SignUpByEmailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1818378245BD6780049A62D /* SignUpByEmailDataManager.swift */; };
+		C181837B245BD6870049A62D /* SignUpByEmailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181837A245BD6870049A62D /* SignUpByEmailResponse.swift */; };
+		C181837D245C19930049A62D /* EmailLoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181837C245C19930049A62D /* EmailLoginDataManager.swift */; };
+		C181837F245C19A90049A62D /* EmailLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181837E245C19A90049A62D /* EmailLoginResponse.swift */; };
 		C185CAAE2458682A00DBB6C3 /* fivew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185CAAC2458682A00DBB6C3 /* fivew.swift */; };
 		C185CAAF2458682A00DBB6C3 /* five.xib in Resources */ = {isa = PBXBuildFile; fileRef = C185CAAD2458682A00DBB6C3 /* five.xib */; };
 		C1A1F99C2459D32800C4862E /* LostPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1F99A2459D32800C4862E /* LostPasswordViewController.swift */; };
@@ -140,9 +152,9 @@
 		C12E0063245416D000EE949F /* FourthMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthMainViewController.xib; sourceTree = "<group>"; };
 		C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		C12E006D24542C7A00EE949F /* customTabBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customTabBarCollectionViewCell.xib; sourceTree = "<group>"; };
-		C16600EC24594B3C00E3800D /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
-		C16600EE24594BBB00E3800D /* findingGoodRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findingGoodRestaurantViewController.swift; sourceTree = "<group>"; };
-		C16600EF24594BBB00E3800D /* findingGoodRestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = findingGoodRestaurantViewController.xib; sourceTree = "<group>"; };
+		C16600EC24594B3C00E3800D /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		C16600EE24594BBB00E3800D /* FindingGoodRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingGoodRestaurantViewController.swift; sourceTree = "<group>"; };
+		C16600EF24594BBB00E3800D /* FindingGoodRestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindingGoodRestaurantViewController.xib; sourceTree = "<group>"; };
 		C16600F224594BE900E3800D /* MangoPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoPickViewController.swift; sourceTree = "<group>"; };
 		C16600F324594BE900E3800D /* MangoPickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MangoPickViewController.xib; sourceTree = "<group>"; };
 		C16600F624594C1900E3800D /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +198,18 @@
 		C1679865245B02B600E7F8F6 /* FilterPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterPopUp.storyboard; sourceTree = "<group>"; };
 		C18059D524580AEB005FB4EC /* TestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResponse.swift; sourceTree = "<group>"; };
 		C18059D724581052005FB4EC /* RestaurantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsResponse.swift; sourceTree = "<group>"; };
+		C1818362245BB02B0049A62D /* FindingGoodRestaurantDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingGoodRestaurantDataManager.swift; sourceTree = "<group>"; };
+		C1818364245BB0CB0049A62D /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
+		C1818366245BC0570049A62D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C1818367245BC0570049A62D /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		C181836A245BC0830049A62D /* RecentSearchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchesViewController.swift; sourceTree = "<group>"; };
+		C181836B245BC0830049A62D /* RecentSearchesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentSearchesViewController.xib; sourceTree = "<group>"; };
+		C181836E245BC09B0049A62D /* FindingFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingFriendsViewController.swift; sourceTree = "<group>"; };
+		C181836F245BC09B0049A62D /* FindingFriendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindingFriendsViewController.xib; sourceTree = "<group>"; };
+		C1818378245BD6780049A62D /* SignUpByEmailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpByEmailDataManager.swift; sourceTree = "<group>"; };
+		C181837A245BD6870049A62D /* SignUpByEmailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpByEmailResponse.swift; sourceTree = "<group>"; };
+		C181837C245C19930049A62D /* EmailLoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginDataManager.swift; sourceTree = "<group>"; };
+		C181837E245C19A90049A62D /* EmailLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginResponse.swift; sourceTree = "<group>"; };
 		C185CAAC2458682A00DBB6C3 /* fivew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fivew.swift; sourceTree = "<group>"; };
 		C185CAAD2458682A00DBB6C3 /* five.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = five.xib; sourceTree = "<group>"; };
 		C1A1F99A2459D32800C4862E /* LostPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostPasswordViewController.swift; sourceTree = "<group>"; };
@@ -368,29 +392,14 @@
 		C16600EB24594AF800E3800D /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
-				C16600EC24594B3C00E3800D /* MainTab.swift */,
-				C16600EE24594BBB00E3800D /* findingGoodRestaurantViewController.swift */,
-				C16600EF24594BBB00E3800D /* findingGoodRestaurantViewController.xib */,
-				C16600F224594BE900E3800D /* MangoPickViewController.swift */,
-				C16600F324594BE900E3800D /* MangoPickViewController.xib */,
-				C16601022459650200E3800D /* EatDealViewController.swift */,
-				C16601032459650200E3800D /* EatDealViewController.xib */,
-				C16601062459651300E3800D /* TopListViewController.swift */,
-				C16601072459651300E3800D /* TopListViewController.xib */,
-				C16600F624594C1900E3800D /* PlusViewController.swift */,
-				C16600F724594C1900E3800D /* PlusViewController.xib */,
-				C167983D245A9C4F00E7F8F6 /* HaveBeenThereViewController.swift */,
-				C167983E245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib */,
-				C1679841245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift */,
-				C1679842245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib */,
-				C16600FA24594C3900E3800D /* NewsViewController.swift */,
-				C16600FB24594C3900E3800D /* NewsViewController.xib */,
-				C167982D245A5AAD00E7F8F6 /* NewsAllViewController.swift */,
-				C167982E245A5AAD00E7F8F6 /* NewsAllViewController.xib */,
-				C1679831245A5AC200E7F8F6 /* NewsFollowingViewController.swift */,
-				C1679832245A5AC200E7F8F6 /* NewsFollowingViewController.xib */,
-				C16600FE24594D9B00E3800D /* MyInfoViewController.swift */,
-				C16600FF24594D9B00E3800D /* MyInfoViewController.xib */,
+				C1818360245BAFE90049A62D /* Entity */,
+				C1818361245BAFF10049A62D /* DataManager */,
+				C16600EC24594B3C00E3800D /* MainTabViewController.swift */,
+				C1818372245BC0B50049A62D /* FindingGoodRestaurant */,
+				C1818373245BC1170049A62D /* MangoPick */,
+				C1818374245BC1440049A62D /* Plus */,
+				C1818375245BC1850049A62D /* News */,
+				C1818376245BC19C0049A62D /* MyInfo */,
 				BD75ABD42301B3FB00E0FC7A /* PopUp */,
 			);
 			path = MainTab;
@@ -446,6 +455,94 @@
 			path = FilterPopup;
 			sourceTree = "<group>";
 		};
+		C1818360245BAFE90049A62D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C1818364245BB0CB0049A62D /* LocationResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C1818361245BAFF10049A62D /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C1818362245BB02B0049A62D /* FindingGoodRestaurantDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C1818372245BC0B50049A62D /* FindingGoodRestaurant */ = {
+			isa = PBXGroup;
+			children = (
+				C16600EE24594BBB00E3800D /* FindingGoodRestaurantViewController.swift */,
+				C16600EF24594BBB00E3800D /* FindingGoodRestaurantViewController.xib */,
+				C1818366245BC0570049A62D /* SearchViewController.swift */,
+				C1818367245BC0570049A62D /* SearchViewController.xib */,
+				C181836A245BC0830049A62D /* RecentSearchesViewController.swift */,
+				C181836B245BC0830049A62D /* RecentSearchesViewController.xib */,
+				C181836E245BC09B0049A62D /* FindingFriendsViewController.swift */,
+				C181836F245BC09B0049A62D /* FindingFriendsViewController.xib */,
+			);
+			path = FindingGoodRestaurant;
+			sourceTree = "<group>";
+		};
+		C1818373245BC1170049A62D /* MangoPick */ = {
+			isa = PBXGroup;
+			children = (
+				C16600F224594BE900E3800D /* MangoPickViewController.swift */,
+				C16600F324594BE900E3800D /* MangoPickViewController.xib */,
+				C16601022459650200E3800D /* EatDealViewController.swift */,
+				C16601032459650200E3800D /* EatDealViewController.xib */,
+				C16601062459651300E3800D /* TopListViewController.swift */,
+				C16601072459651300E3800D /* TopListViewController.xib */,
+			);
+			path = MangoPick;
+			sourceTree = "<group>";
+		};
+		C1818374245BC1440049A62D /* Plus */ = {
+			isa = PBXGroup;
+			children = (
+				C16600F624594C1900E3800D /* PlusViewController.swift */,
+				C16600F724594C1900E3800D /* PlusViewController.xib */,
+				C167983D245A9C4F00E7F8F6 /* HaveBeenThereViewController.swift */,
+				C167983E245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib */,
+				C1679841245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift */,
+				C1679842245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib */,
+			);
+			path = Plus;
+			sourceTree = "<group>";
+		};
+		C1818375245BC1850049A62D /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C16600FA24594C3900E3800D /* NewsViewController.swift */,
+				C16600FB24594C3900E3800D /* NewsViewController.xib */,
+				C167982D245A5AAD00E7F8F6 /* NewsAllViewController.swift */,
+				C167982E245A5AAD00E7F8F6 /* NewsAllViewController.xib */,
+				C1679831245A5AC200E7F8F6 /* NewsFollowingViewController.swift */,
+				C1679832245A5AC200E7F8F6 /* NewsFollowingViewController.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C1818376245BC19C0049A62D /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C16600FE24594D9B00E3800D /* MyInfoViewController.swift */,
+				C16600FF24594D9B00E3800D /* MyInfoViewController.xib */,
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		C1818377245BD6500049A62D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C181837A245BD6870049A62D /* SignUpByEmailResponse.swift */,
+				C181837E245C19A90049A62D /* EmailLoginResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		C1A3E30A245527D000740325 /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +574,7 @@
 		C1B4A8372452A642005608F9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				C1818377245BD6500049A62D /* Entity */,
 				C1B4A8382452A87E005608F9 /* DataManager */,
 				C1B4A8392452A8C0005608F9 /* LoginViewController.swift */,
 				C1B4A83A2452A8C0005608F9 /* LoginViewController.xib */,
@@ -494,6 +592,8 @@
 		C1B4A8382452A87E005608F9 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				C1818378245BD6780049A62D /* SignUpByEmailDataManager.swift */,
+				C181837C245C19930049A62D /* EmailLoginDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -576,15 +676,18 @@
 				C16600FD24594C3900E3800D /* NewsViewController.xib in Resources */,
 				C1679858245AA7EA00E7F8F6 /* GangBukGuViewController.xib in Resources */,
 				C16600F524594BE900E3800D /* MangoPickViewController.xib in Resources */,
+				C1818371245BC09B0049A62D /* FindingFriendsViewController.xib in Resources */,
 				C1679860245B028E00E7F8F6 /* RadiusPopUp.storyboard in Resources */,
 				C1A1F9A12459D3B200C4862E /* SignUpByEmailViewController.xib in Resources */,
 				C167984C245AA79800E7F8F6 /* RecentRegionViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				C1B4A83C2452A8C0005608F9 /* LoginViewController.xib in Resources */,
+				C1818369245BC0570049A62D /* SearchViewController.xib in Resources */,
 				C1A3E3142455292000740325 /* ThreeMainViewController.xib in Resources */,
 				BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */,
 				C1679840245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib in Resources */,
 				C1679850245AA7BA00E7F8F6 /* NearViewController.xib in Resources */,
+				C181836D245BC0830049A62D /* RecentSearchesViewController.xib in Resources */,
 				C1A3E3102455290E00740325 /* SecondMainViewController.xib in Resources */,
 				C185CAAF2458682A00DBB6C3 /* five.xib in Resources */,
 				C167983C245A823E00E7F8F6 /* AlignPopUp.storyboard in Resources */,
@@ -601,7 +704,7 @@
 				C1B4A848245308F8005608F9 /* LocationAgreeViewController.xib in Resources */,
 				C1679844245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib in Resources */,
 				C1A1F99D2459D32800C4862E /* LostPasswordViewController.xib in Resources */,
-				C16600F124594BBB00E3800D /* findingGoodRestaurantViewController.xib in Resources */,
+				C16600F124594BBB00E3800D /* FindingGoodRestaurantViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,11 +773,17 @@
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				C18059D824581052005FB4EC /* RestaurantsResponse.swift in Sources */,
+				C181837B245BD6870049A62D /* SignUpByEmailResponse.swift in Sources */,
 				C16600F424594BE900E3800D /* MangoPickViewController.swift in Sources */,
 				C167983A245A823300E7F8F6 /* AlignPopUpDelegate.swift in Sources */,
+				C181837D245C19930049A62D /* EmailLoginDataManager.swift in Sources */,
 				C167985E245B027D00E7F8F6 /* RadiusPopUpDelegate.swift in Sources */,
 				C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */,
+				C181836C245BC0830049A62D /* RecentSearchesViewController.swift in Sources */,
+				C1818379245BD6780049A62D /* SignUpByEmailDataManager.swift in Sources */,
 				C1679862245B02A200E7F8F6 /* FilterPopUp.swift in Sources */,
+				C1818363245BB02B0049A62D /* FindingGoodRestaurantDataManager.swift in Sources */,
+				C1818365245BB0CB0049A62D /* LocationResponse.swift in Sources */,
 				C1679864245B02AD00E7F8F6 /* FilterPopUpDelegate.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
@@ -682,6 +791,7 @@
 				C1B4A847245308F8005608F9 /* LocationAgreeViewController.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
 				C167983F245A9C4F00E7F8F6 /* HaveBeenThereViewController.swift in Sources */,
+				C1818368245BC0570049A62D /* SearchViewController.swift in Sources */,
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				C1A1F9A02459D3B200C4862E /* SignUpByEmailViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
@@ -695,11 +805,13 @@
 				C1B4A83B2452A8C0005608F9 /* LoginViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				C16601082459651300E3800D /* TopListViewController.swift in Sources */,
+				C181837F245C19A90049A62D /* EmailLoginResponse.swift in Sources */,
 				C1679838245A822800E7F8F6 /* AlignPopUp.swift in Sources */,
-				C16600ED24594B3C00E3800D /* MainTab.swift in Sources */,
+				C1818370245BC09B0049A62D /* FindingFriendsViewController.swift in Sources */,
+				C16600ED24594B3C00E3800D /* MainTabViewController.swift in Sources */,
 				C167985C245B026700E7F8F6 /* RadiusPopUp.swift in Sources */,
 				C166010C24597F6200E3800D /* EmailLoginViewController.swift in Sources */,
-				C16600F024594BBB00E3800D /* findingGoodRestaurantViewController.swift in Sources */,
+				C16600F024594BBB00E3800D /* FindingGoodRestaurantViewController.swift in Sources */,
 				C12E0064245416D000EE949F /* FourthMainViewController.swift in Sources */,
 				C1679857245AA7EA00E7F8F6 /* GangBukGuViewController.swift in Sources */,
 				C1679847245AA6AE00E7F8F6 /* LocationPopUpViewController.swift in Sources */,

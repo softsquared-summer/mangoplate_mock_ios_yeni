@@ -21,7 +21,7 @@ class PlusViewController: UIViewController {
     
     
     @IBAction func PresentEatDealVC(_ sender: UIButton) {
-        let mainTabvc = MainTab() //change this to your class name
+        let mainTabvc = MainTabViewController() //change this to your class name
         mainTabvc.selectedIndex = 1
         mainTabvc.modalPresentationStyle = .fullScreen
         self.present(mainTabvc, animated: true, completion: nil)

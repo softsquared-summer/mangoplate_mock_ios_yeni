@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func goToMainTest(_ sender: UIButton) {
-        let mainTabvc = MainTab() //change this to your class name
+        let mainTabvc = MainTabViewController() //change this to your class name
         mainTabvc.modalPresentationStyle = .fullScreen
         self.present(mainTabvc, animated: true, completion: nil)
         
@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func emailLoginButton(_ sender: UIButton) {
-        let emailLoginVC = EmailLoginViewController()
+//        let emailLoginVC = EmailLoginViewController()
         let emailLoginViewController: UINavigationController = UINavigationController(rootViewController: EmailLoginViewController())
         emailLoginViewController.modalPresentationStyle = .fullScreen
 

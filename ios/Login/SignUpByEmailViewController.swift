@@ -9,7 +9,17 @@
 import UIKit
 
 class SignUpByEmailViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var emailLabel: UITextField!
+    @IBOutlet weak var password1Label: UITextField!
+    @IBOutlet weak var password2Label: UITextField!
+    @IBOutlet weak var nameLabel: UITextField!
+    
+    @IBOutlet weak var signupResultLabel: UILabel!
+    
+    @IBOutlet weak var presentLoginViewButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var backbutton = UIButton(type: .custom)
@@ -22,16 +32,33 @@ class SignUpByEmailViewController: UIViewController {
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
 
+    
         // Do any additional setup after loading the view.
     }
     @objc func backAction(_ sender: UIButton) {
        let _ = self.dismiss(animated: true, completion: nil)
     }
 
-    @IBAction func signInBackButton(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
+//    @IBAction func signInBackButton(_ sender: UIBarButtonItem) {
+//        self.dismiss(animated: true, completion: nil)
+//
+//    }
 
+    @IBAction func pressedGetSingUpByEmail(_ sender: UIButton) {
+        SignUpByEmailDataManager().postSignUpByEmail(self, emailLabel.text!, password1Label.text!, password2Label.text!, nameLabel.text!)
+        
+        
     }
+    
+    
+    @IBAction func pressedGetLoginVC(_ sender: UIButton) {
+        
+            let Loginvc = LoginViewController() //change this to your class name
+            Loginvc.modalPresentationStyle = .fullScreen
+            self.present(Loginvc, animated: true, completion: nil)
+    }
+    
+
     
     /*
     // MARK: - Navigation

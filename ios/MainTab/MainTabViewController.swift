@@ -7,13 +7,16 @@
 //
 
 import UIKit
-class MainTab: UITabBarController {
+
+class MainTabViewController: UITabBarController {
+    
+    
   override func viewDidLoad() {
     super.viewDidLoad()
 //    var firstTabImage: UIImage = UIImage(named: "firstItem_gray")!
 
-    let findingGoodRestaurant = UINavigationController(rootViewController: findingGoodRestaurantViewController())
-    findingGoodRestaurant.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "firstItem_gray"), selectedImage: UIImage(named: "firstItem_orange"))
+    let FindingGoodRestaurant = UINavigationController(rootViewController: FindingGoodRestaurantViewController())
+    FindingGoodRestaurant.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "firstItem_gray"), selectedImage: UIImage(named: "firstItem_orange"))
 //    findingGoodRestaurant.tabBarItem.imageInsets = UIEdgeInsets(top: 9, left: 15, bottom: 0, right: 0)
 
     let MangoPick = UINavigationController(rootViewController: MangoPickViewController())
@@ -31,12 +34,16 @@ class MainTab: UITabBarController {
     let MyInfo = UINavigationController.init(rootViewController: MyInfoViewController())
     MyInfo.tabBarItem = UITabBarItem.init(title: nil, image: UIImage(named: "fiveItem_gray"), selectedImage: UIImage(named: "fiveItem_orange"))
     MyInfo.tabBarItem.imageInsets = UIEdgeInsets(top: 9, left: 60, bottom: 0, right: 0)
-        let tabBarList = [findingGoodRestaurant, MangoPick, Plus, News, MyInfo]
+        let tabBarList = [FindingGoodRestaurant, MangoPick, Plus, News, MyInfo]
 //    tabBarItem.imageInsets = UIEdgeInsets(top: 9, left: 0, bottom: -9, right: 0)
     self.viewControllers = tabBarList
     self.tabBar.tintColor = .orange
     UIApplication.shared.statusBarStyle = .lightContent
   }
+    
+
+    
+    
     
     
 //    override func viewDidLayoutSubviews() {

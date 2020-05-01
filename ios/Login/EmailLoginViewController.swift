@@ -9,6 +9,13 @@
 import UIKit
 
 class EmailLoginViewController: UIViewController {
+ 
+    @IBOutlet weak var emailTextFiled: UITextField!
+    
+    @IBOutlet weak var passwordTextFiled: UITextField!
+    
+    @IBOutlet weak var LoginResultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        navigationItem.backBarButtonItem = UIBarButtonItem(
@@ -33,7 +40,25 @@ class EmailLoginViewController: UIViewController {
    @objc func backAction(_ sender: UIButton) {
       let _ = self.dismiss(animated: true, completion: nil)
    }
+    
+    
+    
+    @IBAction func pressedGetMainTabVC(_ sender: UIButton) {
+        
+        EmailLoginDataManager().postEmailLogin(self, emailTextFiled.text!, passwordTextFiled.text!)
+    
+    }
+    
+    func presentMainTabVC(){
+        //성공했을때만 이동해야됨
+        let mainTabvc = MainTabViewController() //change this to your class name
+        mainTabvc.modalPresentationStyle = .fullScreen
 
+//        UIApplication.shared.delegate?.window!!.rootViewController?.present(mainTabvc, animated: true, completion: nil)
+
+        self.present(mainTabvc, animated: true, completion: nil)
+    }
+    
     @IBAction func findingPassword(_ sender: UIButton) {
 //        let lostPasswordvc = LostPasswordViewController() //change this to your class name
 //        lostPasswordvc.modalPresentationStyle = .fullScreen

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="findingGoodRestaurantViewController" customModule="ios" customModuleProvider="target">
             <connections>
                 <outlet property="alignButton" destination="Bc8-ip-Hdz" id="ucj-tz-ATY"/>
+                <outlet property="distanceLabel" destination="rDT-Th-t46" id="g1D-nq-qKX"/>
                 <outlet property="locationButton" destination="Ect-F4-WbC" id="74y-c6-pQh"/>
                 <outlet property="pagecontrolContainer" destination="Blc-GA-9jj" id="gaF-aj-NTQ"/>
                 <outlet property="pagerContainer" destination="2w7-TR-VJH" id="osS-t6-OMh"/>
