@@ -12,7 +12,7 @@ struct SignUpByEmailResponse {
     var isSuccess: Bool!
     var code: Int!
     var message: String!
-    var result: [SignUpByEmail?]!
+    var result: SignUpByEmail!
     //var tutorials: [Tutorial?]!
 }
 

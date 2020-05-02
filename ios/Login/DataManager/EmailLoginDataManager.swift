@@ -10,7 +10,11 @@
 import Alamofire
 import AlamofireObjectMapper
 
+public var jwtKey = ""
+
 class EmailLoginDataManager: UIViewController{
+    
+   
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     func postEmailLogin(_ emailLoginViewController: EmailLoginViewController, _ email: String, _ pw: String) {
@@ -28,8 +32,14 @@ class EmailLoginDataManager: UIViewController{
                 case .success(let emailLoginResponse):
                     
                     if emailLoginResponse.code == 200 {
+                        emailLoginViewController.LoginResultLabel.text = ""
+                        
+                        jwtKey = emailLoginResponse.result.jwt
                         print(emailLoginResponse.message)
-                        EmailLoginViewController().presentMainTabVC()
+                        print(jwtKey)
+                       
+
+                        emailLoginViewController.presentMainTabVC()
                         
 //                        let mainTabvc = MainTabViewController() //change this to your class name
 //                                mainTabvc.modalPresentationStyle = .fullScreen
@@ -48,6 +58,7 @@ class EmailLoginDataManager: UIViewController{
                 }
             })
     }
+    
     
   
 }

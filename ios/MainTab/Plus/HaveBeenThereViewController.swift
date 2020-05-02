@@ -19,6 +19,8 @@ class HaveBeenThereViewController: UIViewController {
     
     @IBAction func HBTPresentPreviousTab(_ sender: UIButton) {
         // 엑스 버튼 누르면 이전 뷰로 돌아가도록(이전에 선택되어있던 탭으로)
+        self.dismiss(animated: true, completion: nil)
+
     }
     
     

@@ -38,6 +38,20 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
         let locationPopUpvc = LocationPopUpViewController() //change this to your class name
         locationPopUpvc.modalPresentationStyle = .custom
         self.present(locationPopUpvc, animated: true, completion: nil)
+        
+//
+//        let locationPopUpStoryboard = UIStoryboard(name: "LocationPopUp", bundle: Bundle.main)
+//                       guard let locationPopUp = locationPopUpStoryboard
+//                           .instantiateViewController(withIdentifier: "LocationPopUp") as? LocationPopUp else {
+//                           return
+//                       }
+//                       locationPopUp.locationPopUpDelegate = self
+//                       locationPopUp.modalPresentationStyle = .custom
+//                       // 기본 팝업 세팅 끝
+//
+//                       self.present(locationPopUp, animated: true, completion: nil)
+        
+        
 //        let noticePopUpStoryboard = UIStoryboard(name: "NoticePopUp", bundle: Bundle.main)
 //                guard let noticePopUp = noticePopUpStoryboard
 //                    .instantiateViewController(withIdentifier: "NoticePopUp") as? NoticePopUp else {

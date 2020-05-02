@@ -11,7 +11,7 @@ struct EmailLoginResponse {
     var isSuccess: Bool!
     var code: Int!
     var message: String!
-    var result: [EmailLogin?]!
+    var result: EmailLogin!
 }
 
 

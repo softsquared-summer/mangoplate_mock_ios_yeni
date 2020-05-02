@@ -13,7 +13,6 @@ struct LocationResponse {
     var isSuccess: Bool!
     var result: [LocationTest?]!
     var message: String!
-    //var tutorials: [Tutorial?]!
 }
 
 

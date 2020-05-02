@@ -44,14 +44,14 @@ class MangoPickViewController: UITabBarController {
         
        
     } //mangopickVC에 적용하기
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
     
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+         var items = tabBar.items?.index(of: item)
+         print("the selected index is : \(items)")
+        
+        
+    }
 }

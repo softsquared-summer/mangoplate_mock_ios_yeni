@@ -9,6 +9,13 @@
 import UIKit
 
 class EmailLoginViewController: UIViewController {
+    
+    unowned var dataManager: EmailLoginDataManager {
+        get {
+            return EmailLoginDataManager()
+        }
+    }
+    
  
     @IBOutlet weak var emailTextFiled: UITextField!
     
@@ -23,6 +30,8 @@ class EmailLoginViewController: UIViewController {
 //        let backButton = UIBarButtonItem()
 //        backButton.title = "이메일로 로그인"
 //        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        
+        //네비게이션 바 백그라운드 컬러 흰색으로 바꾸기
         var backbutton = UIButton(type: .custom)
         backbutton.setImage(UIImage(named: "backBarButton.png"), for: .normal) // Image can be downloaded from here below link
         backbutton.setTitle("이메일로 로그인", for: .normal)
@@ -45,7 +54,7 @@ class EmailLoginViewController: UIViewController {
     
     @IBAction func pressedGetMainTabVC(_ sender: UIButton) {
         
-        EmailLoginDataManager().postEmailLogin(self, emailTextFiled.text!, passwordTextFiled.text!)
+        dataManager.postEmailLogin(self, emailTextFiled.text!, passwordTextFiled.text!)
     
     }
     
@@ -54,7 +63,7 @@ class EmailLoginViewController: UIViewController {
         let mainTabvc = MainTabViewController() //change this to your class name
         mainTabvc.modalPresentationStyle = .fullScreen
 
-//        UIApplication.shared.delegate?.window!!.rootViewController?.present(mainTabvc, animated: true, completion: nil)
+        UIApplication.shared.delegate?.window!!.rootViewController?.present(mainTabvc, animated: true, completion: nil)
 
         self.present(mainTabvc, animated: true, completion: nil)
     }

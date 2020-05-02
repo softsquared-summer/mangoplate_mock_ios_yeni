@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location Pop Up-->
+        <scene sceneID="Amn-Mu-GL6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bul-C0-DZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="LocationPopUp" id="G1c-Sw-8Mf" customClass="LocationPopUp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JCl-HY-Qvv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXm-XZ-chF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jye-md-XYb">
+                                <rect key="frame" x="0.0" y="496" width="414" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="aLM-jD-xJQ"/>
+                                </constraints>
+                            </view>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YE-Ym-Erf">
+                                <rect key="frame" x="0.0" y="496" width="414" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="최근지역" id="Saz-41-D2X"/>
+                                    <tabBarItem title="내근처" id="yKJ-tM-XlT"/>
+                                    <tabBarItem title="서울-강남" id="Tlo-23-fLh"/>
+                                    <tabBarItem title="서울-강북" id="CCj-IX-5JR"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3YE-Ym-Erf" firstAttribute="trailing" secondItem="KZW-oj-f4d" secondAttribute="trailing" id="6V6-we-gAa"/>
+                            <constraint firstItem="jye-md-XYb" firstAttribute="centerX" secondItem="DXm-XZ-chF" secondAttribute="centerX" id="9Eg-be-yym"/>
+                            <constraint firstAttribute="bottom" secondItem="jye-md-XYb" secondAttribute="bottom" id="C6R-qM-zfV"/>
+                            <constraint firstItem="DXm-XZ-chF" firstAttribute="top" secondItem="JCl-HY-Qvv" secondAttribute="top" id="TGW-PH-2JJ"/>
+                            <constraint firstItem="3YE-Ym-Erf" firstAttribute="leading" secondItem="KZW-oj-f4d" secondAttribute="leading" id="WGq-hv-1wY"/>
+                            <constraint firstItem="jye-md-XYb" firstAttribute="top" secondItem="3YE-Ym-Erf" secondAttribute="top" id="a3M-An-CVg"/>
+                            <constraint firstItem="DXm-XZ-chF" firstAttribute="leading" secondItem="JCl-HY-Qvv" secondAttribute="leading" id="fDl-Uj-wp2"/>
+                            <constraint firstAttribute="bottom" secondItem="DXm-XZ-chF" secondAttribute="bottom" id="m6x-NX-muj"/>
+                            <constraint firstAttribute="trailing" secondItem="DXm-XZ-chF" secondAttribute="trailing" id="nmd-5o-4Ke"/>
+                            <constraint firstItem="jye-md-XYb" firstAttribute="leading" secondItem="KZW-oj-f4d" secondAttribute="leading" id="osN-uv-tOM"/>
+                            <constraint firstItem="KZW-oj-f4d" firstAttribute="trailing" secondItem="jye-md-XYb" secondAttribute="trailing" id="vI4-Xn-slA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KZW-oj-f4d"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-71.014492753623188" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+</document>

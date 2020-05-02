@@ -10,7 +10,12 @@ import UIKit
 
 class SignUpByEmailViewController: UIViewController {
     
-    
+    unowned var dataManager: SignUpByEmailDataManager {
+        get {
+            return SignUpByEmailDataManager()
+        }
+    }
+   
     @IBOutlet weak var emailLabel: UITextField!
     @IBOutlet weak var password1Label: UITextField!
     @IBOutlet weak var password2Label: UITextField!
@@ -45,10 +50,23 @@ class SignUpByEmailViewController: UIViewController {
 //    }
 
     @IBAction func pressedGetSingUpByEmail(_ sender: UIButton) {
-        SignUpByEmailDataManager().postSignUpByEmail(self, emailLabel.text!, password1Label.text!, password2Label.text!, nameLabel.text!)
+        dataManager.postSignUpByEmail(self, emailLabel.text!, password1Label.text!, password2Label.text!, nameLabel.text!)
         
         
     }
+    
+    func presentLoginVC(){
+        //성공했을때만 이동해야됨
+        
+        let loginvc = LoginViewController() //change this to your class name
+        loginvc.modalPresentationStyle = .fullScreen
+
+        UIApplication.shared.delegate?.window!!.rootViewController?.present(loginvc, animated: true, completion: nil)
+
+        self.present(loginvc, animated: true, completion: nil)
+    }
+    
+    
     
     
     @IBAction func pressedGetLoginVC(_ sender: UIButton) {

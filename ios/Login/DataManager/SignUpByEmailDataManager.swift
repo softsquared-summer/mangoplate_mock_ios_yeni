@@ -35,6 +35,11 @@ class SignUpByEmailDataManager {
                         signUpByEmailViewController.signupResultLabel.text = signUpByEmailResponse.message
                         
                         
+                        signUpByEmailViewController.presentLoginVC()
+                        
+                       
+                    
+                        
                     } else {
                         signUpByEmailViewController.signupResultLabel.text = signUpByEmailResponse.message
 //                        "회원가입 정보를 불러오는데 실패하였습니다."

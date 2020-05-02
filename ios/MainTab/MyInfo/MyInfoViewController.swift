@@ -11,15 +11,17 @@ import UIKit
 class MyInfoViewController: UIViewController {
 
     
-       @IBOutlet weak var eventView: UIView!
-       @IBOutlet weak var purchasedEATDealView: UIView!
-       @IBOutlet weak var EATDealReceivingNotification: UIView!
+    @IBOutlet weak var eventButton: UIButton!
+    @IBOutlet weak var purchasedEATDealButton: UIButton!
+    @IBOutlet weak var EATDealReceivingButton: UIButton!
+    @IBOutlet weak var WantToGoButton: UIButton!
+    @IBOutlet weak var MyListButton: UIButton!
+    @IBOutlet weak var bookmarkButton: UIButton!
+    @IBOutlet weak var restaurantWhereIRegisteredButton: UIButton!
+    @IBOutlet weak var settingButton: UIButton!
+    @IBOutlet weak var reviewButton: UIButton!
        @IBOutlet weak var TimelineView: UIView!
-       @IBOutlet weak var WantToGoView: UIView!
-       @IBOutlet weak var MyListView: UIView!
-       @IBOutlet weak var bookmarkView: UIView!
-       @IBOutlet weak var restaurantWhereIRegisteredView: UIView!
-       @IBOutlet weak var settingView: UIView!
+       
        
        @IBOutlet weak var alaramButton: UIButton!
        @IBOutlet weak var profileImageButton: UIButton!
@@ -30,7 +32,6 @@ class MyInfoViewController: UIViewController {
        @IBOutlet weak var followingButton: UIButton!
        @IBOutlet weak var editButton: UIButton!
        
-       @IBOutlet weak var reviewView: UIView!
        @IBOutlet weak var reviewCount: UILabel!
        @IBOutlet weak var haveBeenThereView: UIView!
        @IBOutlet weak var haveBeenThereCount: UILabel!
@@ -44,6 +45,15 @@ class MyInfoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func presentEventVC(_ sender: UIButton) {
+        let eventViewController: UINavigationController = UINavigationController(rootViewController: EventViewController())
+        eventViewController.modalPresentationStyle = .fullScreen
+
+        self.present(eventViewController, animated: true, completion: nil)
+    }
+    
+    
 
 
     /*
