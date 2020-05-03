@@ -13,7 +13,7 @@ class LostPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var backbutton = UIButton(type: .custom)
-             backbutton.setImage(UIImage(named: "backBarButton.png"), for: .normal) // Image can be downloaded from here below link
+             backbutton.setImage(UIImage(named: "ic_left_arrow_gray.png"), for: .normal) // Image can be downloaded from here below link
              backbutton.setTitle("비밀번호 찾기", for: .normal)
              backbutton.tintColor = .black
              backbutton.setTitleColor(backbutton.tintColor, for: .normal) // You can change the TitleColor

@@ -10,7 +10,7 @@
 import Alamofire
 import AlamofireObjectMapper
 
-class SignUpByEmailDataManager {
+class SignUpByEmailDataManager{
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     func postSignUpByEmail(_ signUpByEmailViewController: SignUpByEmailViewController, _ email: String, _ pw1: String, _ pw2: String, _ name: String) {
@@ -32,10 +32,17 @@ class SignUpByEmailDataManager {
                 case .success(let signUpByEmailResponse):
                     
                     if signUpByEmailResponse.code == 200 {
-                        signUpByEmailViewController.signupResultLabel.text = signUpByEmailResponse.message
+                        signUpByEmailViewController.signupResultLabel.text = ""
+                        
+                        let alert = UIAlertController(title: "성공", message: signUpByEmailResponse.message, preferredStyle: UIAlertController.Style.alert)
+                        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                            signUpByEmailViewController.presentLoginVC()
+                        }
+                        alert.addAction(okAction)
+                        
+                        signUpByEmailViewController.present(alert, animated: false, completion: nil)
                         
                         
-                        signUpByEmailViewController.presentLoginVC()
                         
                        
                     

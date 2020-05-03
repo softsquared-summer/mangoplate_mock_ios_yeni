@@ -23,12 +23,11 @@ class SignUpByEmailViewController: UIViewController {
     
     @IBOutlet weak var signupResultLabel: UILabel!
     
-    @IBOutlet weak var presentLoginViewButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         var backbutton = UIButton(type: .custom)
-        backbutton.setImage(UIImage(named: "backBarButton.png"), for: .normal) // Image can be downloaded from here below link
+        backbutton.setImage(UIImage(named: "ic_left_arrow_gray.png"), for: .normal) // Image can be downloaded from here below link
         backbutton.setTitle("이메일로 가입", for: .normal)
         backbutton.tintColor = .black
         backbutton.setTitleColor(backbutton.tintColor, for: .normal) // You can change the TitleColor
@@ -69,12 +68,12 @@ class SignUpByEmailViewController: UIViewController {
     
     
     
-    @IBAction func pressedGetLoginVC(_ sender: UIButton) {
-        
-            let Loginvc = LoginViewController() //change this to your class name
-            Loginvc.modalPresentationStyle = .fullScreen
-            self.present(Loginvc, animated: true, completion: nil)
-    }
+//    @IBAction func pressedGetLoginVC(_ sender: UIButton) {
+//        
+//            let Loginvc = LoginViewController() //change this to your class name
+//            Loginvc.modalPresentationStyle = .fullScreen
+//            self.present(Loginvc, animated: true, completion: nil)
+//    }
     
 
     

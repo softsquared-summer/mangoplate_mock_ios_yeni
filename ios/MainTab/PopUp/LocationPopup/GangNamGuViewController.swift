@@ -2,7 +2,7 @@
 //  GangNamGuViewController.swift
 //  ios
 //
-//  Created by 조예은 on 2020/04/30.
+//  Created by 조예은 on 2020/05/03.
 //  Copyright © 2020 Jerry Jung. All rights reserved.
 //
 

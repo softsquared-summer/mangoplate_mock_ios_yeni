@@ -59,16 +59,6 @@
 		C1679840245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C167983E245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib */; };
 		C1679843245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679841245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift */; };
 		C1679844245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1679842245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib */; };
-		C1679847245AA6AE00E7F8F6 /* LocationPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679845245AA6AE00E7F8F6 /* LocationPopUpViewController.swift */; };
-		C1679848245AA6AE00E7F8F6 /* LocationPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1679846245AA6AE00E7F8F6 /* LocationPopUpViewController.xib */; };
-		C167984B245AA79800E7F8F6 /* RecentRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679849245AA79800E7F8F6 /* RecentRegionViewController.swift */; };
-		C167984C245AA79800E7F8F6 /* RecentRegionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C167984A245AA79800E7F8F6 /* RecentRegionViewController.xib */; };
-		C167984F245AA7BA00E7F8F6 /* NearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167984D245AA7BA00E7F8F6 /* NearViewController.swift */; };
-		C1679850245AA7BA00E7F8F6 /* NearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C167984E245AA7BA00E7F8F6 /* NearViewController.xib */; };
-		C1679853245AA7D800E7F8F6 /* GangNamGuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679851245AA7D800E7F8F6 /* GangNamGuViewController.swift */; };
-		C1679854245AA7D800E7F8F6 /* GangNamGuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1679852245AA7D800E7F8F6 /* GangNamGuViewController.xib */; };
-		C1679857245AA7EA00E7F8F6 /* GangBukGuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1679855245AA7EA00E7F8F6 /* GangBukGuViewController.swift */; };
-		C1679858245AA7EA00E7F8F6 /* GangBukGuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1679856245AA7EA00E7F8F6 /* GangBukGuViewController.xib */; };
 		C167985C245B026700E7F8F6 /* RadiusPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167985B245B026700E7F8F6 /* RadiusPopUp.swift */; };
 		C167985E245B027D00E7F8F6 /* RadiusPopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167985D245B027D00E7F8F6 /* RadiusPopUpDelegate.swift */; };
 		C1679860245B028E00E7F8F6 /* RadiusPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C167985F245B028E00E7F8F6 /* RadiusPopUp.storyboard */; };
@@ -108,8 +98,24 @@
 		C18D8C3F245CFB2800E495AA /* FifthEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18D8C3D245CFB2800E495AA /* FifthEventViewController.xib */; };
 		C18D8C42245CFB4100E495AA /* SixthEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D8C40245CFB4100E495AA /* SixthEventViewController.swift */; };
 		C18D8C43245CFB4100E495AA /* SixthEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18D8C41245CFB4100E495AA /* SixthEventViewController.xib */; };
-		C18D8C45245D013300E495AA /* EventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D8C44245D013300E495AA /* EventResponse.swift */; };
-		C18D8C47245D014C00E495AA /* EventDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D8C46245D014C00E495AA /* EventDataManager.swift */; };
+		C18D8C45245D013300E495AA /* EventDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D8C44245D013300E495AA /* EventDetailResponse.swift */; };
+		C18D8C47245D014C00E495AA /* EventDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D8C46245D014C00E495AA /* EventDetailDataManager.swift */; };
+		C18D8C49245DA66400E495AA /* EventMainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D8C48245DA66400E495AA /* EventMainDataManager.swift */; };
+		C18D8C4B245DA67B00E495AA /* EventMainResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D8C4A245DA67B00E495AA /* EventMainResponse.swift */; };
+		C18D8C4E245DB2BF00E495AA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D8C4C245DB2BF00E495AA /* CollectionViewCell.swift */; };
+		C18D8C4F245DB2BF00E495AA /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18D8C4D245DB2BF00E495AA /* CollectionViewCell.xib */; };
+		C19E8800245E479D00DE7C83 /* DetailRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E87FE245E479D00DE7C83 /* DetailRestaurantViewController.swift */; };
+		C19E8801245E479D00DE7C83 /* DetailRestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19E87FF245E479D00DE7C83 /* DetailRestaurantViewController.xib */; };
+		C19E8806245E86F500DE7C83 /* PurchasedEatDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E8804245E86F500DE7C83 /* PurchasedEatDealViewController.swift */; };
+		C19E8807245E86F500DE7C83 /* PurchasedEatDealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19E8805245E86F500DE7C83 /* PurchasedEatDealViewController.xib */; };
+		C19E880E245E890E00DE7C83 /* EatDealNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E880C245E890E00DE7C83 /* EatDealNoticeViewController.swift */; };
+		C19E880F245E890E00DE7C83 /* EatDealNoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19E880D245E890E00DE7C83 /* EatDealNoticeViewController.xib */; };
+		C19E8812245E892200DE7C83 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E8810245E892200DE7C83 /* TimeLineViewController.swift */; };
+		C19E8813245E892200DE7C83 /* TimeLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19E8811245E892200DE7C83 /* TimeLineViewController.xib */; };
+		C19E8816245E893500DE7C83 /* WantToGoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E8814245E893500DE7C83 /* WantToGoViewController.swift */; };
+		C19E8817245E893500DE7C83 /* WantToGoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19E8815245E893500DE7C83 /* WantToGoViewController.xib */; };
+		C19E881A245E9CDF00DE7C83 /* LinkEatDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E8818245E9CDF00DE7C83 /* LinkEatDealViewController.swift */; };
+		C19E881B245E9CDF00DE7C83 /* LinkEatDealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19E8819245E9CDF00DE7C83 /* LinkEatDealViewController.xib */; };
 		C1A1F99C2459D32800C4862E /* LostPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1F99A2459D32800C4862E /* LostPasswordViewController.swift */; };
 		C1A1F99D2459D32800C4862E /* LostPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A1F99B2459D32800C4862E /* LostPasswordViewController.xib */; };
 		C1A1F9A02459D3B200C4862E /* SignUpByEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A1F99E2459D3B200C4862E /* SignUpByEmailViewController.swift */; };
@@ -126,6 +132,14 @@
 		C1B4A84A24531686005608F9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B4A84924531685005608F9 /* FBSDKCoreKit.framework */; };
 		C1B4A84C24531691005608F9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B4A84B24531691005608F9 /* FBSDKLoginKit.framework */; };
 		C1B4A84E245318D8005608F9 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B4A84D245318D8005608F9 /* KakaoOpenSDK.framework */; };
+		C1E185C0245F033500563FB0 /* RecentRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E185BE245F033500563FB0 /* RecentRegionViewController.swift */; };
+		C1E185C1245F033500563FB0 /* RecentRegionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E185BF245F033500563FB0 /* RecentRegionViewController.xib */; };
+		C1E185C4245F03F700563FB0 /* GangNamGuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E185C2245F03F700563FB0 /* GangNamGuViewController.swift */; };
+		C1E185C5245F03F700563FB0 /* GangNamGuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E185C3245F03F700563FB0 /* GangNamGuViewController.xib */; };
+		C1E185C8245F043500563FB0 /* GangBukGuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E185C6245F043500563FB0 /* GangBukGuViewController.swift */; };
+		C1E185C9245F043500563FB0 /* GangBukGuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E185C7245F043500563FB0 /* GangBukGuViewController.xib */; };
+		C1E185CC245F048700563FB0 /* NearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E185CA245F048700563FB0 /* NearViewController.swift */; };
+		C1E185CD245F048700563FB0 /* NearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E185CB245F048700563FB0 /* NearViewController.xib */; };
 		C7B0F461A33E2BA70527A7F9 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -199,16 +213,6 @@
 		C167983E245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HaveBeenThereViewController.xib; sourceTree = "<group>"; };
 		C1679841245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRegistrationViewController.swift; sourceTree = "<group>"; };
 		C1679842245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantRegistrationViewController.xib; sourceTree = "<group>"; };
-		C1679845245AA6AE00E7F8F6 /* LocationPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPopUpViewController.swift; sourceTree = "<group>"; };
-		C1679846245AA6AE00E7F8F6 /* LocationPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationPopUpViewController.xib; sourceTree = "<group>"; };
-		C1679849245AA79800E7F8F6 /* RecentRegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRegionViewController.swift; sourceTree = "<group>"; };
-		C167984A245AA79800E7F8F6 /* RecentRegionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentRegionViewController.xib; sourceTree = "<group>"; };
-		C167984D245AA7BA00E7F8F6 /* NearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearViewController.swift; sourceTree = "<group>"; };
-		C167984E245AA7BA00E7F8F6 /* NearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearViewController.xib; sourceTree = "<group>"; };
-		C1679851245AA7D800E7F8F6 /* GangNamGuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangNamGuViewController.swift; sourceTree = "<group>"; };
-		C1679852245AA7D800E7F8F6 /* GangNamGuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GangNamGuViewController.xib; sourceTree = "<group>"; };
-		C1679855245AA7EA00E7F8F6 /* GangBukGuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangBukGuViewController.swift; sourceTree = "<group>"; };
-		C1679856245AA7EA00E7F8F6 /* GangBukGuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GangBukGuViewController.xib; sourceTree = "<group>"; };
 		C167985B245B026700E7F8F6 /* RadiusPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusPopUp.swift; sourceTree = "<group>"; };
 		C167985D245B027D00E7F8F6 /* RadiusPopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusPopUpDelegate.swift; sourceTree = "<group>"; };
 		C167985F245B028E00E7F8F6 /* RadiusPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RadiusPopUp.storyboard; sourceTree = "<group>"; };
@@ -248,8 +252,24 @@
 		C18D8C3D245CFB2800E495AA /* FifthEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthEventViewController.xib; sourceTree = "<group>"; };
 		C18D8C40245CFB4100E495AA /* SixthEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthEventViewController.swift; sourceTree = "<group>"; };
 		C18D8C41245CFB4100E495AA /* SixthEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SixthEventViewController.xib; sourceTree = "<group>"; };
-		C18D8C44245D013300E495AA /* EventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResponse.swift; sourceTree = "<group>"; };
-		C18D8C46245D014C00E495AA /* EventDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDataManager.swift; sourceTree = "<group>"; };
+		C18D8C44245D013300E495AA /* EventDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailResponse.swift; sourceTree = "<group>"; };
+		C18D8C46245D014C00E495AA /* EventDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailDataManager.swift; sourceTree = "<group>"; };
+		C18D8C48245DA66400E495AA /* EventMainDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMainDataManager.swift; sourceTree = "<group>"; };
+		C18D8C4A245DA67B00E495AA /* EventMainResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMainResponse.swift; sourceTree = "<group>"; };
+		C18D8C4C245DB2BF00E495AA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		C18D8C4D245DB2BF00E495AA /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		C19E87FE245E479D00DE7C83 /* DetailRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRestaurantViewController.swift; sourceTree = "<group>"; };
+		C19E87FF245E479D00DE7C83 /* DetailRestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRestaurantViewController.xib; sourceTree = "<group>"; };
+		C19E8804245E86F500DE7C83 /* PurchasedEatDealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedEatDealViewController.swift; sourceTree = "<group>"; };
+		C19E8805245E86F500DE7C83 /* PurchasedEatDealViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchasedEatDealViewController.xib; sourceTree = "<group>"; };
+		C19E880C245E890E00DE7C83 /* EatDealNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatDealNoticeViewController.swift; sourceTree = "<group>"; };
+		C19E880D245E890E00DE7C83 /* EatDealNoticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EatDealNoticeViewController.xib; sourceTree = "<group>"; };
+		C19E8810245E892200DE7C83 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		C19E8811245E892200DE7C83 /* TimeLineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineViewController.xib; sourceTree = "<group>"; };
+		C19E8814245E893500DE7C83 /* WantToGoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantToGoViewController.swift; sourceTree = "<group>"; };
+		C19E8815245E893500DE7C83 /* WantToGoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WantToGoViewController.xib; sourceTree = "<group>"; };
+		C19E8818245E9CDF00DE7C83 /* LinkEatDealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkEatDealViewController.swift; sourceTree = "<group>"; };
+		C19E8819245E9CDF00DE7C83 /* LinkEatDealViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkEatDealViewController.xib; sourceTree = "<group>"; };
 		C1A1F99A2459D32800C4862E /* LostPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostPasswordViewController.swift; sourceTree = "<group>"; };
 		C1A1F99B2459D32800C4862E /* LostPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LostPasswordViewController.xib; sourceTree = "<group>"; };
 		C1A1F99E2459D3B200C4862E /* SignUpByEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpByEmailViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +287,14 @@
 		C1B4A84924531685005608F9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		C1B4A84B24531691005608F9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		C1B4A84D245318D8005608F9 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = "../../../Downloads/KakaoOpenSDK-1/KakaoOpenSDK.framework"; sourceTree = "<group>"; };
+		C1E185BE245F033500563FB0 /* RecentRegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRegionViewController.swift; sourceTree = "<group>"; };
+		C1E185BF245F033500563FB0 /* RecentRegionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentRegionViewController.xib; sourceTree = "<group>"; };
+		C1E185C2245F03F700563FB0 /* GangNamGuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangNamGuViewController.swift; sourceTree = "<group>"; };
+		C1E185C3245F03F700563FB0 /* GangNamGuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GangNamGuViewController.xib; sourceTree = "<group>"; };
+		C1E185C6245F043500563FB0 /* GangBukGuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangBukGuViewController.swift; sourceTree = "<group>"; };
+		C1E185C7245F043500563FB0 /* GangBukGuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GangBukGuViewController.xib; sourceTree = "<group>"; };
+		C1E185CA245F048700563FB0 /* NearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearViewController.swift; sourceTree = "<group>"; };
+		C1E185CB245F048700563FB0 /* NearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearViewController.xib; sourceTree = "<group>"; };
 		D52E2D8320870120DBBF4DF3 /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -308,6 +336,9 @@
 		BD75ABD42301B3FB00E0FC7A /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
+				BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */,
+				BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */,
+				BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */,
 				C1679835245A809D00E7F8F6 /* LocationPopup */,
 				C1679836245A80B500E7F8F6 /* AlignPopup */,
 				C1679859245AFEA200E7F8F6 /* RadiusPopup */,
@@ -446,22 +477,17 @@
 		C1679835245A809D00E7F8F6 /* LocationPopup */ = {
 			isa = PBXGroup;
 			children = (
-				C1679845245AA6AE00E7F8F6 /* LocationPopUpViewController.swift */,
-				C1679846245AA6AE00E7F8F6 /* LocationPopUpViewController.xib */,
-				C1679849245AA79800E7F8F6 /* RecentRegionViewController.swift */,
-				C167984A245AA79800E7F8F6 /* RecentRegionViewController.xib */,
-				C167984D245AA7BA00E7F8F6 /* NearViewController.swift */,
-				C167984E245AA7BA00E7F8F6 /* NearViewController.xib */,
-				C1679851245AA7D800E7F8F6 /* GangNamGuViewController.swift */,
-				C1679852245AA7D800E7F8F6 /* GangNamGuViewController.xib */,
-				C1679855245AA7EA00E7F8F6 /* GangBukGuViewController.swift */,
-				C1679856245AA7EA00E7F8F6 /* GangBukGuViewController.xib */,
-				BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */,
-				BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */,
-				BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */,
 				C1818380245C62C80049A62D /* LocationPopUp.swift */,
 				C1818382245C62DA0049A62D /* LocationPopUpDelegate.swift */,
 				C1818384245C62E30049A62D /* LocationPopUp.storyboard */,
+				C1E185BE245F033500563FB0 /* RecentRegionViewController.swift */,
+				C1E185BF245F033500563FB0 /* RecentRegionViewController.xib */,
+				C1E185C2245F03F700563FB0 /* GangNamGuViewController.swift */,
+				C1E185C3245F03F700563FB0 /* GangNamGuViewController.xib */,
+				C1E185C6245F043500563FB0 /* GangBukGuViewController.swift */,
+				C1E185C7245F043500563FB0 /* GangBukGuViewController.xib */,
+				C1E185CA245F048700563FB0 /* NearViewController.swift */,
+				C1E185CB245F048700563FB0 /* NearViewController.xib */,
 			);
 			path = LocationPopup;
 			sourceTree = "<group>";
@@ -500,7 +526,8 @@
 			isa = PBXGroup;
 			children = (
 				C1818364245BB0CB0049A62D /* LocationResponse.swift */,
-				C18D8C44245D013300E495AA /* EventResponse.swift */,
+				C18D8C44245D013300E495AA /* EventDetailResponse.swift */,
+				C18D8C4A245DA67B00E495AA /* EventMainResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -509,7 +536,8 @@
 			isa = PBXGroup;
 			children = (
 				C1818362245BB02B0049A62D /* FindingGoodRestaurantDataManager.swift */,
-				C18D8C46245D014C00E495AA /* EventDataManager.swift */,
+				C18D8C46245D014C00E495AA /* EventDetailDataManager.swift */,
+				C18D8C48245DA66400E495AA /* EventMainDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -525,6 +553,10 @@
 				C181836B245BC0830049A62D /* RecentSearchesViewController.xib */,
 				C181836E245BC09B0049A62D /* FindingFriendsViewController.swift */,
 				C181836F245BC09B0049A62D /* FindingFriendsViewController.xib */,
+				C18D8C4C245DB2BF00E495AA /* CollectionViewCell.swift */,
+				C18D8C4D245DB2BF00E495AA /* CollectionViewCell.xib */,
+				C19E87FE245E479D00DE7C83 /* DetailRestaurantViewController.swift */,
+				C19E87FF245E479D00DE7C83 /* DetailRestaurantViewController.xib */,
 			);
 			path = FindingGoodRestaurant;
 			sourceTree = "<group>";
@@ -573,6 +605,27 @@
 			children = (
 				C16600FE24594D9B00E3800D /* MyInfoViewController.swift */,
 				C16600FF24594D9B00E3800D /* MyInfoViewController.xib */,
+				C19E8802245E860200DE7C83 /* Event */,
+				C19E8803245E861A00DE7C83 /* PurchasedEatDeal */,
+				C19E8808245E88A000DE7C83 /* EatDealNotice */,
+				C19E8809245E88D300DE7C83 /* TimeLine */,
+				C19E880A245E88DF00DE7C83 /* WantToGo */,
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		C1818377245BD6500049A62D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C181837E245C19A90049A62D /* EmailLoginResponse.swift */,
+				C181837A245BD6870049A62D /* SignUpByEmailResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C19E8802245E860200DE7C83 /* Event */ = {
+			isa = PBXGroup;
+			children = (
 				C18D8C28245CF0BD00E495AA /* EventViewController.swift */,
 				C18D8C29245CF0BD00E495AA /* EventViewController.xib */,
 				C18D8C2C245CFADF00E495AA /* FirstEventViewController.swift */,
@@ -588,16 +641,45 @@
 				C18D8C40245CFB4100E495AA /* SixthEventViewController.swift */,
 				C18D8C41245CFB4100E495AA /* SixthEventViewController.xib */,
 			);
-			path = MyInfo;
+			path = Event;
 			sourceTree = "<group>";
 		};
-		C1818377245BD6500049A62D /* Entity */ = {
+		C19E8803245E861A00DE7C83 /* PurchasedEatDeal */ = {
 			isa = PBXGroup;
 			children = (
-				C181837E245C19A90049A62D /* EmailLoginResponse.swift */,
-				C181837A245BD6870049A62D /* SignUpByEmailResponse.swift */,
+				C19E8804245E86F500DE7C83 /* PurchasedEatDealViewController.swift */,
+				C19E8805245E86F500DE7C83 /* PurchasedEatDealViewController.xib */,
+				C19E8818245E9CDF00DE7C83 /* LinkEatDealViewController.swift */,
+				C19E8819245E9CDF00DE7C83 /* LinkEatDealViewController.xib */,
 			);
-			path = Entity;
+			path = PurchasedEatDeal;
+			sourceTree = "<group>";
+		};
+		C19E8808245E88A000DE7C83 /* EatDealNotice */ = {
+			isa = PBXGroup;
+			children = (
+				C19E880C245E890E00DE7C83 /* EatDealNoticeViewController.swift */,
+				C19E880D245E890E00DE7C83 /* EatDealNoticeViewController.xib */,
+			);
+			path = EatDealNotice;
+			sourceTree = "<group>";
+		};
+		C19E8809245E88D300DE7C83 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				C19E8810245E892200DE7C83 /* TimeLineViewController.swift */,
+				C19E8811245E892200DE7C83 /* TimeLineViewController.xib */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		C19E880A245E88DF00DE7C83 /* WantToGo */ = {
+			isa = PBXGroup;
+			children = (
+				C19E8814245E893500DE7C83 /* WantToGoViewController.swift */,
+				C19E8815245E893500DE7C83 /* WantToGoViewController.xib */,
+			);
+			path = WantToGo;
 			sourceTree = "<group>";
 		};
 		C1A3E30A245527D000740325 /* MyInfo */ = {
@@ -725,29 +807,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19E8817245E893500DE7C83 /* WantToGoViewController.xib in Resources */,
 				C1818385245C62E30049A62D /* LocationPopUp.storyboard in Resources */,
 				C18D8C3B245CFB1700E495AA /* FourthEventViewController.xib in Resources */,
-				C1679848245AA6AE00E7F8F6 /* LocationPopUpViewController.xib in Resources */,
+				C1E185C1245F033500563FB0 /* RecentRegionViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */,
+				C19E8807245E86F500DE7C83 /* PurchasedEatDealViewController.xib in Resources */,
 				C16600F924594C1900E3800D /* PlusViewController.xib in Resources */,
 				C16601052459650200E3800D /* EatDealViewController.xib in Resources */,
 				C18D8C2F245CFADF00E495AA /* FirstEventViewController.xib in Resources */,
 				C16600FD24594C3900E3800D /* NewsViewController.xib in Resources */,
+				C1E185C5245F03F700563FB0 /* GangNamGuViewController.xib in Resources */,
 				C18D8C2B245CF0BD00E495AA /* EventViewController.xib in Resources */,
-				C1679858245AA7EA00E7F8F6 /* GangBukGuViewController.xib in Resources */,
 				C16600F524594BE900E3800D /* MangoPickViewController.xib in Resources */,
 				C1818371245BC09B0049A62D /* FindingFriendsViewController.xib in Resources */,
 				C1679860245B028E00E7F8F6 /* RadiusPopUp.storyboard in Resources */,
 				C1A1F9A12459D3B200C4862E /* SignUpByEmailViewController.xib in Resources */,
-				C167984C245AA79800E7F8F6 /* RecentRegionViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				C1B4A83C2452A8C0005608F9 /* LoginViewController.xib in Resources */,
 				C1818369245BC0570049A62D /* SearchViewController.xib in Resources */,
 				C1A3E3142455292000740325 /* ThreeMainViewController.xib in Resources */,
 				BD9BF18422F9D1A4009E47EB /* SplashViewController.xib in Resources */,
 				C1679840245A9C4F00E7F8F6 /* HaveBeenThereViewController.xib in Resources */,
-				C1679850245AA7BA00E7F8F6 /* NearViewController.xib in Resources */,
+				C18D8C4F245DB2BF00E495AA /* CollectionViewCell.xib in Resources */,
+				C19E8801245E479D00DE7C83 /* DetailRestaurantViewController.xib in Resources */,
+				C19E881B245E9CDF00DE7C83 /* LinkEatDealViewController.xib in Resources */,
+				C1E185C9245F043500563FB0 /* GangBukGuViewController.xib in Resources */,
 				C181836D245BC0830049A62D /* RecentSearchesViewController.xib in Resources */,
 				C1A3E3102455290E00740325 /* SecondMainViewController.xib in Resources */,
 				C185CAAF2458682A00DBB6C3 /* five.xib in Resources */,
@@ -756,13 +842,14 @@
 				C18D8C33245CFAF300E495AA /* SecondEventViewController.xib in Resources */,
 				C1679834245A5AC200E7F8F6 /* NewsFollowingViewController.xib in Resources */,
 				C1679866245B02B600E7F8F6 /* FilterPopUp.storyboard in Resources */,
+				C1E185CD245F048700563FB0 /* NearViewController.xib in Resources */,
 				C18D8C3F245CFB2800E495AA /* FifthEventViewController.xib in Resources */,
+				C19E880F245E890E00DE7C83 /* EatDealNoticeViewController.xib in Resources */,
 				C16601092459651300E3800D /* TopListViewController.xib in Resources */,
 				C1679830245A5AAD00E7F8F6 /* NewsAllViewController.xib in Resources */,
 				C166010D24597F6200E3800D /* EmailLoginViewController.xib in Resources */,
 				C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
-				C1679854245AA7D800E7F8F6 /* GangNamGuViewController.xib in Resources */,
 				C166010124594D9B00E3800D /* MyInfoViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				C1B4A848245308F8005608F9 /* LocationAgreeViewController.xib in Resources */,
@@ -770,6 +857,7 @@
 				C1A1F99D2459D32800C4862E /* LostPasswordViewController.xib in Resources */,
 				C16600F124594BBB00E3800D /* FindingGoodRestaurantViewController.xib in Resources */,
 				C18D8C43245CFB4100E495AA /* SixthEventViewController.xib in Resources */,
+				C19E8813245E892200DE7C83 /* TimeLineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,40 +911,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				C16600F824594C1900E3800D /* PlusViewController.swift in Sources */,
+				C1E185C0245F033500563FB0 /* RecentRegionViewController.swift in Sources */,
 				C1A3E3132455292000740325 /* ThreeMainViewController.swift in Sources */,
 				C18D8C2E245CFADF00E495AA /* FirstEventViewController.swift in Sources */,
-				C167984F245AA7BA00E7F8F6 /* NearViewController.swift in Sources */,
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				C16600FC24594C3900E3800D /* NewsViewController.swift in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
+				C19E881A245E9CDF00DE7C83 /* LinkEatDealViewController.swift in Sources */,
 				C16601042459650200E3800D /* EatDealViewController.swift in Sources */,
-				C167984B245AA79800E7F8F6 /* RecentRegionViewController.swift in Sources */,
-				C1679853245AA7D800E7F8F6 /* GangNamGuViewController.swift in Sources */,
+				C19E8816245E893500DE7C83 /* WantToGoViewController.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				C1A1F99C2459D32800C4862E /* LostPasswordViewController.swift in Sources */,
 				C1679843245A9C7100E7F8F6 /* RestaurantRegistrationViewController.swift in Sources */,
+				C18D8C4B245DA67B00E495AA /* EventMainResponse.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				C18059D824581052005FB4EC /* RestaurantsResponse.swift in Sources */,
 				C181837B245BD6870049A62D /* SignUpByEmailResponse.swift in Sources */,
 				C16600F424594BE900E3800D /* MangoPickViewController.swift in Sources */,
+				C1E185C8245F043500563FB0 /* GangBukGuViewController.swift in Sources */,
 				C167983A245A823300E7F8F6 /* AlignPopUpDelegate.swift in Sources */,
 				C181837D245C19930049A62D /* EmailLoginDataManager.swift in Sources */,
 				C18D8C42245CFB4100E495AA /* SixthEventViewController.swift in Sources */,
 				C167985E245B027D00E7F8F6 /* RadiusPopUpDelegate.swift in Sources */,
 				C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */,
 				C18D8C36245CFB0500E495AA /* ThirdEventViewController.swift in Sources */,
-				C18D8C45245D013300E495AA /* EventResponse.swift in Sources */,
+				C1E185C4245F03F700563FB0 /* GangNamGuViewController.swift in Sources */,
+				C18D8C45245D013300E495AA /* EventDetailResponse.swift in Sources */,
 				C181836C245BC0830049A62D /* RecentSearchesViewController.swift in Sources */,
 				C18D8C2A245CF0BD00E495AA /* EventViewController.swift in Sources */,
+				C19E8812245E892200DE7C83 /* TimeLineViewController.swift in Sources */,
 				C1818379245BD6780049A62D /* SignUpByEmailDataManager.swift in Sources */,
+				C18D8C4E245DB2BF00E495AA /* CollectionViewCell.swift in Sources */,
 				C1679862245B02A200E7F8F6 /* FilterPopUp.swift in Sources */,
 				C1818363245BB02B0049A62D /* FindingGoodRestaurantDataManager.swift in Sources */,
 				C1818365245BB0CB0049A62D /* LocationResponse.swift in Sources */,
 				C1679864245B02AD00E7F8F6 /* FilterPopUpDelegate.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
+				C19E8806245E86F500DE7C83 /* PurchasedEatDealViewController.swift in Sources */,
 				C1818383245C62DA0049A62D /* LocationPopUpDelegate.swift in Sources */,
 				C1A3E30F2455290E00740325 /* SecondMainViewController.swift in Sources */,
 				C1B4A847245308F8005608F9 /* LocationAgreeViewController.swift in Sources */,
@@ -878,8 +972,10 @@
 				C1B4A83B2452A8C0005608F9 /* LoginViewController.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				C16601082459651300E3800D /* TopListViewController.swift in Sources */,
+				C19E880E245E890E00DE7C83 /* EatDealNoticeViewController.swift in Sources */,
 				C181837F245C19A90049A62D /* EmailLoginResponse.swift in Sources */,
-				C18D8C47245D014C00E495AA /* EventDataManager.swift in Sources */,
+				C18D8C49245DA66400E495AA /* EventMainDataManager.swift in Sources */,
+				C18D8C47245D014C00E495AA /* EventDetailDataManager.swift in Sources */,
 				C1679838245A822800E7F8F6 /* AlignPopUp.swift in Sources */,
 				C1818370245BC09B0049A62D /* FindingFriendsViewController.swift in Sources */,
 				C16600ED24594B3C00E3800D /* MainTabViewController.swift in Sources */,
@@ -888,9 +984,9 @@
 				C166010C24597F6200E3800D /* EmailLoginViewController.swift in Sources */,
 				C16600F024594BBB00E3800D /* FindingGoodRestaurantViewController.swift in Sources */,
 				C12E0064245416D000EE949F /* FourthMainViewController.swift in Sources */,
-				C1679857245AA7EA00E7F8F6 /* GangBukGuViewController.swift in Sources */,
-				C1679847245AA6AE00E7F8F6 /* LocationPopUpViewController.swift in Sources */,
+				C19E8800245E479D00DE7C83 /* DetailRestaurantViewController.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
+				C1E185CC245F048700563FB0 /* NearViewController.swift in Sources */,
 				BD9BF18322F9D1A4009E47EB /* SplashViewController.swift in Sources */,
 				C18D8C3E245CFB2800E495AA /* FifthEventViewController.swift in Sources */,
 			);

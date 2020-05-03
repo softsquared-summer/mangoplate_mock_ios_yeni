@@ -75,11 +75,11 @@
                                             <constraint firstAttribute="height" constant="20" id="58J-hm-ppa"/>
                                             <constraint firstAttribute="width" constant="30" id="hUP-z8-sgr"/>
                                         </constraints>
-                                        <state key="normal" image="down">
+                                        <state key="normal" image="ic_downward_arrow">
                                             <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="pressedLocationDismiss:" destination="t0e-8o-fwS" eventType="touchUpInside" id="kUt-x0-Jyt"/>
+                                            <action selector="pressedAlignDismiss:" destination="t0e-8o-fwS" eventType="touchUpInside" id="wX1-hf-fso"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -130,6 +130,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="down" width="1200" height="630"/>
+        <image name="ic_downward_arrow" width="32" height="20"/>
     </resources>
 </document>

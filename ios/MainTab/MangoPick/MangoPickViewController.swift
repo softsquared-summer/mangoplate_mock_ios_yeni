@@ -16,10 +16,10 @@ class MangoPickViewController: UITabBarController {
         super.viewDidLoad()
         let EatDeal = UINavigationController(rootViewController: EatDealViewController())
         EatDeal.tabBarItem =  UITabBarItem(title: "EAT딜", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
-        EatDeal.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -15)
+        EatDeal.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -20)
         let TopList = UINavigationController(rootViewController: TopListViewController())
         TopList.tabBarItem = UITabBarItem(title: "Top리스트", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
-        TopList.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -15) //이미지 제거
+        TopList.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -20) //이미지 제거
         
         
         let tabBarList = [EatDeal, TopList]
@@ -28,7 +28,7 @@ class MangoPickViewController: UITabBarController {
         UIApplication.shared.statusBarStyle = .lightContent
         
 
-//        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontㄲal: 0.0, vertical: -10.0)
+//        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -10.0)
 
         
     }

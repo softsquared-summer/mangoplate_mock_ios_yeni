@@ -10,70 +10,66 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecentRegionViewController" customModule="ios" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="fx1-Ph-jJF" id="7BV-ti-10F"/>
+                <outlet property="view" destination="wdK-Db-4PG" id="v5G-Ov-N5o"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fx1-Ph-jJF">
+        <view contentMode="scaleToFill" id="wdK-Db-4PG">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EF-sg-KxT">
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLl-EG-CHV">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qK6-0c-Fdy">
-                            <rect key="frame" x="0.0" y="536" width="414" height="360"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw8-0b-MSO">
-                                    <rect key="frame" x="352" y="294" width="42" height="32"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <state key="normal" title="지우기">
-                                        <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </state>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ast-bd-XEo">
-                                    <rect key="frame" x="160.5" y="294" width="93" height="33"/>
-                                    <color key="backgroundColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="93" id="aqo-Ke-fiQ"/>
-                                        <constraint firstAttribute="height" constant="33" id="feS-7l-7Yk"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                    <state key="normal" title="적용">
-                                        <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </state>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstItem="Ast-bd-XEo" firstAttribute="centerX" secondItem="qK6-0c-Fdy" secondAttribute="centerX" id="1Wq-p9-WzF"/>
-                                <constraint firstAttribute="trailing" secondItem="Jw8-0b-MSO" secondAttribute="trailing" constant="20" id="31Z-uY-7FP"/>
-                                <constraint firstAttribute="bottom" secondItem="Ast-bd-XEo" secondAttribute="bottom" constant="33" id="FLM-Y0-X8S"/>
-                                <constraint firstAttribute="height" constant="360" id="QFb-ud-wiQ"/>
-                                <constraint firstItem="Jw8-0b-MSO" firstAttribute="leading" secondItem="Ast-bd-XEo" secondAttribute="trailing" constant="98.5" id="jpK-Of-Ngy"/>
-                                <constraint firstAttribute="bottom" secondItem="Jw8-0b-MSO" secondAttribute="bottom" constant="34" id="zFM-il-mD2"/>
-                            </constraints>
-                        </view>
-                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvq-r4-sEM">
+                    <rect key="frame" x="0.0" y="536" width="414" height="360"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RL-9g-Th8">
+                            <rect key="frame" x="352" y="294" width="42" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="지우기">
+                                <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xil-J1-Vy1">
+                            <rect key="frame" x="160.5" y="294" width="93" height="33"/>
+                            <color key="backgroundColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="C5j-nN-yIU"/>
+                                <constraint firstAttribute="width" constant="93" id="Mao-uQ-yp6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <state key="normal" title="적용">
+                                <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="qK6-0c-Fdy" firstAttribute="leading" secondItem="1EF-sg-KxT" secondAttribute="leading" id="EXW-mN-L4H"/>
-                        <constraint firstAttribute="trailing" secondItem="qK6-0c-Fdy" secondAttribute="trailing" id="Lmt-Oj-oFy"/>
-                        <constraint firstAttribute="bottom" secondItem="qK6-0c-Fdy" secondAttribute="bottom" id="mpJ-V7-wyY"/>
+                        <constraint firstAttribute="bottom" secondItem="3RL-9g-Th8" secondAttribute="bottom" constant="34" id="OTn-0c-tDO"/>
+                        <constraint firstItem="3RL-9g-Th8" firstAttribute="leading" secondItem="xil-J1-Vy1" secondAttribute="trailing" constant="98.5" id="cak-rQ-WcZ"/>
+                        <constraint firstAttribute="bottom" secondItem="xil-J1-Vy1" secondAttribute="bottom" constant="33" id="dua-wn-fe4"/>
+                        <constraint firstItem="xil-J1-Vy1" firstAttribute="centerX" secondItem="xvq-r4-sEM" secondAttribute="centerX" id="hmT-bX-Dt3"/>
+                        <constraint firstAttribute="height" constant="360" id="lM0-Dv-n28"/>
+                        <constraint firstAttribute="trailing" secondItem="3RL-9g-Th8" secondAttribute="trailing" constant="20" id="qjP-Ng-Oee"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="1EF-sg-KxT" firstAttribute="leading" secondItem="n4g-nH-TQT" secondAttribute="leading" id="19a-YX-1IC"/>
-                <constraint firstItem="1EF-sg-KxT" firstAttribute="centerX" secondItem="fx1-Ph-jJF" secondAttribute="centerX" id="2nw-DI-z8W"/>
-                <constraint firstItem="1EF-sg-KxT" firstAttribute="top" secondItem="fx1-Ph-jJF" secondAttribute="top" id="aCh-BI-dYw"/>
-                <constraint firstAttribute="bottom" secondItem="1EF-sg-KxT" secondAttribute="bottom" id="cp5-bJ-8fF"/>
-                <constraint firstItem="n4g-nH-TQT" firstAttribute="trailing" secondItem="1EF-sg-KxT" secondAttribute="trailing" id="hdE-a6-dXN"/>
+                <constraint firstItem="LNf-f3-Sr6" firstAttribute="trailing" secondItem="xvq-r4-sEM" secondAttribute="trailing" id="23s-20-CRT"/>
+                <constraint firstAttribute="bottom" secondItem="xvq-r4-sEM" secondAttribute="bottom" id="9Eh-3w-HdS"/>
+                <constraint firstItem="QLl-EG-CHV" firstAttribute="top" secondItem="wdK-Db-4PG" secondAttribute="top" id="EXY-u2-bsS"/>
+                <constraint firstItem="xvq-r4-sEM" firstAttribute="centerX" secondItem="QLl-EG-CHV" secondAttribute="centerX" id="JHe-zV-urL"/>
+                <constraint firstAttribute="bottom" secondItem="QLl-EG-CHV" secondAttribute="bottom" id="Snm-Qq-hL9"/>
+                <constraint firstAttribute="trailing" secondItem="QLl-EG-CHV" secondAttribute="trailing" id="cvB-Yx-PZE"/>
+                <constraint firstItem="xvq-r4-sEM" firstAttribute="leading" secondItem="LNf-f3-Sr6" secondAttribute="leading" id="d7J-XH-OUa"/>
+                <constraint firstItem="QLl-EG-CHV" firstAttribute="leading" secondItem="wdK-Db-4PG" secondAttribute="leading" id="n4H-TP-IN5"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="n4g-nH-TQT"/>
-            <point key="canvasLocation" x="139" y="149"/>
+            <viewLayoutGuide key="safeArea" id="LNf-f3-Sr6"/>
+            <point key="canvasLocation" x="139" y="-520"/>
         </view>
     </objects>
 </document>

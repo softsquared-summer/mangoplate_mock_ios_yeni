@@ -7,5 +7,5 @@
 //
 
 protocol LocationPopUpDelegate {
-    func pressedDismissButton()
+    func pressedDismissLocationButton()
 }

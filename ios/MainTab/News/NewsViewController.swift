@@ -11,15 +11,16 @@ import UIKit
 class NewsViewController: UITabBarController {
 
     override func viewDidLoad() {
-        navigationController?.isNavigationBarHidden = true
+//        navigationController?.isNavigationBarHidden = true
 
         super.viewDidLoad()
         let newsAll = UINavigationController(rootViewController: NewsAllViewController())
         newsAll.tabBarItem =  UITabBarItem(title: "전체", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
-        newsAll.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -16)
+        newsAll.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 0)
         let newsFollowing = UINavigationController(rootViewController: NewsFollowingViewController())
         newsFollowing.tabBarItem = UITabBarItem(title: "팔로잉", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
-        newsFollowing.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -16) //이미지 제거
+        newsFollowing.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical:
+            0) //이미지 제거
         
         
         let tabBarList = [newsAll, newsFollowing]
@@ -35,9 +36,9 @@ class NewsViewController: UITabBarController {
         
         super.viewDidLayoutSubviews()
         var tabFrame            = tabBar.frame
-//        tabFrame.size.height    = 132
+        tabFrame.size.height    = 70
         print("tabFrame.size.height: \(tabFrame.size.height)")
-        tabFrame.origin.y       = view.frame.size.height - view.frame.size.height + 70
+        tabFrame.origin.y       = view.frame.size.height - view.frame.size.height
         tabBar.frame            = tabFrame
         
        

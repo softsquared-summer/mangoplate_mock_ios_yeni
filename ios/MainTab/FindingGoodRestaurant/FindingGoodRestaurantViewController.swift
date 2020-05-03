@@ -10,12 +10,46 @@ import UIKit
 import CoreLocation
 
 class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegate, CLLocationManagerDelegate {
-
+    
+    unowned var dataManager: EventMainDataManager {
+        get {
+            return EventMainDataManager()
+        }
+    }
+    private var restaurants: [UIImage] {
+        var restaurants:[UIImage] = []
+        for i in 0...50 {
+            //배열 길이 50 임의 지정
+            let index = i % 4
+            //이미지 16개 임의 지정
+            let image = UIImage(named: "restaurants\(index)")!
+            //이미지 api로 받아서 넣어야됨 일단 이미지 넣는 방식이 이렇다는거
+            restaurants.append(image)
+        }
+        return restaurants
+    }
+    private func setupFlowLayout() {
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets.zero
+        flowLayout.minimumInteritemSpacing = 5
+        flowLayout.minimumLineSpacing = 5
+        
+        let halfWidth = UIScreen.main.bounds.width / 2
+        flowLayout.itemSize = CGSize(width: halfWidth * 0.8 , height: halfWidth * 0.9)
+        self.collectionView.collectionViewLayout = flowLayout
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
+//        self.collectionView.isScrollEnabled = false
+//        self.collectionView.isPagingEnabled = false //스크롤 안되게
+        
+    }
+  
     var pageViewController : UIPageViewController!
         var pageTitles: NSArray!
         var pageImages: NSArray!
         var scrollView: UIScrollView!
         var colors:[UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.black]
+//        var images:[UIImage] = []
     
         
         var frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
@@ -23,7 +57,10 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
         var headerVisible = true
 
         var locationManager:CLLocationManager!
-
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
         @IBOutlet weak var pagecontrolContainer: UIView!
         @IBOutlet weak var pagerContainer: UIView!
        
@@ -35,9 +72,19 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
     
     @IBAction func presentLocationList(_ sender: UIButton) {
         
-        let locationPopUpvc = LocationPopUpViewController() //change this to your class name
-        locationPopUpvc.modalPresentationStyle = .custom
-        self.present(locationPopUpvc, animated: true, completion: nil)
+        let locationPopUpStoryboard = UIStoryboard(name: "LocationPopUp", bundle: Bundle.main)
+                guard let locationPopUp = locationPopUpStoryboard.instantiateViewController(withIdentifier: "LocationPopUp") as? LocationPopUp else {
+                    return
+                }
+                locationPopUp.locationPopUpDelegate = self
+                locationPopUp.modalPresentationStyle = .custom
+                // 기본 팝업 세팅 끝
+
+                self.present(locationPopUp, animated: true, completion: nil)
+        
+//        let locationPopUpvc = LocationPopUpViewController() //change this to your class name
+//        locationPopUpvc.modalPresentationStyle = .custom
+//        self.present(locationPopUpvc, animated: true, completion: nil)
         
 //
 //        let locationPopUpStoryboard = UIStoryboard(name: "LocationPopUp", bundle: Bundle.main)
@@ -126,21 +173,31 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
                 scrollView.delegate = self as! UIScrollViewDelegate
             configurePageControl()
             self.pagerContainer.addSubview(scrollView)
+//            dataManager.getMainEvents(self)
+            collectionView.delegate = self
+            collectionView.dataSource = self
+            collectionView.register(UINib(nibName: "CollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "CollectionViewCell")
+            setupFlowLayout()
             
             locationManager = CLLocationManager()
             locationManager.delegate = self
-                    locationManager.requestWhenInUseAuthorization() //권한 요청
-                    locationManager.desiredAccuracy = kCLLocationAccuracyBest
-                    locationManager.startUpdatingLocation()
-            
-
+            locationManager.requestWhenInUseAuthorization() //권한 요청
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+            let coor = locationManager.location?.coordinate
+            print("latitude : " + String(describing: coor!.latitude) + "/ longitude : " + String(describing: coor!.longitude))
+      
 
 
         }
         override func didReceiveMemoryWarning() {
                 super.didReceiveMemoryWarning()
                 // Dispose of any resources that can be recreated.
-            }
+        }
+    
+    
+
+
 
 
         override func viewDidAppear(_ animated: Bool) {
@@ -193,7 +250,7 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
 
 }
 
-extension FindingGoodRestaurantViewController: NoticePopUpDelegate, AlignPopUpDelegate, RadiusPopUpDelegate, FilterPopUpDelegate{
+extension FindingGoodRestaurantViewController: LocationPopUpDelegate, AlignPopUpDelegate, RadiusPopUpDelegate, FilterPopUpDelegate{
     
     func pressedDismiss100mRadiusButton() {
         self.distanceLabel.text = "100m"
@@ -213,6 +270,10 @@ extension FindingGoodRestaurantViewController: NoticePopUpDelegate, AlignPopUpDe
     
     func pressedDismissFilterButton() {
         //
+    }
+    func pressedDismissLocationButton(){
+        locationButton.setTitle("금천구", for: .normal)
+//내 위치 받아서 또는 지역 선택한거 버튼 선택한거 뜨게하는 곳 api연결해서
     }
     
 
@@ -234,4 +295,37 @@ extension FindingGoodRestaurantViewController: NoticePopUpDelegate, AlignPopUpDe
     
 
 
+}
+
+extension FindingGoodRestaurantViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+        //식당 갯수로 바꿔야함
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {
+            return UICollectionViewCell()
+        }
+    cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
+    
+        cell.restaurantImageview.image = restaurants[indexPath.row]
+        return cell
+    }
+    
+    @objc func tap(_ sender: UITapGestureRecognizer) {
+
+       let location = sender.location(in: self.collectionView)
+       let indexPath = self.collectionView.indexPathForItem(at: location)
+
+       if let index = indexPath {
+          print("Got clicked on index: \(index)!")
+       }
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+      return CGSize(width: 170, height: 210)
+
+    } 
 }

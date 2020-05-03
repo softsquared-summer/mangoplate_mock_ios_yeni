@@ -22,6 +22,11 @@ class LoginViewController: UIViewController {
 //
 //    }
     
+    @IBAction func testGoToMain(_ sender: UIButton) {
+                let MainTabvc = MainTabViewController() //change this to your class name
+                MainTabvc.modalPresentationStyle = .fullScreen
+                self.present(MainTabvc, animated: true, completion: nil)
+    }
     
     @IBAction func emailLoginButton(_ sender: UIButton) {
 //        let emailLoginVC = EmailLoginViewController()

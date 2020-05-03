@@ -184,6 +184,16 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9B4-Zo-s9g">
                                     <rect key="frame" x="0.0" y="392" width="414" height="100"/>
                                     <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyb-Nq-92M">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="GTL-o9-xDR"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="presentTimeLineVC:" destination="-1" eventType="touchUpInside" id="bcU-Lh-c7s"/>
+                                            </connections>
+                                        </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="section3item0" translatesAutoresizingMaskIntoConstraints="NO" id="EET-hH-ZeH">
                                             <rect key="frame" x="15" y="10" width="25" height="25"/>
                                             <color key="tintColor" red="0.5999760032" green="0.60006755590000005" blue="0.59607833619999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -297,6 +307,7 @@
                                         <constraint firstItem="EET-hH-ZeH" firstAttribute="top" secondItem="9B4-Zo-s9g" secondAttribute="top" constant="10" id="IwO-MO-QVh"/>
                                         <constraint firstItem="Uaa-cc-Bqf" firstAttribute="top" secondItem="9B4-Zo-s9g" secondAttribute="top" constant="14" id="Kzu-PT-MT4"/>
                                         <constraint firstItem="Uaa-cc-Bqf" firstAttribute="leading" secondItem="EET-hH-ZeH" secondAttribute="trailing" constant="10" id="Miy-qf-9V7"/>
+                                        <constraint firstItem="Vyb-Nq-92M" firstAttribute="top" secondItem="9B4-Zo-s9g" secondAttribute="top" id="Omp-OK-isd"/>
                                         <constraint firstAttribute="bottom" secondItem="Nfg-Ug-0uK" secondAttribute="bottom" constant="10" id="PrC-Uj-E5k"/>
                                         <constraint firstItem="Nfg-Ug-0uK" firstAttribute="leading" secondItem="9B4-Zo-s9g" secondAttribute="leading" constant="50" id="QwT-Lf-sAR"/>
                                         <constraint firstItem="6YH-et-oeC" firstAttribute="trailing" secondItem="Nfg-Ug-0uK" secondAttribute="trailing" constant="-24" id="WG1-L5-Pjf"/>
@@ -310,6 +321,8 @@
                                         <constraint firstItem="Cib-3Q-rhn" firstAttribute="top" secondItem="9B4-Zo-s9g" secondAttribute="top" constant="36" id="vQS-vS-OrR"/>
                                         <constraint firstItem="yZO-DC-ELx" firstAttribute="top" secondItem="9B4-Zo-s9g" secondAttribute="top" constant="36" id="wca-ee-4hR"/>
                                         <constraint firstItem="6YH-et-oeC" firstAttribute="top" secondItem="CgZ-QM-eMA" secondAttribute="bottom" constant="7" id="y9x-gE-Cu1"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vyb-Nq-92M" secondAttribute="trailing" id="ypU-pu-Mr4"/>
+                                        <constraint firstItem="Vyb-Nq-92M" firstAttribute="leading" secondItem="9B4-Zo-s9g" secondAttribute="leading" id="z5w-3q-zRK"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vx-gX-0uI">
@@ -434,6 +447,9 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="70" id="EMe-yM-ybs"/>
                                     </constraints>
+                                    <connections>
+                                        <action selector="presentPurchasedEatDealVC:" destination="-1" eventType="touchUpInside" id="aMk-0u-H5i"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOH-Tc-8KS">
                                     <rect key="frame" x="0.0" y="312" width="414" height="70"/>
@@ -441,6 +457,9 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="70" id="EUF-Nq-eqj"/>
                                     </constraints>
+                                    <connections>
+                                        <action selector="presentEatDealNoticeVC:" destination="-1" eventType="touchUpInside" id="yL5-gf-9gD"/>
+                                    </connections>
                                 </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="section2item0" translatesAutoresizingMaskIntoConstraints="NO" id="bwL-3H-iaa">
                                     <rect key="frame" x="15" y="260" width="30" height="30"/>
@@ -476,6 +495,9 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="70" id="oKu-Pl-biY"/>
                                     </constraints>
+                                    <connections>
+                                        <action selector="presentWantToGoVC:" destination="-1" eventType="touchUpInside" id="1WP-zg-urA"/>
+                                    </connections>
                                 </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="section4item0" translatesAutoresizingMaskIntoConstraints="NO" id="Q92-G3-K1j">
                                     <rect key="frame" x="15" y="514" width="30" height="30"/>

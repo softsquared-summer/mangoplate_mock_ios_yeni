@@ -43,7 +43,8 @@ class PlusViewController: UIViewController {
     }//뷰 띄워주고 엑스 버튼 누르면 이전 뷰로 돌아가도록(이전에 선택되어있던 탭으로)
     
     @IBAction func PresentPreviousTab(_ sender: UIButton) {
-        
+        self.dismiss(animated: false, completion: nil)
+
     }//x버튼 누르면 이전에 탭했었던 뷰 보여주기
     
 

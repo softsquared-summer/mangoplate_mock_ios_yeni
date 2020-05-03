@@ -9,53 +9,69 @@
     </dependencies>
     <scenes>
         <!--Location Pop Up-->
-        <scene sceneID="Amn-Mu-GL6">
+        <scene sceneID="s04-Vn-UfR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bul-C0-DZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="LocationPopUp" id="G1c-Sw-8Mf" customClass="LocationPopUp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JCl-HY-Qvv">
+                <viewController storyboardIdentifier="LocationPopUp" id="6no-l9-ZA7" customClass="LocationPopUp" customModule="ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DT8-VN-clG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXm-XZ-chF">
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhs-tP-qcC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jye-md-XYb">
-                                <rect key="frame" x="0.0" y="496" width="414" height="400"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vo-VZ-RSd">
+                                <rect key="frame" x="0.0" y="536" width="414" height="360"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="974-yl-9gn">
+                                        <rect key="frame" x="352" y="294.5" width="42" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="지우기">
+                                            <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMA-SG-Mgf">
+                                        <rect key="frame" x="160.5" y="294" width="93" height="33"/>
+                                        <color key="backgroundColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="Fuj-aZ-rSJ"/>
+                                            <constraint firstAttribute="width" constant="93" id="vKf-MC-g5p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="적용">
+                                            <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedSettingLocation:" destination="6no-l9-ZA7" eventType="touchUpInside" id="MMk-wf-rT0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="aLM-jD-xJQ"/>
+                                    <constraint firstItem="974-yl-9gn" firstAttribute="centerY" secondItem="MMA-SG-Mgf" secondAttribute="centerY" id="2l6-eN-9Ji"/>
+                                    <constraint firstAttribute="trailing" secondItem="974-yl-9gn" secondAttribute="trailing" constant="20" id="Pbb-Zd-EVz"/>
+                                    <constraint firstItem="MMA-SG-Mgf" firstAttribute="centerX" secondItem="8vo-VZ-RSd" secondAttribute="centerX" id="cH0-RM-H6S"/>
+                                    <constraint firstAttribute="height" constant="360" id="koz-xl-qgn"/>
+                                    <constraint firstAttribute="bottom" secondItem="MMA-SG-Mgf" secondAttribute="bottom" constant="33" id="psG-aO-IzO"/>
                                 </constraints>
                             </view>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YE-Ym-Erf">
-                                <rect key="frame" x="0.0" y="496" width="414" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="최근지역" id="Saz-41-D2X"/>
-                                    <tabBarItem title="내근처" id="yKJ-tM-XlT"/>
-                                    <tabBarItem title="서울-강남" id="Tlo-23-fLh"/>
-                                    <tabBarItem title="서울-강북" id="CCj-IX-5JR"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3YE-Ym-Erf" firstAttribute="trailing" secondItem="KZW-oj-f4d" secondAttribute="trailing" id="6V6-we-gAa"/>
-                            <constraint firstItem="jye-md-XYb" firstAttribute="centerX" secondItem="DXm-XZ-chF" secondAttribute="centerX" id="9Eg-be-yym"/>
-                            <constraint firstAttribute="bottom" secondItem="jye-md-XYb" secondAttribute="bottom" id="C6R-qM-zfV"/>
-                            <constraint firstItem="DXm-XZ-chF" firstAttribute="top" secondItem="JCl-HY-Qvv" secondAttribute="top" id="TGW-PH-2JJ"/>
-                            <constraint firstItem="3YE-Ym-Erf" firstAttribute="leading" secondItem="KZW-oj-f4d" secondAttribute="leading" id="WGq-hv-1wY"/>
-                            <constraint firstItem="jye-md-XYb" firstAttribute="top" secondItem="3YE-Ym-Erf" secondAttribute="top" id="a3M-An-CVg"/>
-                            <constraint firstItem="DXm-XZ-chF" firstAttribute="leading" secondItem="JCl-HY-Qvv" secondAttribute="leading" id="fDl-Uj-wp2"/>
-                            <constraint firstAttribute="bottom" secondItem="DXm-XZ-chF" secondAttribute="bottom" id="m6x-NX-muj"/>
-                            <constraint firstAttribute="trailing" secondItem="DXm-XZ-chF" secondAttribute="trailing" id="nmd-5o-4Ke"/>
-                            <constraint firstItem="jye-md-XYb" firstAttribute="leading" secondItem="KZW-oj-f4d" secondAttribute="leading" id="osN-uv-tOM"/>
-                            <constraint firstItem="KZW-oj-f4d" firstAttribute="trailing" secondItem="jye-md-XYb" secondAttribute="trailing" id="vI4-Xn-slA"/>
+                            <constraint firstItem="8vo-VZ-RSd" firstAttribute="leading" secondItem="zjK-PT-Prw" secondAttribute="leading" id="6yH-4z-NFb"/>
+                            <constraint firstItem="zjK-PT-Prw" firstAttribute="trailing" secondItem="8vo-VZ-RSd" secondAttribute="trailing" id="Lnz-tS-vwa"/>
+                            <constraint firstItem="Lhs-tP-qcC" firstAttribute="top" secondItem="DT8-VN-clG" secondAttribute="top" id="LsT-tg-QBU"/>
+                            <constraint firstItem="Lhs-tP-qcC" firstAttribute="leading" secondItem="DT8-VN-clG" secondAttribute="leading" id="SvZ-b4-yW8"/>
+                            <constraint firstItem="8vo-VZ-RSd" firstAttribute="centerX" secondItem="Lhs-tP-qcC" secondAttribute="centerX" id="Z3n-PH-rXq"/>
+                            <constraint firstAttribute="bottom" secondItem="Lhs-tP-qcC" secondAttribute="bottom" id="aAr-6C-ESf"/>
+                            <constraint firstAttribute="bottom" secondItem="8vo-VZ-RSd" secondAttribute="bottom" id="dfK-Os-WvZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Lhs-tP-qcC" secondAttribute="trailing" id="gfR-nL-8VM"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="KZW-oj-f4d"/>
+                        <viewLayoutGuide key="safeArea" id="zjK-PT-Prw"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uod-EP-grG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-71.014492753623188" y="61.607142857142854"/>
         </scene>

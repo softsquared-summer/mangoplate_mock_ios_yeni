@@ -24,10 +24,10 @@
                                 <rect key="frame" x="0.0" y="146" width="414" height="750"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-hP-wV9">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdD-W5-QgO">
-                                                <rect key="frame" x="20" y="12" width="35" height="36"/>
+                                                <rect key="frame" x="20" y="7" width="35" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="취소">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,7 +37,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40h-61-wlm">
-                                                <rect key="frame" x="320" y="12" width="74" height="36"/>
+                                                <rect key="frame" x="320" y="7" width="74" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="필터 적용">
                                                     <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -49,12 +49,12 @@
                                             <constraint firstAttribute="trailing" secondItem="40h-61-wlm" secondAttribute="trailing" constant="20" id="0Wm-Vb-bC9"/>
                                             <constraint firstItem="QdD-W5-QgO" firstAttribute="leading" secondItem="Y9P-hP-wV9" secondAttribute="leading" constant="20" id="aFs-lN-5nc"/>
                                             <constraint firstItem="QdD-W5-QgO" firstAttribute="centerY" secondItem="Y9P-hP-wV9" secondAttribute="centerY" id="cFC-Mn-3Cq"/>
-                                            <constraint firstAttribute="height" constant="60" id="rV2-7N-gmI"/>
+                                            <constraint firstAttribute="height" constant="50" id="rV2-7N-gmI"/>
                                             <constraint firstItem="40h-61-wlm" firstAttribute="centerY" secondItem="Y9P-hP-wV9" secondAttribute="centerY" id="xpc-Ps-XSl"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="be3-T5-Mrc">
-                                        <rect key="frame" x="0.0" y="331" width="414" height="240"/>
+                                        <rect key="frame" x="0.0" y="321" width="414" height="240"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가격 / 1인당" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEi-gZ-tTD">
                                                 <rect key="frame" x="159.5" y="20" width="95" height="24"/>
@@ -78,8 +78,69 @@
                                             <constraint firstAttribute="height" constant="240" id="ORa-uu-Qej"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiW-0S-eG1">
+                                        <rect key="frame" x="0.0" y="386" width="414" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlI-Zb-b3W">
+                                                <rect key="frame" x="15" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="IYw-ty-qDa"/>
+                                                    <constraint firstAttribute="height" constant="90" id="yFr-3v-aq1"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_lessThanTenThousandWon_gray"/>
+                                                <connections>
+                                                    <action selector="changelessThanTenThousandWonColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="HeX-6a-x0i"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7t-lA-zxA">
+                                                <rect key="frame" x="115" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="4Xc-ct-3ar"/>
+                                                    <constraint firstAttribute="width" constant="90" id="sfK-hb-pfQ"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_tenThousandWonRange_gray"/>
+                                                <connections>
+                                                    <action selector="changeTenThousandWonRangeColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="lvx-gG-dGC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhg-Ny-Rsd">
+                                                <rect key="frame" x="314" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="doh-8X-8Vw"/>
+                                                    <constraint firstAttribute="width" constant="90" id="ioN-Ab-Pb6"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_thirtyThousandWonRange_gray"/>
+                                                <connections>
+                                                    <action selector="changeThirtyThousandWonRangeColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="7LX-yt-LBd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Y-7X-tKC">
+                                                <rect key="frame" x="215" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="4pK-7V-AGz"/>
+                                                    <constraint firstAttribute="height" constant="90" id="dX1-Rn-44I"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_twentyThousandWonRange_gray"/>
+                                                <connections>
+                                                    <action selector="changetwentyThousandWonRangeColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="DNM-wf-GMZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="S7t-lA-zxA" firstAttribute="centerY" secondItem="EiW-0S-eG1" secondAttribute="centerY" id="0be-qH-zy0"/>
+                                            <constraint firstItem="D5Y-7X-tKC" firstAttribute="centerY" secondItem="EiW-0S-eG1" secondAttribute="centerY" id="1rJ-f7-swC"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bhg-Ny-Rsd" secondAttribute="trailing" constant="10" id="FtL-Jm-HES"/>
+                                            <constraint firstItem="rlI-Zb-b3W" firstAttribute="leading" secondItem="EiW-0S-eG1" secondAttribute="leading" constant="15" id="Lae-hC-pmW"/>
+                                            <constraint firstItem="Bhg-Ny-Rsd" firstAttribute="centerY" secondItem="EiW-0S-eG1" secondAttribute="centerY" id="Wjc-y9-bne"/>
+                                            <constraint firstAttribute="height" constant="110" id="b3x-VM-W9E"/>
+                                            <constraint firstItem="rlI-Zb-b3W" firstAttribute="centerY" secondItem="EiW-0S-eG1" secondAttribute="centerY" id="cHv-va-mK8"/>
+                                            <constraint firstItem="S7t-lA-zxA" firstAttribute="leading" secondItem="rlI-Zb-b3W" secondAttribute="trailing" constant="10" id="upl-lx-q7a"/>
+                                            <constraint firstItem="D5Y-7X-tKC" firstAttribute="leading" secondItem="S7t-lA-zxA" secondAttribute="trailing" constant="10" id="wMZ-M3-xhZ"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPL-WU-VS6">
-                                        <rect key="frame" x="0.0" y="571" width="414" height="179"/>
+                                        <rect key="frame" x="0.0" y="561" width="414" height="189"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trL-9c-tWO">
                                                 <rect key="frame" x="189.5" y="20" width="35" height="24"/>
@@ -88,18 +149,24 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdV-vv-BR0">
-                                                <rect key="frame" x="257" y="73" width="78" height="33"/>
+                                                <rect key="frame" x="257" y="73" width="78" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="주차 불가능">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="changeNoParkingAvailableColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="41o-jy-Ajh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPU-tF-Tal">
-                                                <rect key="frame" x="91" y="73" width="64" height="33"/>
+                                                <rect key="frame" x="91" y="73" width="64" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="주차 가능">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="changeParkingAvailableColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="zbx-fu-pkk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -120,8 +187,11 @@
                                     <constraint firstAttribute="bottom" secondItem="HPL-WU-VS6" secondAttribute="bottom" id="24l-Y5-ZVp"/>
                                     <constraint firstItem="HPL-WU-VS6" firstAttribute="top" secondItem="be3-T5-Mrc" secondAttribute="bottom" id="DZa-yV-3id"/>
                                     <constraint firstItem="Y9P-hP-wV9" firstAttribute="top" secondItem="nSH-h5-PKy" secondAttribute="top" id="IDt-P9-IdN"/>
+                                    <constraint firstAttribute="trailing" secondItem="EiW-0S-eG1" secondAttribute="trailing" id="KNp-6H-uT4"/>
+                                    <constraint firstItem="EiW-0S-eG1" firstAttribute="top" secondItem="be3-T5-Mrc" secondAttribute="bottom" constant="-175" id="LQv-AO-Wd6"/>
                                     <constraint firstAttribute="height" constant="750" id="Q8C-2B-Qhw"/>
                                     <constraint firstItem="HPL-WU-VS6" firstAttribute="leading" secondItem="nSH-h5-PKy" secondAttribute="leading" id="RT4-qa-9PK"/>
+                                    <constraint firstItem="EiW-0S-eG1" firstAttribute="leading" secondItem="nSH-h5-PKy" secondAttribute="leading" id="dTp-dW-WJn"/>
                                     <constraint firstItem="be3-T5-Mrc" firstAttribute="leading" secondItem="nSH-h5-PKy" secondAttribute="leading" id="gVu-A8-t8g"/>
                                     <constraint firstAttribute="trailing" secondItem="be3-T5-Mrc" secondAttribute="trailing" id="kxy-Dh-ozy"/>
                                     <constraint firstAttribute="trailing" secondItem="Y9P-hP-wV9" secondAttribute="trailing" id="tKp-eT-40O"/>
@@ -130,7 +200,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCk-pw-BJc">
-                                <rect key="frame" x="0.0" y="476" width="414" height="2"/>
+                                <rect key="frame" x="0.0" y="466" width="414" height="2"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24K-un-x2p">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -149,7 +219,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2J-IY-Ohz">
-                                <rect key="frame" x="0.0" y="717" width="414" height="2"/>
+                                <rect key="frame" x="0.0" y="707" width="414" height="2"/>
                                 <subviews>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngs-qz-zjM">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -168,10 +238,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7W-fQ-AVZ">
-                                <rect key="frame" x="0.0" y="206" width="414" height="270"/>
+                                <rect key="frame" x="0.0" y="196" width="414" height="270"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="음식종류" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAM-ft-qMO">
-                                        <rect key="frame" x="172" y="20" width="70" height="24"/>
+                                        <rect key="frame" x="172" y="20" width="70" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -182,14 +252,143 @@
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1y-9b-cGv">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1f-ca-iq1">
+                                                <rect key="frame" x="15" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="69Q-Jx-9Gg"/>
+                                                    <constraint firstAttribute="width" constant="90" id="iiz-NB-Aq3"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_korean_food_gray"/>
+                                                <connections>
+                                                    <action selector="changekoreanfoodImageColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="TX6-HP-EqV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7G-hI-XQY">
+                                                <rect key="frame" x="115" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="gMe-ew-21Q"/>
+                                                    <constraint firstAttribute="width" constant="90" id="yOc-xX-J0Y"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_japanese_food_gray"/>
+                                                <connections>
+                                                    <action selector="changejapanesefoodImageColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="TqY-cz-AsV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-bh-B1e">
+                                                <rect key="frame" x="314" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="O26-ZG-tbZ"/>
+                                                    <constraint firstAttribute="width" constant="90" id="xEU-es-HXa"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_western_food_gray"/>
+                                                <connections>
+                                                    <action selector="changewesternfoodImageColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="p3w-UO-Tbq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1u-a2-5m0">
+                                                <rect key="frame" x="215" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="0bT-c8-HbQ"/>
+                                                    <constraint firstAttribute="width" constant="90" id="zhS-Pt-HeL"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_chinese_food_gray"/>
+                                                <connections>
+                                                    <action selector="changechinesefoodImageColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="IwQ-aR-DKY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="O1f-ca-iq1" firstAttribute="leading" secondItem="d1y-9b-cGv" secondAttribute="leading" constant="15" id="2gg-Qw-KDb"/>
+                                            <constraint firstAttribute="trailing" secondItem="jzo-bh-B1e" secondAttribute="trailing" constant="10" id="8tb-EM-UkC"/>
+                                            <constraint firstItem="jzo-bh-B1e" firstAttribute="centerY" secondItem="d1y-9b-cGv" secondAttribute="centerY" id="EW6-uT-rTR"/>
+                                            <constraint firstItem="O1f-ca-iq1" firstAttribute="centerY" secondItem="d1y-9b-cGv" secondAttribute="centerY" id="HER-J5-vuk"/>
+                                            <constraint firstAttribute="height" constant="110" id="MNH-H1-Cty"/>
+                                            <constraint firstItem="Q1u-a2-5m0" firstAttribute="leading" secondItem="R7G-hI-XQY" secondAttribute="trailing" constant="10" id="YHA-VO-YmL"/>
+                                            <constraint firstItem="R7G-hI-XQY" firstAttribute="leading" secondItem="O1f-ca-iq1" secondAttribute="trailing" constant="10" id="c8z-FA-gVo"/>
+                                            <constraint firstItem="R7G-hI-XQY" firstAttribute="centerY" secondItem="d1y-9b-cGv" secondAttribute="centerY" id="qkQ-JV-gXd"/>
+                                            <constraint firstItem="Q1u-a2-5m0" firstAttribute="centerY" secondItem="d1y-9b-cGv" secondAttribute="centerY" id="w65-Os-WWD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpy-p4-71w">
+                                        <rect key="frame" x="0.0" y="160" width="414" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vb-vf-xLj">
+                                                <rect key="frame" x="15" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="5Rp-y7-J0D"/>
+                                                    <constraint firstAttribute="height" constant="90" id="b8s-2P-eGJ"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_world_food_gray"/>
+                                                <connections>
+                                                    <action selector="changeworldfoodImageColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="Iw2-9Y-AMc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbg-CU-Rk8">
+                                                <rect key="frame" x="115" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="MVb-rm-gCi"/>
+                                                    <constraint firstAttribute="height" constant="90" id="zTA-0P-hRi"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_buffet_gray"/>
+                                                <connections>
+                                                    <action selector="changebuffetImageColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="3fB-OB-nVU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htg-Hc-GrJ">
+                                                <rect key="frame" x="314" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="QBe-P2-fQQ"/>
+                                                    <constraint firstAttribute="width" constant="90" id="rNf-2b-pWp"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_pub_gray"/>
+                                                <connections>
+                                                    <action selector="changepubImageColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="8k5-gm-YwA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npq-WJ-VPb">
+                                                <rect key="frame" x="215" y="10" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="Ckz-KI-prs"/>
+                                                    <constraint firstAttribute="width" constant="90" id="lsn-ys-4HK"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_cafe_gray"/>
+                                                <connections>
+                                                    <action selector="changecafeImageColor:" destination="Zrs-cw-OmY" eventType="touchUpInside" id="JaL-11-2qF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="npq-WJ-VPb" firstAttribute="leading" secondItem="xbg-CU-Rk8" secondAttribute="trailing" constant="10" id="4PV-xB-fmc"/>
+                                            <constraint firstItem="xbg-CU-Rk8" firstAttribute="centerY" secondItem="mpy-p4-71w" secondAttribute="centerY" id="S9S-3b-s3N"/>
+                                            <constraint firstItem="xbg-CU-Rk8" firstAttribute="leading" secondItem="9Vb-vf-xLj" secondAttribute="trailing" constant="10" id="aFa-F5-leQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="htg-Hc-GrJ" secondAttribute="trailing" constant="10" id="djd-kh-geo"/>
+                                            <constraint firstItem="npq-WJ-VPb" firstAttribute="centerY" secondItem="mpy-p4-71w" secondAttribute="centerY" id="dtz-VY-x8X"/>
+                                            <constraint firstAttribute="height" constant="110" id="nM2-Qn-9U0"/>
+                                            <constraint firstItem="9Vb-vf-xLj" firstAttribute="leading" secondItem="mpy-p4-71w" secondAttribute="leading" constant="15" id="oJK-QH-4b1"/>
+                                            <constraint firstItem="htg-Hc-GrJ" firstAttribute="centerY" secondItem="mpy-p4-71w" secondAttribute="centerY" id="pDA-Nq-k65"/>
+                                            <constraint firstItem="9Vb-vf-xLj" firstAttribute="centerY" secondItem="mpy-p4-71w" secondAttribute="centerY" id="qQ6-97-Ql9"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="d1y-9b-cGv" firstAttribute="leading" secondItem="S7W-fQ-AVZ" secondAttribute="leading" id="7RG-FY-bul"/>
                                     <constraint firstAttribute="trailing" secondItem="Btd-HR-ZHX" secondAttribute="trailing" constant="20" id="Flg-Dt-AMk"/>
+                                    <constraint firstItem="mpy-p4-71w" firstAttribute="top" secondItem="d1y-9b-cGv" secondAttribute="bottom" id="GuI-wd-KZr"/>
                                     <constraint firstItem="Btd-HR-ZHX" firstAttribute="top" secondItem="S7W-fQ-AVZ" secondAttribute="top" constant="20" id="I4f-sm-sF4"/>
                                     <constraint firstAttribute="height" constant="270" id="JaD-gG-rHM"/>
                                     <constraint firstItem="cAM-ft-qMO" firstAttribute="centerX" secondItem="S7W-fQ-AVZ" secondAttribute="centerX" id="Tmd-JC-6eP"/>
                                     <constraint firstItem="cAM-ft-qMO" firstAttribute="top" secondItem="S7W-fQ-AVZ" secondAttribute="top" constant="20" id="amS-KL-G5V"/>
+                                    <constraint firstAttribute="trailing" secondItem="mpy-p4-71w" secondAttribute="trailing" id="g1D-b5-B38"/>
+                                    <constraint firstItem="mpy-p4-71w" firstAttribute="leading" secondItem="S7W-fQ-AVZ" secondAttribute="leading" id="gqW-z6-xYF"/>
+                                    <constraint firstAttribute="trailing" secondItem="d1y-9b-cGv" secondAttribute="trailing" id="l7l-Y7-cCE"/>
+                                    <constraint firstItem="d1y-9b-cGv" firstAttribute="top" secondItem="cAM-ft-qMO" secondAttribute="bottom" id="x9K-QI-ftF"/>
+                                    <constraint firstAttribute="bottom" secondItem="mpy-p4-71w" secondAttribute="bottom" id="zaI-lS-OB9"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -216,10 +415,40 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ikK-YZ-1F8"/>
                     </view>
+                    <connections>
+                        <outlet property="NoParkingAvailableButton" destination="AdV-vv-BR0" id="ntz-89-6tX"/>
+                        <outlet property="ParkingAvailableButton" destination="oPU-tF-Tal" id="wH7-SG-cCf"/>
+                        <outlet property="buffetButton" destination="xbg-CU-Rk8" id="aub-5Z-ecC"/>
+                        <outlet property="cafeButton" destination="npq-WJ-VPb" id="wiG-PP-E19"/>
+                        <outlet property="chinesefoodButton" destination="Q1u-a2-5m0" id="KGS-oy-P1S"/>
+                        <outlet property="japanesefoodButton" destination="R7G-hI-XQY" id="F8l-s2-RTA"/>
+                        <outlet property="koreanfoodButton" destination="O1f-ca-iq1" id="XiO-6l-x8d"/>
+                        <outlet property="lessThanTenThousandWonButton" destination="rlI-Zb-b3W" id="8rD-oP-su5"/>
+                        <outlet property="pubButton" destination="htg-Hc-GrJ" id="6kR-hX-MfO"/>
+                        <outlet property="tenThousandWonRangeButton" destination="S7t-lA-zxA" id="J06-LQ-gLB"/>
+                        <outlet property="thirtyThousandWonRangeButton" destination="Bhg-Ny-Rsd" id="DGR-3N-aS5"/>
+                        <outlet property="twentyThousandWonRangeButton" destination="D5Y-7X-tKC" id="sjg-JB-911"/>
+                        <outlet property="westernfoodButton" destination="jzo-bh-B1e" id="Yjc-QC-ZSy"/>
+                        <outlet property="worldfoodButton" destination="9Vb-vf-xLj" id="laI-wr-N7n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMU-5M-9Pf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-71.014492753623188" y="61.607142857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_buffet_gray" width="219" height="219"/>
+        <image name="ic_cafe_gray" width="219" height="219"/>
+        <image name="ic_chinese_food_gray" width="219" height="219"/>
+        <image name="ic_japanese_food_gray" width="219" height="219"/>
+        <image name="ic_korean_food_gray" width="221" height="219"/>
+        <image name="ic_lessThanTenThousandWon_gray" width="98" height="103"/>
+        <image name="ic_pub_gray" width="221" height="219"/>
+        <image name="ic_tenThousandWonRange_gray" width="101" height="96"/>
+        <image name="ic_thirtyThousandWonRange_gray" width="107" height="96"/>
+        <image name="ic_twentyThousandWonRange_gray" width="101" height="96"/>
+        <image name="ic_western_food_gray" width="221" height="219"/>
+        <image name="ic_world_food_gray" width="221" height="219"/>
+    </resources>
 </document>

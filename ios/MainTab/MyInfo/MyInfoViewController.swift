@@ -53,8 +53,35 @@ class MyInfoViewController: UIViewController {
         self.present(eventViewController, animated: true, completion: nil)
     }
     
-    
+    @IBAction func presentPurchasedEatDealVC(_ sender: UIButton) {
+        let eatDealViewController: UINavigationController = UINavigationController(rootViewController: PurchasedEatDealViewController())
+        eatDealViewController.modalPresentationStyle = .fullScreen
 
+        self.present(eatDealViewController, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func presentEatDealNoticeVC(_ sender: UIButton) {
+        let eatDealNoticeViewController: UINavigationController = UINavigationController(rootViewController: EatDealNoticeViewController())
+        eatDealNoticeViewController.modalPresentationStyle = .fullScreen
+
+        self.present(eatDealNoticeViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func presentTimeLineVC(_ sender: UIButton) {
+        let timeLineViewController: UINavigationController = UINavigationController(rootViewController: TimeLineViewController())
+        timeLineViewController.modalPresentationStyle = .fullScreen
+
+        self.present(timeLineViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func presentWantToGoVC(_ sender: UIButton) {
+        let wantToGoViewController: UINavigationController = UINavigationController(rootViewController: WantToGoViewController())
+        wantToGoViewController.modalPresentationStyle = .fullScreen
+
+        self.present(wantToGoViewController, animated: true, completion: nil)
+    }
+    
 
     /*
     // MARK: - Navigation

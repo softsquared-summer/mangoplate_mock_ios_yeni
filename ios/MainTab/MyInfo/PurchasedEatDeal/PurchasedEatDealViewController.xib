@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PurchasedEatDealViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기 메뉴를 맛볼 수 있는 기회!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scQ-kW-yut">
+                    <rect key="frame" x="105.5" y="98" width="203" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" red="0.32941433790000002" green="0.33340162039999999" blue="0.32941150670000002" alpha="0.5273972603" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h5a-lh-dnz">
+                    <rect key="frame" x="153.5" y="169" width="107" height="32"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="EAT딜 보러가기">
+                                <attributes>
+                                    <color key="NSColor" red="0.96848052740000001" green="0.50179405919999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="17" name="AppleSDGothicNeo-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="presentEatDealVC:" destination="-1" eventType="touchUpInside" id="GCE-Pv-SGC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="할인된 가격으로" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEY-cQ-Ql3">
+                    <rect key="frame" x="153" y="74" width="108" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" red="0.32941433790000002" green="0.33340162039999999" blue="0.32941150670000002" alpha="0.5273972602739726" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xtv-QQ-qJc">
+                    <rect key="frame" x="0.0" y="201" width="414" height="2"/>
+                    <subviews>
+                        <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTi-Ij-mds">
+                            <rect key="frame" x="155" y="0.0" width="104" height="1"/>
+                            <color key="backgroundColor" red="0.96848052740000001" green="0.50179405919999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="J9j-Hc-qk1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="yTi-Ij-mds" firstAttribute="top" secondItem="xtv-QQ-qJc" secondAttribute="top" id="0jW-iS-KIa"/>
+                        <constraint firstItem="yTi-Ij-mds" firstAttribute="leading" secondItem="xtv-QQ-qJc" secondAttribute="leading" constant="155" id="7Fx-8Z-fha"/>
+                        <constraint firstAttribute="height" constant="2" id="YOZ-dp-uKV"/>
+                        <constraint firstAttribute="trailing" secondItem="yTi-Ij-mds" secondAttribute="trailing" constant="155" id="j6t-9C-hS5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZEY-cQ-Ql3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Aiz-7s-Zvb"/>
+                <constraint firstItem="scQ-kW-yut" firstAttribute="top" secondItem="ZEY-cQ-Ql3" secondAttribute="bottom" constant="3" id="EO3-ef-qGg"/>
+                <constraint firstAttribute="trailing" secondItem="xtv-QQ-qJc" secondAttribute="trailing" id="FL6-bd-RBC"/>
+                <constraint firstItem="h5a-lh-dnz" firstAttribute="top" secondItem="scQ-kW-yut" secondAttribute="bottom" constant="50" id="J5i-ba-El5"/>
+                <constraint firstItem="scQ-kW-yut" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TvK-Ng-ahe"/>
+                <constraint firstItem="xtv-QQ-qJc" firstAttribute="top" secondItem="h5a-lh-dnz" secondAttribute="bottom" id="i04-Ba-crj"/>
+                <constraint firstItem="h5a-lh-dnz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="s0Z-4N-RgA"/>
+                <constraint firstItem="ZEY-cQ-Ql3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vKC-A6-Xvx"/>
+                <constraint firstItem="xtv-QQ-qJc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zyX-vr-nja"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="149"/>
+        </view>
+    </objects>
+</document>

@@ -14,7 +14,6 @@
                 <outlet property="nameLabel" destination="AHf-tv-ld5" id="3ID-Np-kmC"/>
                 <outlet property="password1Label" destination="ycq-eS-z1d" id="SWW-iP-TDl"/>
                 <outlet property="password2Label" destination="4ZT-th-Mv7" id="hYA-V8-lke"/>
-                <outlet property="presentLoginViewButton" destination="5Ws-xO-Pbn" id="wqu-x2-GVM"/>
                 <outlet property="signupResultLabel" destination="A0o-w1-nyh" id="7aX-Y6-0C4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -150,19 +149,6 @@
                         <constraint firstAttribute="height" constant="2" id="zcE-bq-zFR"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ws-xO-Pbn">
-                    <rect key="frame" x="294" y="64" width="100" height="30"/>
-                    <color key="backgroundColor" red="0.66667127609999999" green="0.66665846110000004" blue="0.66666716339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="2kG-dy-s9z"/>
-                    </constraints>
-                    <state key="normal" title="로그인 하러가기">
-                        <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </state>
-                    <connections>
-                        <action selector="pressedGetLoginVC:" destination="-1" eventType="touchUpInside" id="6wl-Tc-XhL"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -172,7 +158,6 @@
                 <constraint firstItem="vn8-QW-MQt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FOo-KS-H51"/>
                 <constraint firstItem="v1a-zx-mNE" firstAttribute="top" secondItem="s3g-b0-ycw" secondAttribute="bottom" constant="2" id="G30-21-nvi"/>
                 <constraint firstItem="SJy-7Z-YUa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IPe-NW-fx9"/>
-                <constraint firstItem="5Ws-xO-Pbn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Jac-oG-cBd"/>
                 <constraint firstItem="s3g-b0-ycw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="73" id="LOH-Ey-IV4"/>
                 <constraint firstItem="X26-Wy-Igm" firstAttribute="top" secondItem="QF3-u1-mNb" secondAttribute="bottom" constant="8" id="LPE-uk-4cS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vn8-QW-MQt" secondAttribute="trailing" id="Lgs-AE-0Wh"/>
@@ -198,7 +183,6 @@
                 <constraint firstAttribute="trailing" secondItem="QF3-u1-mNb" secondAttribute="trailing" id="uqS-zD-AoW"/>
                 <constraint firstAttribute="trailing" secondItem="SJy-7Z-YUa" secondAttribute="trailing" id="voC-EE-6Yw"/>
                 <constraint firstItem="A0o-w1-nyh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wsO-ta-XRm"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Ws-xO-Pbn" secondAttribute="trailing" constant="20" id="xMH-nk-ljK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4ZT-th-Mv7" secondAttribute="trailing" constant="20" id="yf3-RI-Pbt"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

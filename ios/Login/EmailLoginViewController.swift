@@ -33,7 +33,7 @@ class EmailLoginViewController: UIViewController {
         
         //네비게이션 바 백그라운드 컬러 흰색으로 바꾸기
         var backbutton = UIButton(type: .custom)
-        backbutton.setImage(UIImage(named: "backBarButton.png"), for: .normal) // Image can be downloaded from here below link
+        backbutton.setImage(UIImage(named: "ic_left_arrow_gray.png"), for: .normal) // Image can be downloaded from here below link
         backbutton.setTitle("이메일로 로그인", for: .normal)
         backbutton.tintColor = .black
 //        backbutton.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
