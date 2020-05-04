@@ -8,6 +8,9 @@
 import Alamofire
 import AlamofireObjectMapper
 import AlamofireImage
+import Kingfisher
+
+
 
 class LookUpMainEventDataManager {
 let headers: HTTPHeaders = ["x-access-token" : jwtKey]
@@ -25,10 +28,14 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                 switch response.result {
                 case .success(let lookUpMainEventResponse):
                     if (lookUpMainEventResponse.code == 200) {
+                        
+                        let MainEventURL = URL(string: lookUpMainEventResponse.result.imageUrl)
+                        mainEventViewController.mainEventImageView.kf.setImage(with: MainEventURL)
+                        
 //                        eventResponse.result.startIndex
-                        let MainEventURL = URL(string: lookUpMainEventResponse.result.imageUrl)!
-                        let Maindata = try! Data(contentsOf: MainEventURL)
-                        mainEventViewController.mainEventImageView.image = UIImage(data: Maindata)
+//                        let MainEventURL = URL(string: lookUpMainEventResponse.result.imageUrl)!
+//                        let Maindata = try! Data(contentsOf: MainEventURL)
+//                        mainEventViewController.mainEventImageView.image = UIImage(data: Maindata)
                         
                         
                        print("lookUpMainEventResponse: \(lookUpMainEventResponse.message)")

@@ -27,6 +27,10 @@
 		BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */; };
 		BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */; };
 		BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */; };
+		C117DA422460549800037CF4 /* NearRegionListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C117DA412460549800037CF4 /* NearRegionListDataManager.swift */; };
+		C117DA44246054AD00037CF4 /* NearRegionListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C117DA43246054AD00037CF4 /* NearRegionListResponse.swift */; };
+		C117DA4724605A7D00037CF4 /* NearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C117DA4524605A7D00037CF4 /* NearCollectionViewCell.swift */; };
+		C117DA4824605A7D00037CF4 /* NearCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C117DA4624605A7D00037CF4 /* NearCollectionViewCell.xib */; };
 		C12E0064245416D000EE949F /* FourthMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E0062245416D000EE949F /* FourthMainViewController.swift */; };
 		C12E0065245416D000EE949F /* FourthMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E0063245416D000EE949F /* FourthMainViewController.xib */; };
 		C12E006E24542C7A00EE949F /* customTabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */; };
@@ -86,6 +90,8 @@
 		C183A5CD245FDB5F0009C323 /* MainEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C183A5CB245FDB5F0009C323 /* MainEventViewController.xib */; };
 		C183A5CF245FDD950009C323 /* LookUpMainEventDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183A5CE245FDD950009C323 /* LookUpMainEventDataManager.swift */; };
 		C183A5D1245FDDA40009C323 /* LookUpMainEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183A5D0245FDDA40009C323 /* LookUpMainEventResponse.swift */; };
+		C183A5D8245FF5410009C323 /* GangBukGuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183A5D6245FF5410009C323 /* GangBukGuCollectionViewCell.swift */; };
+		C183A5D9245FF5410009C323 /* GangBukGuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C183A5D7245FF5410009C323 /* GangBukGuCollectionViewCell.xib */; };
 		C185CAAE2458682A00DBB6C3 /* fivew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185CAAC2458682A00DBB6C3 /* fivew.swift */; };
 		C185CAAF2458682A00DBB6C3 /* five.xib in Resources */ = {isa = PBXBuildFile; fileRef = C185CAAD2458682A00DBB6C3 /* five.xib */; };
 		C18D8C2A245CF0BD00E495AA /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D8C28245CF0BD00E495AA /* EventViewController.swift */; };
@@ -187,6 +193,10 @@
 		BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDEF323B22F9B7CB00FEF8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEF323D22F9B7CB00FEF8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C117DA412460549800037CF4 /* NearRegionListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearRegionListDataManager.swift; sourceTree = "<group>"; };
+		C117DA43246054AD00037CF4 /* NearRegionListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearRegionListResponse.swift; sourceTree = "<group>"; };
+		C117DA4524605A7D00037CF4 /* NearCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearCollectionViewCell.swift; sourceTree = "<group>"; };
+		C117DA4624605A7D00037CF4 /* NearCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearCollectionViewCell.xib; sourceTree = "<group>"; };
 		C12E0062245416D000EE949F /* FourthMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthMainViewController.swift; sourceTree = "<group>"; };
 		C12E0063245416D000EE949F /* FourthMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthMainViewController.xib; sourceTree = "<group>"; };
 		C12E006C24542C7A00EE949F /* customTabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabBarCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -246,6 +256,8 @@
 		C183A5CB245FDB5F0009C323 /* MainEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainEventViewController.xib; sourceTree = "<group>"; };
 		C183A5CE245FDD950009C323 /* LookUpMainEventDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpMainEventDataManager.swift; sourceTree = "<group>"; };
 		C183A5D0245FDDA40009C323 /* LookUpMainEventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpMainEventResponse.swift; sourceTree = "<group>"; };
+		C183A5D6245FF5410009C323 /* GangBukGuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangBukGuCollectionViewCell.swift; sourceTree = "<group>"; };
+		C183A5D7245FF5410009C323 /* GangBukGuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GangBukGuCollectionViewCell.xib; sourceTree = "<group>"; };
 		C185CAAC2458682A00DBB6C3 /* fivew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fivew.swift; sourceTree = "<group>"; };
 		C185CAAD2458682A00DBB6C3 /* five.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = five.xib; sourceTree = "<group>"; };
 		C18D8C28245CF0BD00E495AA /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -496,14 +508,18 @@
 				C1818384245C62E30049A62D /* LocationPopUp.storyboard */,
 				C1E185BE245F033500563FB0 /* RecentRegionViewController.swift */,
 				C1E185BF245F033500563FB0 /* RecentRegionViewController.xib */,
+				C1E185CA245F048700563FB0 /* NearViewController.swift */,
+				C1E185CB245F048700563FB0 /* NearViewController.xib */,
+				C117DA4524605A7D00037CF4 /* NearCollectionViewCell.swift */,
+				C117DA4624605A7D00037CF4 /* NearCollectionViewCell.xib */,
 				C1E185C2245F03F700563FB0 /* GangNamGuViewController.swift */,
 				C1E185C3245F03F700563FB0 /* GangNamGuViewController.xib */,
 				C183A5C6245F8E290009C323 /* GangNamGuCollectionViewCell.swift */,
 				C183A5C7245F8E290009C323 /* GangNamGuCollectionViewCell.xib */,
 				C1E185C6245F043500563FB0 /* GangBukGuViewController.swift */,
 				C1E185C7245F043500563FB0 /* GangBukGuViewController.xib */,
-				C1E185CA245F048700563FB0 /* NearViewController.swift */,
-				C1E185CB245F048700563FB0 /* NearViewController.xib */,
+				C183A5D6245FF5410009C323 /* GangBukGuCollectionViewCell.swift */,
+				C183A5D7245FF5410009C323 /* GangBukGuCollectionViewCell.xib */,
 			);
 			path = LocationPopup;
 			sourceTree = "<group>";
@@ -545,6 +561,7 @@
 				C18D8C44245D013300E495AA /* EventDetailResponse.swift */,
 				C18D8C4A245DA67B00E495AA /* EventMainResponse.swift */,
 				C1E185D1245F109E00563FB0 /* DistinctResponse.swift */,
+				C117DA43246054AD00037CF4 /* NearRegionListResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -556,6 +573,7 @@
 				C18D8C46245D014C00E495AA /* EventDetailDataManager.swift */,
 				C18D8C48245DA66400E495AA /* EventMainDataManager.swift */,
 				C1E185CF245F101C00563FB0 /* DistinctDataManager.swift */,
+				C117DA412460549800037CF4 /* NearRegionListDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -869,6 +887,7 @@
 				C1679830245A5AAD00E7F8F6 /* NewsAllViewController.xib in Resources */,
 				C166010D24597F6200E3800D /* EmailLoginViewController.xib in Resources */,
 				C12E006F24542C7A00EE949F /* customTabBarCollectionViewCell.xib in Resources */,
+				C183A5D9245FF5410009C323 /* GangBukGuCollectionViewCell.xib in Resources */,
 				BD9BF18822F9DCC7009E47EB /* MainViewController.xib in Resources */,
 				C166010124594D9B00E3800D /* MyInfoViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
@@ -876,6 +895,7 @@
 				C1679844245A9C7100E7F8F6 /* RestaurantRegistrationViewController.xib in Resources */,
 				C1A1F99D2459D32800C4862E /* LostPasswordViewController.xib in Resources */,
 				C16600F124594BBB00E3800D /* FindingGoodRestaurantViewController.xib in Resources */,
+				C117DA4824605A7D00037CF4 /* NearCollectionViewCell.xib in Resources */,
 				C18D8C43245CFB4100E495AA /* SixthEventViewController.xib in Resources */,
 				C19E8813245E892200DE7C83 /* TimeLineViewController.xib in Resources */,
 			);
@@ -938,6 +958,7 @@
 				C16600FC24594C3900E3800D /* NewsViewController.swift in Sources */,
 				C1E185D2245F109E00563FB0 /* DistinctResponse.swift in Sources */,
 				BD9BF18722F9DCC7009E47EB /* MainViewController.swift in Sources */,
+				C117DA44246054AD00037CF4 /* NearRegionListResponse.swift in Sources */,
 				C19E881A245E9CDF00DE7C83 /* LinkEatDealViewController.swift in Sources */,
 				C16601042459650200E3800D /* EatDealViewController.swift in Sources */,
 				C19E8816245E893500DE7C83 /* WantToGoViewController.swift in Sources */,
@@ -964,6 +985,7 @@
 				C18D8C45245D013300E495AA /* EventDetailResponse.swift in Sources */,
 				C181836C245BC0830049A62D /* RecentSearchesViewController.swift in Sources */,
 				C18D8C2A245CF0BD00E495AA /* EventViewController.swift in Sources */,
+				C183A5D8245FF5410009C323 /* GangBukGuCollectionViewCell.swift in Sources */,
 				C19E8812245E892200DE7C83 /* TimeLineViewController.swift in Sources */,
 				C1818379245BD6780049A62D /* SignUpByEmailDataManager.swift in Sources */,
 				C18D8C4E245DB2BF00E495AA /* CollectionViewCell.swift in Sources */,
@@ -984,9 +1006,11 @@
 				C1A1F9A02459D3B200C4862E /* SignUpByEmailViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
+				C117DA4724605A7D00037CF4 /* NearCollectionViewCell.swift in Sources */,
 				C166010024594D9B00E3800D /* MyInfoViewController.swift in Sources */,
 				C183A5CF245FDD950009C323 /* LookUpMainEventDataManager.swift in Sources */,
 				C185CAAE2458682A00DBB6C3 /* fivew.swift in Sources */,
+				C117DA422460549800037CF4 /* NearRegionListDataManager.swift in Sources */,
 				C18059D624580AEB005FB4EC /* TestResponse.swift in Sources */,
 				C1818381245C62C80049A62D /* LocationPopUp.swift in Sources */,
 				C1A3E31A2455AAEB00740325 /* MenuBar.swift in Sources */,

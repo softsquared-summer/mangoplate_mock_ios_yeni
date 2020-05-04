@@ -33,6 +33,9 @@
                             <state key="normal" title="지우기">
                                 <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <connections>
+                                <action selector="clearSelectedRegion:" destination="-1" eventType="touchUpInside" id="LJH-oc-cFT"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXF-vE-Cuo">
                             <rect key="frame" x="160.5" y="294" width="93" height="33"/>
@@ -45,6 +48,9 @@
                             <state key="normal" title="적용">
                                 <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <connections>
+                                <action selector="pressedSettingLocation:" destination="-1" eventType="touchUpInside" id="fFM-uy-3tI"/>
+                            </connections>
                         </button>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8RI-wB-T8B">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>

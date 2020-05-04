@@ -26,5 +26,9 @@ class RecentRegionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func pressedSettingLocation(_ sender: UIButton) {
+    self.dismiss(animated: false, completion: nil)
+
+    }
 
 }

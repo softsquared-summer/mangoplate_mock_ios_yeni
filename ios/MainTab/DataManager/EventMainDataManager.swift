@@ -9,6 +9,9 @@ import Alamofire
 import AlamofireObjectMapper
 import AlamofireImage
 
+
+
+
 class EventMainDataManager {
 let headers: HTTPHeaders = ["x-access-token" : jwtKey]
 //    var jwt = jwtKey

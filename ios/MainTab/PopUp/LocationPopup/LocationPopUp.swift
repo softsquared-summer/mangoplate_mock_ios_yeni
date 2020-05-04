@@ -16,8 +16,9 @@ class LocationPopUp: UITabBarController {
     }
     
     var locationPopUpDelegate: LocationPopUpDelegate!
-//    var gangnamguTitle = ""
-//    var gangbukmguTitle = ""
+    
+    var gangnamguTitle = ""
+    var gangbukmguTitle = ""
 
 override func viewDidLoad() {
        super.viewDidLoad()

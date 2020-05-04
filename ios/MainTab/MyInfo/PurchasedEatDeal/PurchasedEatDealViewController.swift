@@ -10,6 +10,7 @@ import UIKit
 
 class PurchasedEatDealViewController: UIViewController {
 
+    @IBOutlet weak var goToSeeEatDeal: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +24,11 @@ class PurchasedEatDealViewController: UIViewController {
                 backbutton.addTarget(self, action: #selector(self.backAction), for: .touchUpInside)
 
                 self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
+        
+      
+
+
+
                 
                 
     }

@@ -16,6 +16,7 @@ target 'ios' do
   pod 'Crashlytics', '~> 3.10.1'
   pod 'KYDrawerController'
   pod 'FBSDKLoginKit'
+  pod 'Kingfisher'
 
 
 end

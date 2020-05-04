@@ -9,6 +9,10 @@
 import UIKit
 import CoreLocation
 
+public var latitude : Double = 0.0
+public var longitude : Double = 0.0
+
+
 class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegate, CLLocationManagerDelegate {
     
     unowned var dataManager: EventMainDataManager {
@@ -31,11 +35,11 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
     private func setupFlowLayout() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInset = UIEdgeInsets.zero
-        flowLayout.minimumInteritemSpacing = 5
-        flowLayout.minimumLineSpacing = 5
+        flowLayout.minimumInteritemSpacing = 3
+        flowLayout.minimumLineSpacing = 3
         
         let halfWidth = UIScreen.main.bounds.width / 2
-        flowLayout.itemSize = CGSize(width: halfWidth * 0.8 , height: halfWidth * 0.9)
+        flowLayout.itemSize = CGSize(width: halfWidth * 0.99 , height: halfWidth * 0.99)
         self.collectionView.collectionViewLayout = flowLayout
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
@@ -61,7 +65,9 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
         var pageControl: UIPageControl!
         var headerVisible = true
 
-        var locationManager:CLLocationManager!
+        var locationManager = CLLocationManager()
+    var currentLocation: CLLocation!
+
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -183,19 +189,40 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
             collectionView.dataSource = self
             collectionView.register(UINib(nibName: "CollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "CollectionViewCell")
             setupFlowLayout()
-            
-            locationManager = CLLocationManager()
-            locationManager.requestWhenInUseAuthorization() //권한 요청
+
             locationManager.delegate = self
 
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
-            let coor = locationManager.location?.coordinate
-            print("latitude : " + String(describing: coor!.latitude) + "/ longitude : " + String(describing: coor!.longitude))
-      
+             locationManager.requestWhenInUseAuthorization()
+        locationManager.startMonitoringSignificantLocationChanges()
 
+           
 
         }
+    
+    
+        override func viewDidAppear(_ animated: Bool) {
+    //        PresentLocationAccessView()
+            locationAuthCheck()
+
+            setPageViewInScroll()
+        }
+    
+    
+    func locationAuthCheck(){
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse{
+            currentLocation = locationManager.location
+            
+            latitude = currentLocation.coordinate.latitude
+            longitude = currentLocation.coordinate.longitude
+            
+
+        }else{
+            locationManager.requestWhenInUseAuthorization()
+            locationAuthCheck()
+        }
+    }
+    
         override func didReceiveMemoryWarning() {
                 super.didReceiveMemoryWarning()
                 // Dispose of any resources that can be recreated.
@@ -206,10 +233,6 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
 
 
 
-        override func viewDidAppear(_ animated: Bool) {
-    //        PresentLocationAccessView()
-            setPageViewInScroll()
-        }
         
        
         
@@ -224,7 +247,7 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
 //                subView.backgroundColor = colors[index]
                 subView.af_setImage(withURL: images[index])
 //                subView.image = UIImage(named: "\( images[index])")
-//                 
+//
 //              subView.image =  images[index]
 //                subView.af_setImage(withURL: images[index])
                 self.scrollView.addSubview(subView)

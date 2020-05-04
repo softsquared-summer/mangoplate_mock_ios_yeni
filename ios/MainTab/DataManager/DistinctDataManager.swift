@@ -32,6 +32,8 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                 switch response.result {
                 case .success(let distinctResponse):
                     if (distinctResponse.code == 200) {
+                    
+                        
 //                        eventResponse.result.startIndex
                         
 //                        var gangNamTabBarItemTitle = districtResponse.result[0]?.name
@@ -44,8 +46,8 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
 //                        locationPopUp.setDistincts(distinctResponse.result[0].name, distinctResponse.result[1].name)
                         
                         print("distinctResponse: \(distinctResponse.message)")
-                        print("distinctResponse: \(distinctResponse.result[0].distinctsId)")
-                        print("distinctResponse: \(distinctResponse.result[1].distinctsId)")
+                        print("distinctResponse: \(distinctResponse.result[0].name)")
+                        print("distinctResponse: \(distinctResponse.result[1].name)")
 
 
                         
@@ -57,6 +59,80 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                 }
             })
     }
+    
+    
+     func getGangNamGuRegionList(_ gangNamGuViewController: GangNamGuViewController) {
+
+
+            Alamofire
+                .request("\(self.appDelegate.baseUrl)/districts/1", method: .get, headers: headers)
+                .validate()
+                .responseObject(completionHandler: { (response: DataResponse<DistinctResponse>) in
+                    switch response.result {
+                    case .success(let distinctResponse):
+                        if (distinctResponse.code == 200) {
+                           
+                            for index in 0..<26{
+                            
+                            gangNamGuViewController.dongs.insert(distinctResponse.result[index].name, at: index)
+                            
+                            }
+                            gangNamGuViewController.setDongs()
+
+                            print("distinctResponse: \(distinctResponse.message)")
+                            print("distinctResponse: \(distinctResponse.result[0].name)")
+                            print("distinctResponse: \(distinctResponse.result[1].name)")
+
+
+                            
+                        }else {
+                            print("distinctsIdResponse:\( distinctResponse.message)")
+                        }
+                    case .failure:
+                         print("서버와의 연결이 원활하지 않습니다.")
+                    }
+                })
+        }
+    
+    
+    
+    
+     func getGangBukGuRegionList(_ gangBukGuViewController: GangBukGuViewController) {
+
+
+            Alamofire
+                .request("\(self.appDelegate.baseUrl)/districts/2", method: .get, headers: headers)
+                .validate()
+                .responseObject(completionHandler: { (response: DataResponse<DistinctResponse>) in
+                    switch response.result {
+                    case .success(let distinctResponse):
+                        if (distinctResponse.code == 200) {
+                        
+                            for index in 0..<25{
+                            
+                            gangBukGuViewController.dongs.insert(distinctResponse.result[index].name, at: index)
+                            
+                            }
+                            gangBukGuViewController.setDongs()
+                            
+ 
+                            
+                            print("distinctResponse: \(distinctResponse.message)")
+                            print("distinctResponse: \(distinctResponse.result[0].name)")
+                            print("distinctResponse: \(distinctResponse.result[1].name)")
+
+
+                            
+                        }else {
+                            print("distinctsIdResponse:\( distinctResponse.message)")
+                        }
+                    case .failure:
+                         print("서버와의 연결이 원활하지 않습니다.")
+                    }
+                })
+        }
+    
+    
     
     
 }

@@ -8,6 +8,8 @@
 import Alamofire
 import AlamofireObjectMapper
 import AlamofireImage
+import Kingfisher
+
 
 class EventDetailDataManager {
 let headers: HTTPHeaders = ["x-access-token" : jwtKey]
@@ -35,10 +37,13 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                     if (eventDetailResponse.code == 200) {
 //                        eventResponse.result.startIndex
                         
+                        let FirstEventURL = URL(string: eventDetailResponse.result[2].imageUrl)
+                    eventViewController.FirstEventImageView.kf.setImage(with: FirstEventURL)
                         
-                        let FirstEventURL = URL(string: eventDetailResponse.result[2].imageUrl)!
-                        let Firstdata = try! Data(contentsOf: FirstEventURL)
-                        eventViewController.FirstEventImageView.image = UIImage(data: Firstdata)
+                        
+//                        let FirstEventURL = URL(string: eventDetailResponse.result[2].imageUrl)!
+//                        let Firstdata = try! Data(contentsOf: FirstEventURL)
+//                        eventViewController.FirstEventImageView.image = UIImage(data: Firstdata)
                         
                        /* let FirstEventURL = URL(string: eventResponse.result[2].imageUrl)
                         eventViewController.FirstEventImageView.af_setImage(withURL: FirstEventURL)*/

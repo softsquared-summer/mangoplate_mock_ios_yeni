@@ -44,13 +44,40 @@
                             <state key="normal" title="적용">
                                 <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <connections>
+                                <action selector="pressedSettingLocation:" destination="-1" eventType="touchUpInside" id="din-MA-fEJ"/>
+                            </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 선택된 지역이 없어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="box-2M-Ks6">
+                            <rect key="frame" x="119.5" y="100" width="175" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지역을 설정해보세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-JE-IAy">
+                            <rect key="frame" x="144.5" y="151" width="125" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근 지역 순으로 쉽게 찾아서 볼 수 있어요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adI-XZ-izf">
+                            <rect key="frame" x="80.5" y="172" width="253" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="x9m-JE-IAy" firstAttribute="centerX" secondItem="xvq-r4-sEM" secondAttribute="centerX" id="0RP-zn-aXE"/>
+                        <constraint firstItem="adI-XZ-izf" firstAttribute="centerX" secondItem="xvq-r4-sEM" secondAttribute="centerX" id="147-p2-5gx"/>
+                        <constraint firstItem="box-2M-Ks6" firstAttribute="centerX" secondItem="xvq-r4-sEM" secondAttribute="centerX" id="4z1-yf-47h"/>
                         <constraint firstAttribute="bottom" secondItem="3RL-9g-Th8" secondAttribute="bottom" constant="34" id="OTn-0c-tDO"/>
+                        <constraint firstItem="adI-XZ-izf" firstAttribute="top" secondItem="x9m-JE-IAy" secondAttribute="bottom" constant="3" id="Vnu-ln-lvY"/>
+                        <constraint firstItem="x9m-JE-IAy" firstAttribute="top" secondItem="box-2M-Ks6" secondAttribute="bottom" constant="30" id="cLc-al-Pf0"/>
                         <constraint firstItem="3RL-9g-Th8" firstAttribute="leading" secondItem="xil-J1-Vy1" secondAttribute="trailing" constant="98.5" id="cak-rQ-WcZ"/>
                         <constraint firstAttribute="bottom" secondItem="xil-J1-Vy1" secondAttribute="bottom" constant="33" id="dua-wn-fe4"/>
+                        <constraint firstItem="box-2M-Ks6" firstAttribute="top" secondItem="xvq-r4-sEM" secondAttribute="top" constant="100" id="fa9-cJ-Ley"/>
                         <constraint firstItem="xil-J1-Vy1" firstAttribute="centerX" secondItem="xvq-r4-sEM" secondAttribute="centerX" id="hmT-bX-Dt3"/>
                         <constraint firstAttribute="height" constant="360" id="lM0-Dv-n28"/>
                         <constraint firstAttribute="trailing" secondItem="3RL-9g-Th8" secondAttribute="trailing" constant="20" id="qjP-Ng-Oee"/>
