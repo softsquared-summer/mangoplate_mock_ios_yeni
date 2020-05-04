@@ -1,22 +1,23 @@
 //
-//  restaurants.swift
+//  EventResponse.swift
 //  ios
 //
-//  Created by 조예은 on 2020/04/28.
+//  Created by 조예은 on 2020/05/02.
 //  Copyright © 2020 Jerry Jung. All rights reserved.
 //
 
 import ObjectMapper
 
-struct LocationResponse {
+struct LookUpMainEventResponse {
     var code: Int!
     var isSuccess: Bool!
-    var result: [LocationTest?]!
+    var result: LookUpMainEvent!
     var message: String!
+    //var tutorials: [Tutorial?]!
 }
 
 
-extension LocationResponse: Mappable {
+extension LookUpMainEventResponse: Mappable {
     
     init?(map: Map) {
     }
@@ -32,23 +33,28 @@ extension LocationResponse: Mappable {
 }
 
 
-struct LocationTest {
+struct LookUpMainEvent {
   
-    var districtsId: Int!
-    var name: String!
+    var eventId: Int!
+    var imageUrl: String!
+    
+
     
    
 }
 
-extension LocationTest: Mappable {
+extension LookUpMainEvent: Mappable {
 
     init?(map: Map) {
     }
 
     mutating func mapping(map: Map) {
-        districtsId <- map["districtsId"]
-        name <- map["name"]
+        eventId <- map["eventId"]
+        imageUrl <- map["imageUrl"]
+        
+
 
     }
 
 }
+

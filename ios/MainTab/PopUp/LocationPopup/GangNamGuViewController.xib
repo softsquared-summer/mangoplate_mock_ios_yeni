@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GangNamGuViewController" customModule="ios" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="8RI-wB-T8B" id="W6H-I7-Wyn"/>
                 <outlet property="view" destination="6d6-7a-VWv" id="b6d-Ix-eCV"/>
             </connections>
         </placeholder>
@@ -45,10 +46,24 @@
                                 <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
                         </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8RI-wB-T8B">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S1g-nt-znW">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="0AS-tU-u0l" firstAttribute="top" secondItem="8RI-wB-T8B" secondAttribute="bottom" id="6dG-C5-7I2"/>
+                        <constraint firstAttribute="trailing" secondItem="8RI-wB-T8B" secondAttribute="trailing" id="EXI-A0-ceP"/>
+                        <constraint firstItem="8RI-wB-T8B" firstAttribute="top" secondItem="Q9J-od-6sg" secondAttribute="top" id="U7e-z9-aaR"/>
                         <constraint firstAttribute="height" constant="360" id="cfj-AG-9t2"/>
+                        <constraint firstItem="8RI-wB-T8B" firstAttribute="leading" secondItem="Q9J-od-6sg" secondAttribute="leading" id="gIF-hK-gDy"/>
                         <constraint firstItem="gXF-vE-Cuo" firstAttribute="centerX" secondItem="Q9J-od-6sg" secondAttribute="centerX" id="hgw-9S-rZS"/>
                         <constraint firstItem="0AS-tU-u0l" firstAttribute="leading" secondItem="gXF-vE-Cuo" secondAttribute="trailing" constant="98.5" id="iOZ-2U-4Ne"/>
                         <constraint firstAttribute="bottom" secondItem="gXF-vE-Cuo" secondAttribute="bottom" constant="33" id="ssb-Cc-i3p"/>

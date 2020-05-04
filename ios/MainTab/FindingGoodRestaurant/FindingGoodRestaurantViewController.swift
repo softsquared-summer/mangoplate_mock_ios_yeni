@@ -48,8 +48,13 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
         var pageTitles: NSArray!
         var pageImages: NSArray!
         var scrollView: UIScrollView!
-        var colors:[UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.black]
-//        var images:[UIImage] = []
+//        var colors:[UIColor] = [UIColor.red, UIColor.blue, UIColor.green, UIColor.black]
+    
+//        var images : [String] = []
+    var images:[URL] = []
+
+//    var images : [UIImage] = []
+
     
         
         var frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
@@ -173,15 +178,16 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
                 scrollView.delegate = self as! UIScrollViewDelegate
             configurePageControl()
             self.pagerContainer.addSubview(scrollView)
-//            dataManager.getMainEvents(self)
+            dataManager.getMainEvents(self)
             collectionView.delegate = self
             collectionView.dataSource = self
             collectionView.register(UINib(nibName: "CollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "CollectionViewCell")
             setupFlowLayout()
             
             locationManager = CLLocationManager()
-            locationManager.delegate = self
             locationManager.requestWhenInUseAuthorization() //권한 요청
+            locationManager.delegate = self
+
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
             let coor = locationManager.location?.coordinate
@@ -214,8 +220,13 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
                 frame.size = self.scrollView.frame.size
                 self.scrollView.isPagingEnabled = true
                 
-                let subView = UIView(frame: frame)
-                subView.backgroundColor = colors[index]
+                let subView = UIImageView(frame: frame)
+//                subView.backgroundColor = colors[index]
+                subView.af_setImage(withURL: images[index])
+//                subView.image = UIImage(named: "\( images[index])")
+//                 
+//              subView.image =  images[index]
+//                subView.af_setImage(withURL: images[index])
                 self.scrollView.addSubview(subView)
             }
             
@@ -226,7 +237,9 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
         
         func configurePageControl() {
             // The total number of pages that are available is based on how many available colors we have.
-            self.pageControl.numberOfPages = colors.count
+//            self.pageControl.numberOfPages = colors.count
+            self.pageControl.numberOfPages = images.count
+
             self.pageControl.currentPage = 0
             self.pageControl.tintColor = UIColor.red
             self.pageControl.pageIndicatorTintColor = UIColor.lightGray
@@ -297,11 +310,12 @@ extension FindingGoodRestaurantViewController: LocationPopUpDelegate, AlignPopUp
 
 }
 
-extension FindingGoodRestaurantViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension FindingGoodRestaurantViewController: UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
         //식당 갯수로 바꿔야함
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         

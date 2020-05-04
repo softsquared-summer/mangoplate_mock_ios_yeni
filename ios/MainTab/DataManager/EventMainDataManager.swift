@@ -34,6 +34,24 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                 case .success(let eventMainResponse):
                     if (eventMainResponse.code == 200) {
                         
+                        let FirstEventURL = URL(string: eventMainResponse.result[0].imageUrl)!
+                        findingGoodRestaurantVC.images.insert(FirstEventURL, at: 0)
+                        
+                        let SecondEventURL = URL(string: eventMainResponse.result[1].imageUrl)!
+                        findingGoodRestaurantVC.images.insert(SecondEventURL, at: 1)
+                        
+                        let ThirdEventURL = URL(string: eventMainResponse.result[2].imageUrl)!
+                        findingGoodRestaurantVC.images.insert(ThirdEventURL, at: 2)
+                        
+                         let FourthEventURL = URL(string: eventMainResponse.result[3].imageUrl)!
+                        findingGoodRestaurantVC.images.insert(FourthEventURL, at: 3)
+//                        findingGoodRestaurantVC.images.append(eventMainResponse.result[1].imageUrl)
+//                        findingGoodRestaurantVC.images.append(eventMainResponse.result[2].imageUrl)
+//                        findingGoodRestaurantVC.images.append(eventMainResponse.result[3].imageUrl)
+                                
+                        
+                        
+                        
                        //이미지 받아오는 부분 구현하기...
                         
                        

@@ -9,7 +9,15 @@
 import UIKit
 
 class LocationPopUp: UITabBarController {
+    unowned var dataManager: DistinctDataManager {
+        get {
+            return DistinctDataManager()
+        }
+    }
+    
     var locationPopUpDelegate: LocationPopUpDelegate!
+//    var gangnamguTitle = ""
+//    var gangbukmguTitle = ""
 
 override func viewDidLoad() {
        super.viewDidLoad()
@@ -37,7 +45,19 @@ override func viewDidLoad() {
     self.tabBar.tintColor = .orange
     UIApplication.shared.statusBarStyle = .lightContent
     
+    dataManager.getDistincts(self)
+//    gangNamGu.tabBarItem.title = gangnamguTitle
+//    gangBukGu.tabBarItem.title = gangbukmguTitle
+
+    
+    
    }
+    
+//    func setDistincts(_ gangnamguDistinctTitle: String, _ gangbukguDistinctTitle: String){
+//        gangnamguTitle = gangnamguDistinctTitle
+//        gangbukmguTitle = gangbukguDistinctTitle
+//    }
+   
     
     override func viewDidLayoutSubviews() {
         navigationController?.isNavigationBarHidden = true

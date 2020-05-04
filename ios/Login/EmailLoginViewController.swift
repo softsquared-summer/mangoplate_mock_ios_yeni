@@ -59,13 +59,13 @@ class EmailLoginViewController: UIViewController {
     }
     
     func presentMainTabVC(){
-        //성공했을때만 이동해야됨
-        let mainTabvc = MainTabViewController() //change this to your class name
-        mainTabvc.modalPresentationStyle = .fullScreen
+        //근데 neverSeeAgainButton(다시 보지 않음 버튼) 누르면 이 함수에서 그 버튼이 눌렸다는걸 인지해서 MainEventViewController를 띄우지 않아야하는건데 그부분을 하려면 앱 자동로그인이라던지 그런게 되어있어야 가능한 부분같다. 그 부분을 구현할쯤 이 부분 구현하기
+        let mainEventvc = MainEventViewController() //change this to your class name
+        mainEventvc.modalPresentationStyle = .fullScreen
 
-        UIApplication.shared.delegate?.window!!.rootViewController?.present(mainTabvc, animated: true, completion: nil)
+        UIApplication.shared.delegate?.window!!.rootViewController?.present(mainEventvc, animated: true, completion: nil)
 
-        self.present(mainTabvc, animated: true, completion: nil)
+        self.present(mainEventvc, animated: true, completion: nil)
     }
     
     @IBAction func findingPassword(_ sender: UIButton) {
