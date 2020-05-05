@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectRegionViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="JHb-n1-HbY" id="nFc-2j-zZD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JHb-n1-HbY">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMv-XQ-DAy">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hay-dA-LI9">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhU-YB-R9z">
+                            <rect key="frame" x="352" y="830" width="42" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="지우기">
+                                <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDe-00-To2">
+                            <rect key="frame" x="160.5" y="830" width="93" height="33"/>
+                            <color key="backgroundColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="93" id="PzG-2E-W9U"/>
+                                <constraint firstAttribute="height" constant="33" id="U7E-rw-dAS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <state key="normal" title="적용">
+                                <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="pressedEatDealSettingLocation:" destination="-1" eventType="touchUpInside" id="KCF-tz-8Bh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="PhU-YB-R9z" secondAttribute="bottom" constant="34" id="5D2-tQ-gpV"/>
+                        <constraint firstItem="PhU-YB-R9z" firstAttribute="leading" secondItem="TDe-00-To2" secondAttribute="trailing" constant="98.5" id="FlS-oP-KGh"/>
+                        <constraint firstAttribute="trailing" secondItem="PhU-YB-R9z" secondAttribute="trailing" constant="20" id="J8U-3N-TGG"/>
+                        <constraint firstItem="TDe-00-To2" firstAttribute="centerX" secondItem="Hay-dA-LI9" secondAttribute="centerX" id="guu-D5-k4E"/>
+                        <constraint firstAttribute="bottom" secondItem="TDe-00-To2" secondAttribute="bottom" constant="33" id="hi5-M8-AIX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Hay-dA-LI9" firstAttribute="centerX" secondItem="pMv-XQ-DAy" secondAttribute="centerX" id="4mX-Nl-6iJ"/>
+                <constraint firstAttribute="trailing" secondItem="pMv-XQ-DAy" secondAttribute="trailing" id="P5h-jc-V1z"/>
+                <constraint firstItem="Hay-dA-LI9" firstAttribute="top" secondItem="JHb-n1-HbY" secondAttribute="top" id="RVt-We-OZA"/>
+                <constraint firstItem="Hay-dA-LI9" firstAttribute="leading" secondItem="jsT-6r-dDg" secondAttribute="leading" id="XdG-lL-xeu"/>
+                <constraint firstItem="pMv-XQ-DAy" firstAttribute="leading" secondItem="JHb-n1-HbY" secondAttribute="leading" id="dNg-bh-hp1"/>
+                <constraint firstItem="pMv-XQ-DAy" firstAttribute="top" secondItem="JHb-n1-HbY" secondAttribute="top" id="dT7-oP-XSc"/>
+                <constraint firstAttribute="bottom" secondItem="pMv-XQ-DAy" secondAttribute="bottom" id="ekE-bH-igl"/>
+                <constraint firstItem="jsT-6r-dDg" firstAttribute="trailing" secondItem="Hay-dA-LI9" secondAttribute="trailing" id="h6a-m5-Ca4"/>
+                <constraint firstAttribute="bottom" secondItem="Hay-dA-LI9" secondAttribute="bottom" id="qtd-Rw-FPu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="jsT-6r-dDg"/>
+            <point key="canvasLocation" x="139" y="-520"/>
+        </view>
+    </objects>
+</document>

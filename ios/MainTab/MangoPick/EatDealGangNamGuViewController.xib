@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EatDealGangNamGuViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="M76-si-A3e" id="Jkw-rQ-VjG"/>
+                <outlet property="view" destination="kX0-nS-abJ" id="yLK-nG-c3N"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kX0-nS-abJ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtS-jf-L16">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hs3-4b-9dg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKD-5u-Ppl">
+                            <rect key="frame" x="352" y="830" width="42" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="지우기">
+                                <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uet-pz-vJQ">
+                            <rect key="frame" x="160.5" y="830" width="93" height="33"/>
+                            <color key="backgroundColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="j6M-t8-0ZR"/>
+                                <constraint firstAttribute="width" constant="93" id="pIj-hT-0mL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <state key="normal" title="적용">
+                                <color key="titleColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="pressedSettingLocation:" destination="-1" eventType="touchUpInside" id="JdV-8A-wFZ"/>
+                            </connections>
+                        </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M76-si-A3e">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="830"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xNV-fO-fuz">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="XKD-5u-Ppl" firstAttribute="top" secondItem="M76-si-A3e" secondAttribute="bottom" id="0qc-2e-A8U"/>
+                        <constraint firstAttribute="trailing" secondItem="M76-si-A3e" secondAttribute="trailing" id="47w-YW-zm3"/>
+                        <constraint firstItem="M76-si-A3e" firstAttribute="leading" secondItem="Hs3-4b-9dg" secondAttribute="leading" id="7UF-pG-l0J"/>
+                        <constraint firstAttribute="bottom" secondItem="uet-pz-vJQ" secondAttribute="bottom" constant="33" id="VvT-9v-wRA"/>
+                        <constraint firstAttribute="bottom" secondItem="XKD-5u-Ppl" secondAttribute="bottom" constant="34" id="eXe-bK-UuM"/>
+                        <constraint firstItem="uet-pz-vJQ" firstAttribute="centerX" secondItem="Hs3-4b-9dg" secondAttribute="centerX" id="g2S-2K-OeQ"/>
+                        <constraint firstItem="XKD-5u-Ppl" firstAttribute="leading" secondItem="uet-pz-vJQ" secondAttribute="trailing" constant="98.5" id="jwj-eY-1r3"/>
+                        <constraint firstAttribute="trailing" secondItem="XKD-5u-Ppl" secondAttribute="trailing" constant="20" id="u3M-oO-axO"/>
+                        <constraint firstItem="M76-si-A3e" firstAttribute="top" secondItem="Hs3-4b-9dg" secondAttribute="top" id="wbJ-eI-XD7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Hs3-4b-9dg" firstAttribute="top" secondItem="kX0-nS-abJ" secondAttribute="top" id="EaN-gu-osl"/>
+                <constraint firstAttribute="bottom" secondItem="vtS-jf-L16" secondAttribute="bottom" id="NEg-Jm-T7R"/>
+                <constraint firstItem="Hs3-4b-9dg" firstAttribute="leading" secondItem="BTU-aD-nLi" secondAttribute="leading" id="OQi-kp-8OP"/>
+                <constraint firstItem="vtS-jf-L16" firstAttribute="leading" secondItem="kX0-nS-abJ" secondAttribute="leading" id="Vpn-2X-zIJ"/>
+                <constraint firstItem="BTU-aD-nLi" firstAttribute="trailing" secondItem="Hs3-4b-9dg" secondAttribute="trailing" id="aJm-Oo-f74"/>
+                <constraint firstAttribute="bottom" secondItem="Hs3-4b-9dg" secondAttribute="bottom" id="al3-eP-Bp9"/>
+                <constraint firstItem="Hs3-4b-9dg" firstAttribute="centerX" secondItem="vtS-jf-L16" secondAttribute="centerX" id="gAe-FF-C2V"/>
+                <constraint firstAttribute="trailing" secondItem="vtS-jf-L16" secondAttribute="trailing" id="jF9-l8-o77"/>
+                <constraint firstItem="vtS-jf-L16" firstAttribute="top" secondItem="kX0-nS-abJ" secondAttribute="top" id="ys8-sL-2RZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="BTU-aD-nLi"/>
+            <point key="canvasLocation" x="139" y="-520"/>
+        </view>
+    </objects>
+</document>

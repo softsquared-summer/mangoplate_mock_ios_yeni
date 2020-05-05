@@ -135,4 +135,80 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
     
     
     
+
+
+
+
+func getEatDealGangNamGuRegionList(_ eatDealGangNamGuViewController: EatDealGangNamGuViewController) {
+
+
+            Alamofire
+                .request("\(self.appDelegate.baseUrl)/districts/1", method: .get, headers: headers)
+                .validate()
+                .responseObject(completionHandler: { (response: DataResponse<DistinctResponse>) in
+                    switch response.result {
+                    case .success(let distinctResponse):
+                        if (distinctResponse.code == 200) {
+                           
+                            for index in 0..<26{
+                            
+                            eatDealGangNamGuViewController.dongs.insert(distinctResponse.result[index].name, at: index)
+                            
+                            }
+                            eatDealGangNamGuViewController.setDongs()
+
+                            print("distinctResponse: \(distinctResponse.message)")
+                            print("distinctResponse: \(distinctResponse.result[0].name)")
+                            print("distinctResponse: \(distinctResponse.result[1].name)")
+
+
+                            
+                        }else {
+                            print("distinctsIdResponse:\( distinctResponse.message)")
+                        }
+                    case .failure:
+                         print("서버와의 연결이 원활하지 않습니다.")
+                    }
+                })
+        }
+    
+    
+    
+    
+     func getEatDealGangBukGuRegionList(_ eatDealGangBukGuViewController: EatDealGangBukGuViewController) {
+            Alamofire
+                .request("\(self.appDelegate.baseUrl)/districts/2", method: .get, headers: headers)
+                .validate()
+                .responseObject(completionHandler: { (response: DataResponse<DistinctResponse>) in
+                    switch response.result {
+                    case .success(let distinctResponse):
+                        if (distinctResponse.code == 200) {
+                        
+                            for index in 0..<25{
+                            
+                            eatDealGangBukGuViewController.dongs.insert(distinctResponse.result[index].name, at: index)
+                            
+                            }
+                            eatDealGangBukGuViewController.setDongs()
+                            
+ 
+                            
+                            print("distinctResponse: \(distinctResponse.message)")
+                            print("distinctResponse: \(distinctResponse.result[0].name)")
+                            print("distinctResponse: \(distinctResponse.result[1].name)")
+
+
+                            
+                        }else {
+                            print("distinctsIdResponse:\( distinctResponse.message)")
+                        }
+                    case .failure:
+                         print("서버와의 연결이 원활하지 않습니다.")
+                    }
+                })
+        }
+    
 }
+    
+
+

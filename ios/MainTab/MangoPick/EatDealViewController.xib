@@ -273,6 +273,9 @@
                             <state key="normal" title="지역 선택">
                                 <color key="titleColor" red="0.93044406180000006" green="0.47848826649999998" blue="0.1841924787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <connections>
+                                <action selector="presentSelectRegion:" destination="-1" eventType="touchUpInside" id="vEM-Kx-A7H"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

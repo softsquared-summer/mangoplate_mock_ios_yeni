@@ -16,7 +16,14 @@ class EatDealViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func presentSelectRegion(_ sender: UIButton) {
+        
+        let selectRegionViewController: UINavigationController = UINavigationController(rootViewController: SelectRegionViewController())
+               selectRegionViewController.modalPresentationStyle = .fullScreen
 
+               self.present(selectRegionViewController, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
