@@ -35,7 +35,7 @@ class SearchViewController: UITabBarController {
         super.viewDidLayoutSubviews()
         var tabFrame            = tabBar.frame
         tabFrame.size.height    = 70
-        tabFrame.origin.y       = view.frame.size.height - view.frame.size.height + 100
+        tabFrame.origin.y       = view.frame.size.height - view.frame.size.height + 87
         tabBar.frame            = tabFrame
 
 

@@ -32,7 +32,6 @@ class EmailLoginDataManager: UIViewController{
                 case .success(let emailLoginResponse):
                     
                     if emailLoginResponse.code == 200 {
-                        emailLoginViewController.LoginResultLabel.text = ""
                         
                         jwtKey = emailLoginResponse.result.jwt
                         print(emailLoginResponse.message)
@@ -51,10 +50,10 @@ class EmailLoginDataManager: UIViewController{
                         
                         
                     } else {
-                        emailLoginViewController.LoginResultLabel.text = "회원 정보를 불러오는데 실패하였습니다."
+                        emailLoginViewController.signupResultLabel.text = emailLoginResponse.message
                     }
                 case .failure:
-                    emailLoginViewController.LoginResultLabel.text = "서버와의 연결이 원활하지 않습니다."
+                    print("서버와의 연결이 원활하지 않습니다.")
                 }
             })
     }

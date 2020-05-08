@@ -9,10 +9,52 @@
 import UIKit
 
 class EatDealViewController: UIViewController {
-
+    
+    unowned var dataManager: EatDealDataManager {
+        get {
+            return EatDealDataManager()
+        }
+    }
+    
+    
+    @IBOutlet weak var eatDealFirstImageView: UIImageView!
+    @IBOutlet weak var eatDealFirstPriceLabel: UILabel!
+    
+    @IBOutlet weak var eatDealFirstTitleLabel: UILabel!
+    
+    @IBOutlet weak var eatDealFirstItemLabel: UILabel!
+    @IBOutlet weak var eatDealSecondImageView: UIImageView!
+    @IBOutlet weak var eatDealSecondPriceLabel: UILabel!
+    
+    @IBOutlet weak var eatDealSecondTitleLabel: UILabel!
+    
+    @IBOutlet weak var eatDealSecondItemLabel: UILabel!
+    @IBOutlet weak var eatDealThirdImageView: UIImageView!
+    @IBOutlet weak var eatDealThirdPriceLabel: UILabel!
+    
+    @IBOutlet weak var eatDealThirdItemLabel: UILabel!
+    @IBOutlet weak var eatDealThirdTitleLabel: UILabel!
+    
+    @IBOutlet weak var eatDealThirdSoldOutLabel: UILabel!
+    
+    
+    @IBOutlet weak var eatDealFourthImageView: UIImageView!
+    
+    @IBOutlet weak var eatDealFourthPriceLabel: UILabel!
+    
+    @IBOutlet weak var eatDealFourthTitleLabel: UILabel!
+    
+    @IBOutlet weak var eatDealFourthItemLabel: UILabel!
+    @IBOutlet weak var eatDealFifthImageView: UIImageView!
+    @IBOutlet weak var eatDealFifthPriceLabel: UILabel!
+    
+    @IBOutlet weak var eatDealFifthTitleLabel: UILabel!
+    
+    @IBOutlet weak var eatDealFifthItemLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        dataManager.getEatDealList(self)
         // Do any additional setup after loading the view.
     }
 

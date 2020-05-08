@@ -11,7 +11,7 @@ import CoreLocation
 
 public var latitude : Double = 0.0
 public var longitude : Double = 0.0
-
+public var gpsLocation : String = ""
 
 class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegate, CLLocationManagerDelegate {
     
@@ -25,6 +25,14 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
             return RestaurantsDataManager()
         }
     }
+    
+    unowned var nearRegionListDataManager: NearRegionListDataManager {
+        get {
+            return NearRegionListDataManager()
+        }
+    }
+
+    
     var restaurantsArea : [String] = []
     var restaurantsImage : [URL] = []
 //    var restaurantsStar : [String] = []
@@ -34,7 +42,21 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
     var restaurantsReviewNum : [String] = []
     var restaurantsRating : [String] = []
     var restaurantsRatingColor : [String] = []
+    
+    
+    var kind : [String?] = []
+    var order : [String?] = []
+    var category : [String?] = []
+    var price : [String?] = []
+    var parking : [String?] = []
+    var radius : [String?] = []
 
+    
+    
+    
+    
+//    var convertIntArray : [String] = []
+//    var convertFloatArray : [String] = []
 
 //    private var restaurants: [UIImage] {
 //        var restaurants:[UIImage] = []
@@ -107,7 +129,7 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
                 locationPopUp.modalPresentationStyle = .custom
                 // 기본 팝업 세팅 끝
 
-                self.present(locationPopUp, animated: true, completion: nil)
+                self.present(locationPopUp, animated: false, completion: nil)
         
 //        let locationPopUpvc = LocationPopUpViewController() //change this to your class name
 //        locationPopUpvc.modalPresentationStyle = .custom
@@ -139,13 +161,16 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
         
     }
     
+    
+    
     @IBAction func presentSearchView(_ sender: UIButton) {
         let searchvc = SearchViewController() //change this to your class name
-                searchvc.modalPresentationStyle = .fullScreen
-                self.present(searchvc, animated: true, completion: nil)
-               
-        
+        searchvc.modalPresentationStyle = .fullScreen
+        self.present(searchvc, animated: true, completion: nil)
     }
+    
+    
+
     
     
     
@@ -159,7 +184,7 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
                 alignPopUp.modalPresentationStyle = .custom
                 // 기본 팝업 세팅 끝
         
-                self.present(alignPopUp, animated: true, completion: nil)
+                self.present(alignPopUp, animated: false, completion: nil)
     }
     
     
@@ -173,7 +198,7 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
                 radiusPopUp.modalPresentationStyle = .custom
                 // 기본 팝업 세팅 끝
         
-                self.present(radiusPopUp, animated: true, completion: nil)
+                self.present(radiusPopUp, animated: false, completion: nil)
     }
     
     @IBAction func presentFilter(_ sender: UIButton) {
@@ -186,7 +211,7 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
                 filterPopUp.modalPresentationStyle = .custom
                 // 기본 팝업 세팅 끝
         
-                self.present(filterPopUp, animated: true, completion: nil)
+                self.present(filterPopUp, animated: false, completion: nil)
         
     }
     
@@ -198,35 +223,65 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
             self.scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.pagerContainer.frame.width, height: self.pagerContainer.frame.height))
             self.pageControl = UIPageControl(frame: CGRect(x: 0, y: 130, width: self.pagerContainer.frame.width, height: 30))
                 scrollView.delegate = self as! UIScrollViewDelegate
-            configurePageControl()
+            
             self.pagerContainer.addSubview(scrollView)
             
             
             dataManager.getMainEvents(self)
             
-            
+//            configurePageControl()
 
             locationManager.delegate = self
 
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
              locationManager.requestWhenInUseAuthorization()
         locationManager.startMonitoringSignificantLocationChanges()
-
+            
         }
+    
+  
+    
+
+    
+    
     func setRestaurantList(){
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "CollectionViewCell")
+        
         setupFlowLayout()
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailRestaurantPopUpStoryboard = UIStoryboard(name: "DetailRestaurantPopUp", bundle: Bundle.main)
+                guard let detailRestaurantPopUp = detailRestaurantPopUpStoryboard
+                    .instantiateViewController(withIdentifier: "DetailRestaurantPopUp") as? DetailRestaurantPopUp else {
+                    return
+                }
+                detailRestaurantPopUp.detailRestaurantPopUpDelegate = self
+                detailRestaurantPopUp.modalPresentationStyle = .custom
+                // 기본 팝업 세팅 끝
+
+                self.present(detailRestaurantPopUp, animated: true, completion: nil)
+    }
+   
+    
+    
     
     
         override func viewDidAppear(_ animated: Bool) {
     //        PresentLocationAccessView()
             locationAuthCheck()
             restaurantDataManager.getRestaurantsList(self)
+//            restaurantDataManager.getRestaurantsList(self, kind, category, price, parking, radius, order)
+            nearRegionListDataManager.getCurrentLocation(self)
+            //식당 api로 했더니 식당 등록안된 지역의 경우에는 해당 api에서 값이 없기 때문에 동작하지 않음 따라서 내근처 api랑 엮어야함
+
+//            convertIntArray = restaurantsReviewNum.map { String($0) }
+//            convertFloatArray = restaurantsRating.map { String($0) }
             setPageViewInScroll()
+            configurePageControl()
         }
     
     
@@ -308,58 +363,18 @@ class FindingGoodRestaurantViewController: UIViewController, UIScrollViewDelegat
 
 }
 
-extension FindingGoodRestaurantViewController: LocationPopUpDelegate, AlignPopUpDelegate, RadiusPopUpDelegate, FilterPopUpDelegate{
-    
-    func pressedDismiss100mRadiusButton() {
-        self.distanceLabel.text = "100m"
-    }
-    func pressedDismiss300mRadiusButton() {
-        self.distanceLabel.text = "300m"
-    }
-    func pressedDismiss500mRadiusButton() {
-        self.distanceLabel.text = "500m"
-    }
-    func pressedDismiss1kmRadiusButton() {
-        self.distanceLabel.text = "1km"
-    }
-    func pressedDismiss3kmRadiusButton() {
-        self.distanceLabel.text = "3km"
-    }
-    
-    func pressedDismissFilterButton() {
-        //
-    }
-    func pressedDismissLocationButton(){
-        locationButton.setTitle("\(restaurantsArea)", for: .normal)
-//내 위치 받아서 또는 지역 선택한거 버튼 선택한거 뜨게하는 곳 api연결해서
-    }
-    
+//extension FindingGoodRestaurantViewController: LocationPopUpDelegate, AlignPopUpDelegate, RadiusPopUpDelegate, FilterPopUpDelegate, DetailRestaurantPopUpDelegate{
+//
+//
+//
+//}
 
-    func pressedDismissRatingButton(){
-        alignButton.setTitle("평점순", for: .normal)
-    }
-    func pressedDismissReviewButton(){
-        alignButton.setTitle("리뷰순", for: .normal)
-    }
-    func pressedDismissDistanceButton(){
-        alignButton.setTitle("거리순", for: .normal)
-    }
-    
-    func pressedDismissNoticeButton() {
-        //        self.titleLabel.text = "팝업 닫기 완료"
-
-    }
-    //locationButton의 text를 선택한 데이터들이 뜨도록 여러개 선택하면 제일 마지막에 누른 것 외 몇갠지(서래마을 외 3곳 이런식)
-    
-
-
-}
-
-extension FindingGoodRestaurantViewController: UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate {
+extension FindingGoodRestaurantViewController: UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, LocationPopUpDelegate, AlignPopUpDelegate, RadiusPopUpDelegate, FilterPopUpDelegate, DetailRestaurantPopUpDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return restaurantsTitle.count
         //식당 갯수로 바꿔야함
     }
+    
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -367,7 +382,9 @@ extension FindingGoodRestaurantViewController: UICollectionViewDelegate, UIColle
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {
             return UICollectionViewCell()
         }
-    cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
+        
+        locationButton.setTitle(restaurantsArea[indexPath.row], for: .normal)
+//    cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
     
         cell.restaurantArea.text = restaurantsArea[indexPath.row]
         
@@ -383,27 +400,150 @@ extension FindingGoodRestaurantViewController: UICollectionViewDelegate, UIColle
         
         cell.restaurantRating.text = restaurantsRating[indexPath.row]
         
-        cell.restaurantRating.textColor =  UIColor(named: restaurantsRatingColor[indexPath.row])
+        cell.restaurantRating.textColor =  .orange
         
-        
-       
-        
+//        cell.isUserInteractionEnabled = true
         
         return cell
     }
     
-    @objc func tap(_ sender: UITapGestureRecognizer) {
-
-       let location = sender.location(in: self.collectionView)
-       let indexPath = self.collectionView.indexPathForItem(at: location)
-
-       if let index = indexPath {
-          print("Got clicked on index: \(index)!")
-       }
-    }
+//    @objc func tap(_ sender: UITapGestureRecognizer) {
+//
+//       let location = sender.location(in: self.collectionView)
+//       let indexPath = self.collectionView.indexPathForItem(at: location)
+//
+//       if let index = indexPath {
+//
+//
+//          print("Got clicked on index: \(index)!")
+//       }
+//    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-      return CGSize(width: 170, height: 210)
+      return CGSize(width: 170, height: 235)
 
-    } 
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//
+//        print("cell:\(indexPath.row)")
+//
+//        let detailRestaurantPopUpStoryboard = UIStoryboard(name: "DetailRestaurantPopUp", bundle: Bundle.main)
+//                guard let detailRestaurantPopUp = detailRestaurantPopUpStoryboard
+//                    .instantiateViewController(withIdentifier: "DetailRestaurantPopUp") as? DetailRestaurantPopUp else {
+//                    return
+//                }
+//                detailRestaurantPopUp.detailRestaurantPopUpDelegate = self
+//                detailRestaurantPopUp.modalPresentationStyle = .custom
+//                // 기본 팝업 세팅 끝
+//
+//                self.present(detailRestaurantPopUp, animated: true, completion: nil)
+//
+//
+//    }
+    
+
+        func pressedDismiss500mRadiusButton() {
+            self.distanceLabel.text = "500m"
+    //        radius.insert("0.5", at: order.endIndex - 1)
+            radius.append("0.5")
+
+
+        }
+        func pressedDismiss1kmRadiusButton() {
+            self.distanceLabel.text = "1km"
+    //        radius.insert("1", at: order.endIndex - 1)
+            radius.append("1")
+
+
+        }
+        func pressedDismiss3kmRadiusButton() {
+            self.distanceLabel.text = "3km"
+    //        radius.insert("3", at: order.endIndex - 1)
+            radius.append("3")
+
+
+        }
+        
+        func pressedDismissFilterButton() {
+    //        category.insert(categories, at: category.endIndex - 1)
+            category.append(categories)
+
+    //        parking.insert(carParking, at: parking.endIndex - 1)
+            parking.append(carParking)
+
+
+            for i in 0..<foodKind.count{
+                kind.insert(foodKind[i], at: i)
+    //            kind.append(foodKind[i])
+
+            }
+            for i in 0..<prices.count{
+                price.insert(prices[i], at: i)
+    //            price.append(prices[i])
+
+            }
+
+        }
+        func pressedDismissLocationButton(){
+            
+    //내 위치 받아서 또는 지역 선택한거 버튼 선택한거 뜨게하는 곳 api연결해서
+        }
+        func pressedDetailRestaurantButton(){
+        }
+        
+
+        func pressedDismissRatingButton(){
+            alignButton.setTitle("평점순", for: .normal)
+            selectedAlign = "평점순"
+    //        order.insert("평점순", at: order.endIndex - 1)
+            order.append("평점순")
+
+            //eatDealGangBukGuViewController.dongs.insert(distinctResponse.result[index].name, at: index)
+
+          
+        }
+        func pressedDismissReviewButton(){
+            alignButton.setTitle("리뷰순", for: .normal)
+            selectedAlign = "리뷰순"
+    //        order.insert("리뷰순", at: order.endIndex - 1)
+            order.append("리뷰순")
+
+
+
+        }
+        func pressedDismissDistanceButton(){
+            alignButton.setTitle("거리순", for: .normal)
+            selectedAlign = "거리순"
+    //        order.insert("거리순", at: order.endIndex - 1)
+            order.append("거리순")
+
+
+
+        }
+        
+        func pressedDismissNoticeButton() {
+            //        self.titleLabel.text = "팝업 닫기 완료"
+
+        }
+        //locationButton의 text를 선택한 데이터들이 뜨도록 여러개 선택하면 제일 마지막에 누른 것 외 몇갠지(서래마을 외 3곳 이런식)
+        
+
 }
+//
+//extension FindingGoodRestaurantViewController: CustomCellDelegate {
+//    func sharePressed(cell: CollectionViewCell) {
+//        guard let index = collectionView.indexPath(for: cell)?.row else { return }
+//        //fetch the dataSource object using index
+//        let detailRestaurantPopUpStoryboard = UIStoryboard(name: "DetailRestaurantPopUp", bundle: Bundle.main)
+//        guard let detailRestaurantPopUp = detailRestaurantPopUpStoryboard
+//            .instantiateViewController(withIdentifier: "DetailRestaurantPopUp") as? DetailRestaurantPopUp else {
+//            return
+//        }
+//        detailRestaurantPopUp.detailRestaurantPopUpDelegate = self
+//        detailRestaurantPopUp.modalPresentationStyle = .custom
+//        // 기본 팝업 세팅 끝
+//
+//        self.present(detailRestaurantPopUp, animated: true, completion: nil)
+//    }
+//}

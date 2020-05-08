@@ -15,9 +15,10 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    //func getRestaurantsList(_ findingGoodRestaurantViewController: FindingGoodRestaurantViewController, _ kind: [String?], _ category: [String?], _ price: [String?], _ parking: [String?], _ radius: [String?], _ order: [String?]){
     
     func getRestaurantsList(_ findingGoodRestaurantViewController: FindingGoodRestaurantViewController) {
-
+///restaurants?type=main&lat=\(latitude)&lng=\(longitude)&kind=\(kind)&category=\(category)&price=\(price)&parking=\(parking)&radius=\(radius)&order=\(order)"
 
         Alamofire
             .request("\(self.appDelegate.baseUrl)/restaurants?type=main&lat=\(latitude)&lng=\(longitude)", method: .get, headers: headers)
@@ -32,8 +33,8 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                         findingGoodRestaurantViewController.restaurantsArea.insert(restaurantsResponse.result[index].area, at: index)
                             //식당 지역
                             
-                            let RestaurantURL = URL(string: restaurantsResponse.result[index].img)!
-                        findingGoodRestaurantViewController.restaurantsImage.insert(RestaurantURL, at: index)
+                            let RestaurantsURL = URL(string: restaurantsResponse.result[index].img)!
+                            findingGoodRestaurantViewController.restaurantsImage.insert(RestaurantsURL, at: index)
                             //식당 이미지
 //                            findingGoodRestaurantViewController.restaurantsStar.insert(restaurantsResponse.result[index].star, at: index)
                             //가고싶다
@@ -47,10 +48,10 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                             findingGoodRestaurantViewController.restaurantsSeenNum.insert(restaurantsResponse.result[index].seenNum, at: index)
                             //조회수
                             
-                            findingGoodRestaurantViewController.restaurantsReviewNum.insert(String(restaurantsResponse.result[index].reviewNum), at: index)
+                            findingGoodRestaurantViewController.restaurantsReviewNum.insert(restaurantsResponse.result[index].reviewNum, at: index)
                             //리뷰 수
                             
-                            findingGoodRestaurantViewController.restaurantsRating.insert(String(restaurantsResponse.result[index].rating), at: index)
+                            findingGoodRestaurantViewController.restaurantsRating.insert(restaurantsResponse.result[index].rating, at: index)
                             //평점
                             
                             findingGoodRestaurantViewController.restaurantsRatingColor.insert(restaurantsResponse.result[index].ratingColor, at: index)
@@ -59,7 +60,7 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                         
                         findingGoodRestaurantViewController.setRestaurantList()
                         
-                        
+                         print("latitude:\(latitude), longitude:\(longitude)")
                         print("restaurantsResponse: \(restaurantsResponse.message)")
                         
                         print("restaurantsResponse: \(restaurantsResponse.result[0].title)")
@@ -70,7 +71,7 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                     }
                     
                     else {
-                       print("latitude:\(latitude), longitude:\(longitude)")
+                      
                         print("restaurantsResponse:\( restaurantsResponse.message)")
                     }
                 case .failure:

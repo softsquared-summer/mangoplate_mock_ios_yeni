@@ -48,8 +48,14 @@ class SignUpByEmailDataManager{
                     
                         
                     } else {
-                        signUpByEmailViewController.signupResultLabel.text = signUpByEmailResponse.message
-//                        "회원가입 정보를 불러오는데 실패하였습니다."
+                        
+                        if (signUpByEmailResponse.message == "잘못된 메일주소입니다. 다시 입력해주세요." ){
+                            signUpByEmailViewController.emailMessage.text = signUpByEmailResponse.message
+                        } else if (signUpByEmailResponse.message == "비밀번호를 다시 확인 해주세요"){
+                            signUpByEmailViewController.password1Label.text = signUpByEmailResponse.message
+                        } else if (signUpByEmailResponse.message == "비밀번호가 일치 하지 않습니다."){
+                            signUpByEmailViewController.password2Label.text = signUpByEmailResponse.message
+                        }
                     }
                 case .failure:
                     signUpByEmailViewController.signupResultLabel.text = "서버와의 연결이 원활하지 않습니다."

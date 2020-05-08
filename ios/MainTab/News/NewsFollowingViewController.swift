@@ -12,6 +12,8 @@ class NewsFollowingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
+        self.navigationController?.navigationBar.barTintColor = .white
 
         // Do any additional setup after loading the view.
     }

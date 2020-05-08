@@ -22,11 +22,7 @@ class LoginViewController: UIViewController {
 //
 //    }
     
-    @IBAction func testGoToMain(_ sender: UIButton) {
-                let MainTabvc = MainTabViewController() //change this to your class name
-                MainTabvc.modalPresentationStyle = .fullScreen
-                self.present(MainTabvc, animated: true, completion: nil)
-    }
+   
     
     @IBAction func emailLoginButton(_ sender: UIButton) {
 //        let emailLoginVC = EmailLoginViewController()
@@ -44,7 +40,7 @@ class LoginViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        layout()
+//        layout()
         navigationController?.isNavigationBarHidden = true
 
 
@@ -102,29 +98,29 @@ class LoginViewController: UIViewController {
         })
       }
     }
-    private func layout() {
-       let guide = view.safeAreaLayoutGuide
-//        let facebookLoginButton = FBLoginButton()
-        
-       view.addSubview(kakaoLoginButton)
-        view.addSubview(facebookLoginButton)
-       
-       kakaoLoginButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 75).isActive = true
-       kakaoLoginButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -75).isActive = true
-       kakaoLoginButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -317).isActive = true
-       kakaoLoginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-
-        if let facebookButtonHeightConstraint = facebookLoginButton.constraints.first(where: { $0.firstAttribute == .height }) {
-            facebookLoginButton.removeConstraint(facebookButtonHeightConstraint)
-        }
-        facebookLoginButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 75).isActive = true
-        facebookLoginButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -75).isActive = true
-        kakaoLoginButton.topAnchor.constraint(equalTo: facebookLoginButton.bottomAnchor, constant: 10).isActive = true
-        facebookLoginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-
-//질문
-
-     }
+//    private func layout() {
+//       let guide = view.safeAreaLayoutGuide
+////        let facebookLoginButton = FBLoginButton()
+//
+//       view.addSubview(kakaoLoginButton)
+//        view.addSubview(facebookLoginButton)
+//
+//       kakaoLoginButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 75).isActive = true
+//       kakaoLoginButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -75).isActive = true
+//       kakaoLoginButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -317).isActive = true
+//       kakaoLoginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+//
+//        if let facebookButtonHeightConstraint = facebookLoginButton.constraints.first(where: { $0.firstAttribute == .height }) {
+//            facebookLoginButton.removeConstraint(facebookButtonHeightConstraint)
+//        }
+//        facebookLoginButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 75).isActive = true
+//        facebookLoginButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -75).isActive = true
+//        kakaoLoginButton.topAnchor.constraint(equalTo: facebookLoginButton.bottomAnchor, constant: 10).isActive = true
+//        facebookLoginButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+//
+////질문
+//
+//     }
 
     // Swift override func viewDidLoad() { super.viewDidLoad() if let token = AccessToken.current, !token.isExpired { // User is logged in, do work such as go to next view controller. } } //현재 로그인 상태 확인
 

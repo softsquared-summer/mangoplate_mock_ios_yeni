@@ -36,7 +36,8 @@ class GangBukGuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.isNavigationBarHidden = true
+
         dataManager.getGangBukGuRegionList(self)
 
        

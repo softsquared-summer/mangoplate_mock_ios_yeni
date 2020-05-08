@@ -18,8 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 사용할 수 없는 기능입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLY-Gk-B9e">
-                    <rect key="frame" x="83" y="436" width="248.5" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식당 등록 부분은 관리자의 역할인 것 같아 망고플레이트 팀원들과 협의하에 구현하지 않기로 한 부분입니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLY-Gk-B9e">
+                    <rect key="frame" x="0.0" y="424" width="414" height="48"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -40,6 +40,8 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fZa-gv-lpS" firstAttribute="trailing" secondItem="cxn-QF-I5u" secondAttribute="trailing" constant="20" id="AIB-F3-cPK"/>
+                <constraint firstAttribute="trailing" secondItem="GLY-Gk-B9e" secondAttribute="trailing" id="S6O-71-UU6"/>
+                <constraint firstItem="GLY-Gk-B9e" firstAttribute="leading" secondItem="aTL-dA-ot5" secondAttribute="leading" id="UsC-ZE-yrA"/>
                 <constraint firstItem="GLY-Gk-B9e" firstAttribute="centerX" secondItem="aTL-dA-ot5" secondAttribute="centerX" id="Y1f-jH-xqV"/>
                 <constraint firstItem="cxn-QF-I5u" firstAttribute="top" secondItem="fZa-gv-lpS" secondAttribute="top" id="dwk-bt-gmm"/>
                 <constraint firstItem="GLY-Gk-B9e" firstAttribute="centerY" secondItem="aTL-dA-ot5" secondAttribute="centerY" id="n5I-zL-Q1K"/>

@@ -14,18 +14,38 @@ class MangoPickViewController: UITabBarController {
     @IBOutlet weak var locationSelectView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
+        
         let EatDeal = UINavigationController(rootViewController: EatDealViewController())
+        
+
         EatDeal.tabBarItem =  UITabBarItem(title: "EAT딜", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
         EatDeal.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -20)
+        EatDeal.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)], for: .normal)
+        
+        
+        let Story = UINavigationController(rootViewController: StoryViewController())
+        Story.tabBarItem =  UITabBarItem(title: "스토리", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
+        Story.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -20)
+        Story.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)], for: .normal)
+        
         let TopList = UINavigationController(rootViewController: TopListViewController())
         TopList.tabBarItem = UITabBarItem(title: "Top리스트", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
         TopList.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -20) //이미지 제거
+        TopList.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)], for: .normal)
         
+        self.navigationController?.navigationBar.barTintColor = .white
         
-        let tabBarList = [EatDeal, TopList]
+        let tabBarList = [EatDeal, Story, TopList]
         self.viewControllers = tabBarList
         self.tabBar.tintColor = .orange
+        
+//        let systemFontAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)]
+//               UITabBarItem.appearance().setTitleTextAttributes(systemFontAttribute, for: .normal)
+        
         UIApplication.shared.statusBarStyle = .lightContent
+        
         
 
 //        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -10.0)

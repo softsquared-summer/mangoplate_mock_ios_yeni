@@ -40,7 +40,7 @@ class MyInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         navigationController?.isNavigationBarHidden = true
-
+        self.navigationController?.navigationBar.barTintColor = .white
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

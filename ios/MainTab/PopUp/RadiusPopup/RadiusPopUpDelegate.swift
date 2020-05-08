@@ -7,8 +7,7 @@
 //
 
 protocol RadiusPopUpDelegate {
-    func pressedDismiss100mRadiusButton()
-    func pressedDismiss300mRadiusButton()
+   
     func pressedDismiss500mRadiusButton()
     func pressedDismiss1kmRadiusButton()
     func pressedDismiss3kmRadiusButton()

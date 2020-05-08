@@ -21,6 +21,8 @@ class NearViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
+
         dataManager.getNearRegionList(self)
 
 

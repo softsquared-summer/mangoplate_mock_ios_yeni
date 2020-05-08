@@ -41,7 +41,9 @@ override func viewDidLoad() {
 
     let tabBarList = [recentRegion, near, gangNamGu, gangBukGu]
 
-
+    self.navigationController?.navigationBar.barTintColor = .white
+    self.tabBar.barTintColor = UIColor.white
+    
     self.viewControllers = tabBarList
     self.tabBar.tintColor = .orange
     UIApplication.shared.statusBarStyle = .lightContent

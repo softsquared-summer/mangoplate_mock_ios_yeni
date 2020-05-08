@@ -21,10 +21,10 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mangoplateLogin" translatesAutoresizingMaskIntoConstraints="NO" id="ub2-it-Pql">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRq-kW-Tpy">
-                    <rect key="frame" x="93" y="594" width="228" height="32"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRq-kW-Tpy">
+                    <rect key="frame" x="137" y="597" width="185" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="이메일로 시작하기">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -32,25 +32,16 @@
                         <action selector="emailLoginButton:" destination="-1" eventType="touchUpInside" id="Ulr-8a-Jwq"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzA-CK-KGT">
-                    <rect key="frame" x="348" y="832" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="testGoToMain:" destination="-1" eventType="touchUpInside" id="KVI-am-gw4"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="QzA-CK-KGT" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="3fV-q9-Mqr"/>
                 <constraint firstItem="ub2-it-Pql" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7As-qf-eXa"/>
                 <constraint firstAttribute="bottom" secondItem="ub2-it-Pql" secondAttribute="bottom" id="8zr-Jo-Thf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bRq-kW-Tpy" secondAttribute="trailing" constant="93" id="GfA-DS-Wzz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QzA-CK-KGT" secondAttribute="trailing" constant="20" id="Jgw-ml-4J7"/>
-                <constraint firstItem="bRq-kW-Tpy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="93" id="eUH-YC-YSv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bRq-kW-Tpy" secondAttribute="trailing" constant="92" id="GfA-DS-Wzz"/>
+                <constraint firstItem="bRq-kW-Tpy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="137" id="eUH-YC-YSv"/>
                 <constraint firstItem="ub2-it-Pql" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jBl-lX-kA1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ub2-it-Pql" secondAttribute="trailing" id="jme-rf-qF8"/>
-                <constraint firstItem="bRq-kW-Tpy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="550" id="tyr-j5-qyg"/>
+                <constraint firstItem="bRq-kW-Tpy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="553" id="tyr-j5-qyg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="136.23188405797103" y="129.91071428571428"/>

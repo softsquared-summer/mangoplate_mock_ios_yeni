@@ -26,7 +26,7 @@
                     <rect key="frame" x="0.0" y="806" width="414" height="90"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4f-wY-3TG">
-                            <rect key="frame" x="20" y="14" width="113" height="36"/>
+                            <rect key="frame" x="30" y="14" width="113" height="36"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="다시 보지 않기">
                                 <color key="titleColor" red="0.54902344940000003" green="0.54901272059999995" blue="0.54901999239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -36,10 +36,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSq-uD-NDw">
-                            <rect key="frame" x="359" y="14" width="35" height="36"/>
+                            <rect key="frame" x="349" y="14" width="35" height="36"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="닫기">
-                                <color key="titleColor" red="0.54902344940000003" green="0.54901272059999995" blue="0.54901999239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="titleColor" red="0.32157102230000001" green="0.32156431670000002" blue="0.32156884670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
                             <connections>
                                 <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="ELy-BN-AUo"/>
@@ -49,10 +49,10 @@
                     <color key="backgroundColor" red="0.95294767619999998" green="0.95292967559999997" blue="0.95294183489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="JSq-uD-NDw" secondAttribute="bottom" constant="40" id="8Dr-pw-ylC"/>
-                        <constraint firstItem="W4f-wY-3TG" firstAttribute="leading" secondItem="4Eh-tX-lpL" secondAttribute="leading" constant="20" id="IHi-SY-ECG"/>
+                        <constraint firstItem="W4f-wY-3TG" firstAttribute="leading" secondItem="4Eh-tX-lpL" secondAttribute="leading" constant="30" id="IHi-SY-ECG"/>
                         <constraint firstAttribute="bottom" secondItem="W4f-wY-3TG" secondAttribute="bottom" constant="40" id="IsV-Yr-3aw"/>
                         <constraint firstAttribute="height" constant="90" id="N27-hH-5rO"/>
-                        <constraint firstAttribute="trailing" secondItem="JSq-uD-NDw" secondAttribute="trailing" constant="20" id="lr3-nY-aWM"/>
+                        <constraint firstAttribute="trailing" secondItem="JSq-uD-NDw" secondAttribute="trailing" constant="30" id="lr3-nY-aWM"/>
                     </constraints>
                 </view>
             </subviews>

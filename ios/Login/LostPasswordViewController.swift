@@ -21,13 +21,10 @@ class LostPasswordViewController: UIViewController {
              backbutton.addTarget(self, action: #selector(self.backAction), for: .touchUpInside)
 
              self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
-             
-             
-         
-         
-        
-        // Do any additional setup after loading the view.
+
     }
+    
+    
     
     @objc func backAction(_ sender: UIButton) {
        let _ = self.dismiss(animated: true, completion: nil)

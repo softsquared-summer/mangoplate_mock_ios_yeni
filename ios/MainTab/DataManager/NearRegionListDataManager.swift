@@ -30,7 +30,8 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                         for index in 0..<nearRegionListResponse.result.count{
                         
                         nearViewController.dongs.insert(nearRegionListResponse.result[index].name, at: index)
-                        
+           
+                            
                         }
                         nearViewController.setDongs()
                         
@@ -48,6 +49,33 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                 }
             })
     }
+    
+    func getCurrentLocation(_ findingGoodRestaurantViewController: FindingGoodRestaurantViewController) {
+
+
+        Alamofire
+            .request("\(self.appDelegate.baseUrl)/near-districts?lat=\(latitude)&lng=\(longitude)", method: .get, headers: headers)
+            .validate()
+            .responseObject(completionHandler: { (response: DataResponse<NearRegionListResponse>) in
+                switch response.result {
+                case .success(let nearRegionListResponse):
+                    if (nearRegionListResponse.code == 200) {
+                            
+                        findingGoodRestaurantViewController.locationButton.setTitle(nearRegionListResponse.result[0].name, for: .normal)
+                            
+                 
+    
+                    }else {
+                        print("nearRegionListResponse:\( nearRegionListResponse.message)")
+                    }
+                case .failure:
+                     print("서버와의 연결이 원활하지 않습니다.")
+                }
+            })
+    }
+    
+    
+    
     
     
 }

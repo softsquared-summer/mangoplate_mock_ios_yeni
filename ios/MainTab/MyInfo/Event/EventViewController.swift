@@ -39,16 +39,29 @@ class EventViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dataManager.getDetailEvents(self)
-         var backbutton = UIButton(type: .custom)
-                backbutton.setImage(UIImage(named: "ic_left_arrow_orange.png"), for: .normal) // Image can be downloaded from here below link
-                backbutton.setTitle("이벤트", for: .normal)
-                backbutton.tintColor = .orange
+        
+        var backImage = UIImage(named: "ic_left_arrow_orange.png")
+
+               var backbutton = UIBarButtonItem(image: backImage, style: .plain, target: self, action: #selector(self.backAction))
+        backbutton.tintColor = .orange
+        var lefttitle = UIBarButtonItem()
+        lefttitle.title = "이벤트"
+
+        lefttitle.tintColor = .orange
+        let attributes: [NSAttributedString.Key : Any] = [ .font: UIFont.boldSystemFont(ofSize: 17) ]
+        lefttitle.setTitleTextAttributes(attributes, for: .normal)
+
+
+                navigationItem.leftBarButtonItems = [backbutton, lefttitle]
+         
+//                backbutton.setTitle("이벤트", for: .normal)
+//                backbutton.tintColor = .orange
         //        backbutton.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
-                backbutton.setTitleColor(backbutton.tintColor, for: .normal) // You can change the TitleColor
-
-                backbutton.addTarget(self, action: #selector(self.backAction), for: .touchUpInside)
-
-                self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
+//                backbutton.setTitleColor(backbutton.tintColor, for: .normal) // You can change the TitleColor
+//
+//                backbutton.addTarget(self, action: #selector(self.backAction), for: .touchUpInside)
+//
+//                self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
         
         
                 

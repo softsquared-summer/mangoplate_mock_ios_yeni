@@ -35,6 +35,8 @@ class GangNamGuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
+
         dataManager.getGangNamGuRegionList(self)
         
         

@@ -9,7 +9,8 @@
 import UIKit
 
 class NewsAllViewController: UIViewController {
-
+    @IBOutlet weak var locationView: UIView!
+    
     @IBOutlet weak var deliciousButton: UIButton!
     @IBOutlet weak var sosoButton: UIButton!
     @IBOutlet weak var notGoodButton: UIButton!
@@ -21,6 +22,9 @@ class NewsAllViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
+        self.navigationController?.navigationBar.barTintColor = .white
+
 
         // Do any additional setup after loading the view.
     }

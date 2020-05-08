@@ -16,15 +16,17 @@ class EmailLoginViewController: UIViewController {
         }
     }
     
- 
+    @IBOutlet weak var loginButton: UIButton!
+    
     @IBOutlet weak var emailTextFiled: UITextField!
     
     @IBOutlet weak var passwordTextFiled: UITextField!
     
-    @IBOutlet weak var LoginResultLabel: UILabel!
+    @IBOutlet weak var signupResultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        navigationItem.backBarButtonItem = UIBarButtonItem(
 //        title: "이메일로 로그인", style: .plain, target: nil, action: nil)
 //        let backButton = UIBarButtonItem()
@@ -32,18 +34,53 @@ class EmailLoginViewController: UIViewController {
 //        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         
         //네비게이션 바 백그라운드 컬러 흰색으로 바꾸기
-        var backbutton = UIButton(type: .custom)
-        backbutton.setImage(UIImage(named: "ic_left_arrow_gray.png"), for: .normal) // Image can be downloaded from here below link
-        backbutton.setTitle("이메일로 로그인", for: .normal)
-        backbutton.tintColor = .black
-//        backbutton.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
-        backbutton.setTitleColor(backbutton.tintColor, for: .normal) // You can change the TitleColor
+//        var backbutton = UIButton(type: .custom)
+//        backbutton.setImage(UIImage(named: "ic_right_arrow.png"), for: .normal) // Image can be downloaded from here below link
+//        backbutton.setTitle("이메일로 로그인", for: .normal)
+//        backbutton.tintColor = .black
+////        backbutton.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+//        backbutton.setTitleColor(backbutton.tintColor, for: .normal) // You can change the TitleColor
+//
+//        backbutton.addTarget(self, action: #selector(self.backAction), for: .touchUpInside)
 
-        backbutton.addTarget(self, action: #selector(self.backAction), for: .touchUpInside)
+        
+         var backImage = UIImage(named: "ic_right_arrow.png")
 
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
+        var backbutton = UIBarButtonItem(image: backImage, style: .plain, target: self, action: #selector(self.backAction))
+
+        backbutton.tintColor = .darkGray
+        var lefttitle = UIBarButtonItem()
+        lefttitle.title = "이메일로 로그인"
+        lefttitle.tintColor = .darkGray
+        let attributes: [NSAttributedString.Key : Any] = [ .font: UIFont.boldSystemFont(ofSize: 17) ]
+        lefttitle.setTitleTextAttributes(attributes, for: .normal)
+
+
+                navigationItem.leftBarButtonItems = [backbutton, lefttitle]
+
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
+        
+        loginButton.layer.cornerRadius = 24
+        self.navigationController?.navigationBar.barTintColor = .white
+
         
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        emailTextFiled.borderStyle = .none
+        let emailBorder = CALayer()
+        emailBorder.frame = CGRect(x: 0, y: emailTextFiled.frame.size.height-1, width: emailTextFiled.frame.width, height: 1)
+        emailBorder.backgroundColor = UIColor.white.cgColor
+        emailTextFiled.layer.addSublayer((emailBorder))
+        emailTextFiled.textColor = UIColor.lightGray
+        
+        passwordTextFiled.borderStyle = .none
+        let passwordBorder = CALayer()
+        passwordBorder.frame = CGRect(x: 0, y: passwordTextFiled.frame.size.height-1, width: passwordTextFiled.frame.width, height: 1)
+        passwordBorder.backgroundColor = UIColor.white.cgColor
+        passwordTextFiled.layer.addSublayer((passwordBorder))
+        passwordTextFiled.textColor = UIColor.lightGray
     }
     
    @objc func backAction(_ sender: UIButton) {

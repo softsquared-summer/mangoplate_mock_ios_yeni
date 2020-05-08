@@ -42,8 +42,8 @@ struct Restaurants {
     var title: String!
     var distance: String!
     var seenNum: String!
-    var reviewNum: Int!
-    var rating: Float!
+    var reviewNum: String!
+    var rating: String!
     var ratingColor: String!
 
     

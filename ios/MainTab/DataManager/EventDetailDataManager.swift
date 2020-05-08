@@ -52,44 +52,57 @@ let headers: HTTPHeaders = ["x-access-token" : jwtKey]
                             
                         eventViewController.FirstEventDateLabel.text = eventDetailResponse.result[2].date
                         
-                        let SecondEventURL = URL(string: eventDetailResponse.result[3].imageUrl)!
-                        let Seconddata = try! Data(contentsOf: SecondEventURL)
-                        eventViewController.SecondEventImageView.image = UIImage(data: Seconddata)
+                        let SecondEventURL = URL(string: eventDetailResponse.result[3].imageUrl)
+                        eventViewController.SecondEventImageView.kf.setImage(with: SecondEventURL)
+                        
+//                        let Seconddata = try! Data(contentsOf: SecondEventURL)
+//                        eventViewController.SecondEventImageView.image = UIImage(data: Seconddata)
                         
                         eventViewController.SecondEventTitleLabel.text = eventDetailResponse.result[3].title
                             
                         eventViewController.SecondEventDateLabel.text = eventDetailResponse.result[3].date
                         
-                        let ThirdEventURL = URL(string: eventDetailResponse.result[0].imageUrl)!
-                        let Thirddata = try! Data(contentsOf: SecondEventURL)
-                        eventViewController.SecondEventImageView.image = UIImage(data: Thirddata)
+                        let ThirdEventURL = URL(string: eventDetailResponse.result[0].imageUrl)
+                        
+                        eventViewController.ThirdEventImageView.kf.setImage(with: ThirdEventURL)
+                        
+                        
+//                        let Thirddata = try! Data(contentsOf: SecondEventURL)
+//                        eventViewController.SecondEventImageView.image = UIImage(data: Thirddata)
                         
                         
                         eventViewController.ThirdEventTitleLabel.text = eventDetailResponse.result[0].title
                             
                         eventViewController.ThirdEventDateLabel.text = eventDetailResponse.result[0].date
                         
-                        let FourthEventURL = URL(string: eventDetailResponse.result[5].imageUrl)!
-                        let Fourthdata = try! Data(contentsOf: SecondEventURL)
-                        eventViewController.SecondEventImageView.image = UIImage(data: Fourthdata)
+                        let FourthEventURL = URL(string: eventDetailResponse.result[5].imageUrl)
                         
+                        eventViewController.FourthEventImageView.kf.setImage(with: FourthEventURL)
+                        
+//                        let Fourthdata = try! Data(contentsOf: SecondEventURL)
+//                        eventViewController.SecondEventImageView.image = UIImage(data: Fourthdata)
+//
                     
                         eventViewController.FourthEventTitleLabel.text = eventDetailResponse.result[5].title
                             
                         eventViewController.FourthEventDateLabel.text = eventDetailResponse.result[5].date
                         
-                        let FifthEventURL = URL(string: eventDetailResponse.result[4].imageUrl)!
-                        let Fifthdata = try! Data(contentsOf: SecondEventURL)
-                        eventViewController.SecondEventImageView.image = UIImage(data: Fifthdata)
+                        let FifthEventURL = URL(string: eventDetailResponse.result[4].imageUrl)
+                        
+                        eventViewController.FifthEventImageView.kf.setImage(with: FifthEventURL)
+//                        let Fifthdata = try! Data(contentsOf: SecondEventURL)
+//                        eventViewController.SecondEventImageView.image = UIImage(data: Fifthdata)
                         
                         eventViewController.FifthEventTitleLabel.text = eventDetailResponse.result[4].title
                             
                         eventViewController.FifthEventDateLabel.text = eventDetailResponse.result[4].date
                         
-                        let SixthEventURL = URL(string: eventDetailResponse.result[1].imageUrl)!
-                        let Sixthdata = try! Data(contentsOf: SecondEventURL)
-                        eventViewController.SecondEventImageView.image = UIImage(data: Sixthdata)
+                        let SixthEventURL = URL(string: eventDetailResponse.result[1].imageUrl)
                         
+                         eventViewController.SixthEventImageView.kf.setImage(with: SixthEventURL)
+//                        let Sixthdata = try! Data(contentsOf: SecondEventURL)
+//                        eventViewController.SecondEventImageView.image = UIImage(data: Sixthdata)
+//
                         eventViewController.SixthEventTitleLabel.text = eventDetailResponse.result[1].title
                             
                         eventViewController.SixthEventDateLabel.text = eventDetailResponse.result[1].date
